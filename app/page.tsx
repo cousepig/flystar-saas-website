@@ -8,7 +8,8 @@ import Features from "@/sections/Features";
 import Hero from "@/sections/Hero";
 import Pricing from "@/sections/Pricing";
 import Testimonials from "@/sections/Testimonials";
-import Video from "@/sections/Video";
+import About from "@/sections/Video";
+import Showcase from "@/sections/Showcase";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,14 +22,14 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Features />
-      <AboutSection />
+      {/* <Features /> */}
+      {/* <Showcase /> */}
       {/* <Solutions /> */}
       {/* <Pricing /> */}
-      <Brands />
-      <Video />
+      {/* <Brands /> */}
+      {/* <About /> */}
       {/* <Testimonials /> */}
-      <Blog />
+      {/* <Blog /> */}
       {/* <Contact /> */}
     </>
   );

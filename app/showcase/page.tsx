@@ -1,4 +1,10 @@
 
+import BlogPagination, { generateStaticParams } from "./page/[slug]/page";
+
+export { generateStaticParams };
+export default BlogPagination;
+
+/*
 import Breadcrumb from "@/components/Breadcrumb";
 import Pricing from "@/sections/Pricing";
 import Showcase from "@/sections/Showcase";
@@ -13,11 +19,12 @@ const PricePage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="工程案例"
+        pageName="Showcase"
       />
-    <Showcase />
+      <Showcase />
     </>
   );
 };
 
 export default PricePage;
+*/

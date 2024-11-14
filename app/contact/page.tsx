@@ -4,7 +4,7 @@ import Contact from "@/sections/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "联系我们 | 颜如玉 声入心",
+  title: "Contact us | Syrincs",
   description: "This is Contact Page for website",
 };
 
@@ -12,7 +12,7 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="联系我们"
+        pageName="Contact us"
       />
       <Contact />
     </>

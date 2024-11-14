@@ -1,5 +1,9 @@
 import ProductLayouts from "@/components/product/ProductLayouts";
 import LoadingProducts from "@/components/skeleton/SkeletonProducts";
+import SectionTitle from "../../components/SectionTitle";
+import Breadcrumb from "@/components/Breadcrumb";
+import featuresData from "@/sections/Features/featuresData";
+import SingleFeature from "@/sections/Features/SingleFeature";
 // import { defaultSort, sorting } from "@/lib/constants";
 // import { getListPage } from "@/lib/contentParser";
 // import {
@@ -17,13 +21,8 @@ import LoadingProducts from "@/components/skeleton/SkeletonProducts";
 import { Suspense } from "react";
 
 interface SearchParams {
-  sort?: string;
-  q?: string;
-  minPrice?: string;
-  maxPrice?: string;
-  b?: string;
+
   c?: string;
-  t?: string;
 }
 
 const ShowProducts = async ({
@@ -32,16 +31,11 @@ const ShowProducts = async ({
   searchParams: SearchParams;
 }) => {
   const {
-    sort,
-    q: searchValue,
-    minPrice,
-    maxPrice,
-    b: brand,
     c: category,
-    t: tag,
   } = searchParams as {
     [key: string]: string;
   };
+  console.log(searchParams);
 
   const { layout, cursor } = searchParams as { [key: string]: string };
 
@@ -52,30 +46,11 @@ const ShowProducts = async ({
   let vendorsWithCounts: { vendor: string; productCount: number }[] = [];
   let categoriesWithCounts: { category: string; productCount: number }[] = [];
 
-  if (searchValue || brand || minPrice || maxPrice || category || tag) {
+  if (category) {
     let queryString = "";
 
-    if (minPrice || maxPrice) {
-      queryString += `variants.price:<=${maxPrice} variants.price:>=${minPrice}`;
-    }
-
-    if (searchValue) {
-      queryString += ` ${searchValue}`;
-    }
-
-    if (brand) {
-      Array.isArray(brand)
-        ? (queryString += `${brand.map((b) => `(vendor:${b})`).join(" OR ")}`)
-        : (queryString += `vendor:"${brand}"`);
-    }
-
-    if (tag) {
-      queryString += ` ${tag}`;
-    }
 
     const query = {
-      // sortKey,
-      // reverse,
       query: queryString,
       cursor,
     };
@@ -83,10 +58,8 @@ const ShowProducts = async ({
     productsData =
       category && category !== "all"
         ? await getCollectionProducts({
-            collection: category,
-            sortKey,
-            reverse,
-          })
+          collection: category
+        })
         : await getProducts(query);
 
     const uniqueVendors: string[] = [
@@ -128,27 +101,39 @@ const ShowProducts = async ({
     // Fetch all products
     // productsData = await getProducts({ sortKey, reverse, cursor });
   }
-  // console.log(categoriesWithCounts)
-  // const categories = await getCollections();
-  // const vendors = await getVendors({});
-
-  const tags = [
-    ...new Set(
-      (
-        productsData as { pageInfo: PageInfo; products: Product[] }
-      )?.products.flatMap((product: Product) => product.tags),
-    ),
-  ];
-
-  // const maxPriceData = await getHighestProductPrice();
 
   return (
     <>
+      <Breadcrumb pageName="产品中心  1" />
+      <section
+        id="products"
+        className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
+      >
+        <div className="container">
+          <SectionTitle
+            title="产品中心"
+            paragraph="探索我们精选使用SYRINCS的酒吧，Livehouse、PartyK、娱乐DJ、现场安装应用扩声系统。更多DJ音乐人和设计师都信任我们。"
+            center
+          />
+        </div>
+        <section className="section">
+          <div className="container">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
+              {featuresData.map((feature) => (
+                <SingleFeature key={feature.id} feature={feature} />
+              ))}
+
+
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+
+
       <ProductLayouts
         // categories={categories}
-        // vendors={vendors}
-        // tags={tags}
-        // maxPriceData={maxPriceData}
         vendorsWithCounts={vendorsWithCounts}
         categoriesWithCounts={categoriesWithCounts}
       />
@@ -180,16 +165,13 @@ const ShowProducts = async ({
 };
 
 const ProductsListPage = ({ searchParams }: { searchParams: any }) => {
-  // const callToAction = getListPage("sections/call-to-action.md");
 
   return (
     <>
-      {/* <PageHeader title={"Products"} /> */}
       <Suspense fallback={<LoadingProducts />}>
         <ShowProducts searchParams={searchParams} />
       </Suspense>
 
-      {/* <CallToAction data={callToAction} /> */}
     </>
   );
 };

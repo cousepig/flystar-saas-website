@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "title": "Live House enhances sound system with Syrincs Audio",
+      "tagline": "IF YOU LIKE IT",
+      "image": "/images/home/Bleat-Post-Production.webp",
+      "buttons": [
+        {
+          "id": 1,
+          "text": "Read More",
+          "link": "/",
+          "type": "btn-dark btn-circle"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Syrincs Systems Prove Ideal For All In Trondheim",
+      "tagline": "IF YOU LIKE IT",
+      "image": "/images/home/Bleat-Post-Production.webp",
+      "buttons": [
+        {
+          "id": 1,
+          "text": "Read More",
+          "link": "/",
+          "type": "btn-dark btn-circle"
+        }
+      ]
+    }
+  ]
+  

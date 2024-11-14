@@ -16,8 +16,9 @@ const PricePage = () => {
         pageName="产品中心"
       />
 
-    {/* <Pricing /> */}
-    <Category />
+      {/* <Pricing /> */}
+      <Category />
+      <Pricing />
     </>
   );
 };

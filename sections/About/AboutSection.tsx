@@ -9,7 +9,7 @@ const checkIcon = (
 
 const AboutSection = () => {
   const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+    <p className="mb-5 flex items-center text-lg font-medium text-black dark:text-white ">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-sm bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -57,15 +57,17 @@ const AboutSection = () => {
                 <Image
                   src="/images/about/about-image.svg"
                   alt="about-image"
+                  quality={75}
+                  priority={false}
                   fill
                   className="drop-shadow-three mx-auto max-w-full dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
-                <Image
+                {/* <Image
                   src="/images/about/about-image-dark.svg"
                   alt="about-image"
                   fill
                   className="drop-shadow-three mx-auto hidden max-w-full dark:block dark:drop-shadow-none lg:mr-0"
-                />
+                /> */}
               </div>
             </div>
           </div>

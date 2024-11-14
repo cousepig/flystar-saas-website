@@ -38,16 +38,18 @@ module.exports = {
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#0f172a",
+        green: "#183e41",
         dark: "#182c25",
-        primary: "#00dc82",
+        primary: "rgba(24, 62, 65, 0.8)",
+        secondary: "#c9db4b",
         yellow: "#FBB040",
-        "body-color": "#475569",
-        "body-color-dark": "#809189",
-        "gray-dark": "#001810",
+        "body-color": "#333",
+        "body-color-dark": "#ffffff",
+        "gray-dark": "#000000",
         "gray-light": "#F0F2F9",
         stroke: "#E3E8EF",
         "stroke-dark": "#11211f",
-        "bg-color-dark": "#091612",
+        "bg-color-dark": "#000000",
       },
 
       boxShadow: {
@@ -69,5 +71,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')]
+
 };

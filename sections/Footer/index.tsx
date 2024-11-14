@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import categoryData from "@/sections/products/categoryData";
+import categoryData from "@/sections/Features/featuresData";
 
 const Footer = () => {
   return (
@@ -16,14 +16,14 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/syrincs-logo-white.svg"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={140}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/logo.svg"
+                    src="/images/logo/syrincs-logo.svg"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}
@@ -31,7 +31,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="dark:text-body-color-dark mb-9 text-base leading-relaxed text-body-color">
-                SYRINCS, 延承了德国设计的严谨与厚实, 体现在其音色之中, 在音色的设计中使用一种十分严密的数学秩序, 其音色充满严谨的理性主义色彩魅力。
+                  {/* SYRINCS, 延承了德国设计的严谨与厚实, 体现在其音色之中, 在音色的设计中使用一种十分严密的数学秩序, 其音色充满严谨的理性主义色彩魅力。 */}
                 </p>
                 <div className="flex items-center">
                   <a
@@ -97,19 +97,19 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  产品中心
+                  Products
                 </h2>
                 <ul>
-                {categoryData.map((category) => (
-                  <li>
-                    <a
-                      href={category.href}
-                      className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
-                    >
-                      {category.title}
-                    </a>
-                  </li>
-              ))}
+                  {categoryData.map((category, footindex) => (
+                    <li key={footindex}>
+                      <a
+                        href={`/products/${category.slug}`}
+                        className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
+                      >
+                        {category.title}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  工程案例
+                  Showcase
                 </h2>
                 <ul>
                   <li>
@@ -125,7 +125,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      小型表演
+                      Party K
                     </a>
                   </li>
                   <li>
@@ -133,7 +133,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      流动演出
+                      DJ
                     </a>
                   </li>
                   <li>
@@ -141,7 +141,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      小型表演
+                      Bar
                     </a>
                   </li>
                   <li>
@@ -149,7 +149,7 @@ const Footer = () => {
                       href="/"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      固定安装
+                      KTV
                     </a>
                   </li>
                 </ul>
@@ -159,7 +159,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  支持服务
+                  Support
                 </h2>
                 <ul>
                   <li>
@@ -167,7 +167,7 @@ const Footer = () => {
                       href="/support"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      服务支持
+                      Support
                     </a>
                   </li>
                   <li>
@@ -175,7 +175,7 @@ const Footer = () => {
                       href="/privacy-policy"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      隐私政策
+                      Privacy Policy
                     </a>
                   </li>
                   <li>
@@ -183,7 +183,7 @@ const Footer = () => {
                       href="/contact"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
-                      联系我们
+                      Contact us
                     </a>
                   </li>
                 </ul>
@@ -194,7 +194,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
             <p className="text-center text-base text-body-color dark:text-white">
-            Copyright © 1988-2024 Syrincs, Inc. - MIT License
+              Copyright © 1988-2024 Syrincs, Inc. - MIT License
             </p>
           </div>
         </div>

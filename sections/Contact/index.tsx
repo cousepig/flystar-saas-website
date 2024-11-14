@@ -12,10 +12,33 @@ const Contact = () => {
               "
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+                World headquarters
+              </h2>
+
+              <div className="mb-12 text-base text-body-color">
+                <p>A:	Hans-Thomann-Str.196138 Burgebrach Germany</p>
+                <p>T:	+49 (0) 9549 9223-66</p>
+                <p>F:	+49 (0) 9549 9223-24</p>
+                <p>E:	info@syrincs.hk</p>
+              </div>
+
+              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+                Other locations
+              </h2>
+              <div className="mb-12 text-base text-body-color">
+                <p><b>High-Sound (Hong kong) Company Limited.</b></p>
+                <p>A:	1601-02,16/F Seaview Commercial building,21-24
+                  Connaught Road West,HongKong</p>
+                <p>T:	+852 9272 3660</p>
+                <p>F:	+852 9272 3660</p>
+                <p>E:	vip@syrincs.hk</p>
+              </div>
+
+              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Get Assistance by Opening a Ticket
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-              We&APOS;ll respond to your inquiry as soon as possible via email.
+                We &APOS; ll respond to your inquiry as soon as possible via email.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">

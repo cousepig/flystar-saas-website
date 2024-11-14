@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'T-Star TW PRO';
+    src: url('T-StarTWPRO-Bold.eot');
+    src: local('T-Star TW PRO Bold'), local('T-StarTWPRO-Bold'),
+        url('T-StarTWPRO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('T-StarTWPRO-Bold.woff2') format('woff2'),
+        url('T-StarTWPRO-Bold.woff') format('woff'),
+        url('T-StarTWPRO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star TW PRO';
+    src: url('T-StarTWPRO-Regular.eot');
+    src: local('T-Star TW PRO Regular'), local('T-StarTWPRO-Regular'),
+        url('T-StarTWPRO-Regular.eot?#iefix') format('embedded-opentype'),
+        url('T-StarTWPRO-Regular.woff2') format('woff2'),
+        url('T-StarTWPRO-Regular.woff') format('woff'),
+        url('T-StarTWPRO-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
