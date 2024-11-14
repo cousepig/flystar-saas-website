@@ -13,11 +13,8 @@ const Video = () => {
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="See Our Community"
-          paragraph="Welcome to our vibrant community! At the heart of our 
-          platform lies a diverse and engaging network of individuals from all 
-          walks of life. Explore the rich tapestry of experiences, ideas, 
-          and talents that define our community."
+          title="查看我们的社区"
+          paragraph="欢迎加入我们充满活力的社区！我们平台的核心是来自各行各业的多元化、互动性强的个人网络。探索定义我们社区的丰富经验、想法和才能。"
           center
           mb="80px"
         />

@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Error Page | Web Design and Seo SaaS",
-  description: "This is Error Page for website",
+  title: "抱歉，找不到该页面 | 颜如玉 声入心",
+  description: "抱歉，找不到该页面",
 };
 
 const ErrorPage = () => {
@@ -141,17 +141,16 @@ const ErrorPage = () => {
                   </svg>
                 </div>
                 <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
-                  Sorry, the page can’t be found
+                抱歉，找不到该页面
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  The page you were looking for appears to have been moved,
-                  deleted or does not exist.
+                您查找的页面似乎已被移动、删除或不存在。
                 </p>
                 <Link
                   href="/"
                   className="px-8 py-3 text-base font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
                 >
-                  Back to Homepage
+                  返回首页
                 </Link>
               </div>
             </div>

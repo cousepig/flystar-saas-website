@@ -24,8 +24,8 @@ const AboutSection = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Streamlined SEO Marketing and Website Design Solutions"
-                paragraph="Enhance your online visibility and unlock success with our innovative platform. Experience the power of streamlined SEO marketing and website design solutions to propel your online presence forward."
+                title="深受世界级企业信赖"
+                paragraph="探索我们精选的使用SYRINCS的小型表演、演出、娛樂DJ、現場安裝应用扩声系统。更多DJ音乐人和自由职业者都信任我们。"
                 mb="44px"
               />
 

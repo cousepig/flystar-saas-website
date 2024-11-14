@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Sertan Dani",
     designation: "Designer at Gumroad",
     content:
-      "The platform's intuitive design, cleanliness, and minimal distractions are unparalleled. If you're building a community, look no further.",
+      "该平台的直观设计、整洁度和最小干扰都是无与伦比的。如果您正在建立一个社区，那就不要再犹豫了。",
     image: "/images/testimonials/team-1.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Fera Lopus",
     designation: "Founder of loom",
     content:
-      "The platform's intuitive design, cleanliness, and minimal distractions are unparalleled. If you're building a community, look no further",
+      "该平台的直观设计、整洁度和最小干扰都是无与伦比的。如果您正在建立一个社区，那就不要再犹豫了。",
     image: "/images/testimonials/team-2.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Zahe Conteq",
     designation: "Developer at Webflow",
     content:
-      "The platform's intuitive design, cleanliness, and minimal distractions are unparalleled. If you're building a community, look no further",
+      "该平台的直观设计、整洁度和最小干扰都是无与伦比的。如果您正在建立一个社区，那就不要再犹豫了。",
     image: "/images/testimonials/team-3.png",
     star: 5,
   },
@@ -37,8 +37,8 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Testimonials from Our Community"
-          paragraph="Our vibrant community shares diverse experiences and feedback, shaping our journey towards excellence."
+          title="来自我们社区的评价"
+          paragraph="我们充满活力的社区分享不同的经验和反馈，塑造我们走向卓越的旅程。"
           center
         />
 

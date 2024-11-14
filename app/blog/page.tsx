@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Web Design and Seo SaaS",
+  title: "新闻资讯 | 颜如玉 声入心",
   description: "This is Blog Page for website",
 };
 
@@ -12,7 +12,7 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog"
+        pageName="新闻资讯"
       />
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
@@ -38,7 +38,7 @@ const Blog = () => {
                     href="#0"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
-                    Prev
+                    上一页
                   </a>
                 </li>
                 <li className="mx-1">
@@ -83,7 +83,7 @@ const Blog = () => {
                     href="#0"
                     className="flex h-9 min-w-[36px] items-center justify-center rounded-md bg-body-color bg-opacity-[15%] px-4 text-sm text-body-color transition hover:bg-primary hover:bg-opacity-100 hover:text-white"
                   >
-                    Next
+                    下一页
                   </a>
                 </li>
               </ul>
