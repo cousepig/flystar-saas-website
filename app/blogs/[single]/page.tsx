@@ -104,7 +104,7 @@ const Article = async ({ params }: any) => {
                   <div className="mb-8 prose prose-slate">
                     <MDXContent content={content} />
                   </div>
-                  {images.map((img, index) => (
+                  {images.map((img: any, index: any) => (
 
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] mb-4">
                       <Image src={img} alt={img} className="h-full w-full object-cover object-center"
