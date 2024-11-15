@@ -1,13 +1,15 @@
 import config from "@/config/config.json";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import Link from "next/link";
+import { ReactElement, JSXElementConstructor, ReactNode, PromiseLikeOfReactNode, ReactPortal } from "react";
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts }: any) => {
     const { case_folders, summary_length } = config.settings;
     return (
         <div className="grid max-w-[26rem] sm:max-w-[52.5rem] mt-16 sm:mt-20 md:mt-32 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 lg:gap-y-8 xl:gap-x-8 lg:max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            {posts.map((post, i) => (
+            {posts.map((post: { slug: any; frontmatter: { image: string; title: string; description: string; }; }, i: any) => (
                 <div key={`key-${i}`}
                     className="w-full wow fadeInUp hover:shadow-two  group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 "
                     data-wow-delay=".1s"
