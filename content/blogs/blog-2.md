@@ -1,151 +1,31 @@
 ---
-title: How to make toys from old Olarpaper
-description: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
-image: "/images/blog/blog-02.jpg"
-images: [ ]
+title: 2019廣州國際專業燈光 音響展覽會
+description: "时间：24-27.2.2019 
+中國進出口商品交易會展館A區 
+ 展位号：5.2館 F28"
+image: "/images/blog/1551262115.jpg"
+images: ["/images/blog/1551254948.jpg", "/images/blog/1551256878.jpg", "/images/blog/1551256946.jpg", "/images/blog/1551260242.jpg", "/images/blog/1551261131.jpg", "/images/blog/1551262115.jpg", "/images/blog/1551262693.jpg" ]
 date: 2022-05-04T05:00:00Z
 
 draft: false
 ---
 
-##### Heading example
+	廣州展將在2019年2月24至27日在中國進出口商品交易會展館舉行！
+ 
+ 
+	為緊貼專業影音與IT領域中技術融合的發展浪潮，2019廣州國際專業燈光、音響展覽會（下稱廣州展）將作出全新嘗試。除了壹系列專業燈光、音響、舞臺設備等產品外，展會將重點展出演藝設備、通信與會議及KTV領域上前沿的總體解決方案，旨在為行業打造壹體化的集成展示平臺。
 
-Here is an example of headings. You can use this heading by the following markdown rules. For example: use `#` for heading 1 and use `######` for heading 6.
+###  SYRINCS 展位信息 
+时间：2019.02.24-27 
+中國進出口商品交易會展館A區 
+展位号：5.2館 F28 
 
-# Heading 1
+高顏值的德國小鳥SYRINCS在2018年末榮獲“海外十佳品牌”後，在2019年初在廣州國際燈光音響展上異彩紛呈、璀璨奪目。
 
-## Heading 2
+百萬級別的跨界商用發燒音響系統Zugspitze2963得到了眾多業界人士的高度肯定，因為它即使是在廣州展音響不斷的吵雜環境下，也能給您入心的“純聲”體驗，清晰而細膩音質，豐富多彩的細節，讓您聽出心境，釋放自我，沈浸在“純聲”的心境中。
+Zugspitze2963，采用德國進口原木，最大程度還原聲音，聽，見心境。
 
-### Heading 3
+為了更好地展現小型流動演出系統Reisender的聲線和操作，SYRINCS邀請了外國歌手現場彈唱。手風琴優美而跳動的旋律、變化豐富的音色和歌手的傾情演出，讓很多音樂愛好者陶醉不已，紛紛駐足了解。
 
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
----
-
-##### Emphasis
-
-The emphasis, aka italics, with _asterisks_ or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
-
-The combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
----
-
-##### Link
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
-
----
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
----
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
----
-
-##### Unordered List
-
-- List item
-- List item
-- List item
-- List item
-- List item
-
----
-
-##### Code and Syntax Highlighting
-
-This is an `Inline code` sample.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
----
-
-##### Blockquote
-
-> This is a blockquote example.
-
----
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
----
-
-##### Tables
-
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.
-
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
-
----
-
-##### Images
-
-![service](/images/service-slide-1.png "service")
-
----
-
+小型流動表演系統Reisender，個性化的“小舞臺”，隨時隨地，分享我的精彩。
+SYRINCS，高顏值、高要求、高品質，以“顏如玉，聲入心，TO ENJOY TO LISTEN”為品牌價值理念，打造高端的聽覺盛宴。 
