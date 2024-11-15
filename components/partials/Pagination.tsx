@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Pagination = ({ section, currentPage, totalPages }) => {
+const Pagination = ({ section, currentPage, totalPages }: any) => {
     const indexPageLink = currentPage === 2;
     const hasPrevPage = currentPage > 1;
     const hasNextPage = totalPages > currentPage;
