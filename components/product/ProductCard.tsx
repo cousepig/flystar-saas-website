@@ -3,10 +3,10 @@ import { plainify } from "@/lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts }: any) => {
     return (
         <div className="section row pb-0">
-            {posts.map((post, i) => (
+            {posts.map((post: any, i: any) => (
                 <div key={`key-${i}`} className="w-full border-green border rounded-lg px-6 py-6 ">
                     <div className="wow fadeInUp relative" data-wow-delay=".15s">
                         <div className="mb-10 flex relative block aspect-[336/240] w-full items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">

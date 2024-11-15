@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 // import { TbFilter, TbFilterX } from "react-icons/tb";
 // import DropdownMenu from "../filter/DropdownMenu";
 
-export type ListItem = SortFilterItem | PathFilterItem;
+export type ListItem = PathFilterItem;
 export type PathFilterItem = { title: string; path: string };
 
 const ProductLayouts = ({
@@ -23,7 +23,7 @@ const ProductLayouts = ({
   categoriesWithCounts,
 }: any) => {
   // const { getCollapseProps, getToggleProps, isExpanded, setExpanded } =
-    // useCollapse();
+  // useCollapse();
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -92,22 +92,22 @@ const ProductLayouts = ({
                     Views
                   </p>
                   <div className="flex gap-2">
-                    <button
+                    {/* <button
                       onClick={() => layoutChange("card")}
                       className={`btn border dark:border-darkmode-border ${
                         isListView ? "btn-outline-primary" : "btn-primary"
                       } p-2 hover:scale-105 duration-300`}
-                    >
-                      {/* <BsGridFill /> */}
-                    </button>
-                    <button
+                    > */}
+                    {/* <BsGridFill /> */}
+                    {/* </button> */}
+                    {/* <button
                       onClick={() => layoutChange("list")}
                       className={`btn border dark:border-darkmode-border ${
                         isListView ? "btn-primary" : "btn-outline-primary"
                       } p-2 hover:scale-105 duration-300`}
-                    >
-                      {/* <FaList /> */}
-                    </button>
+                    > */}
+                    {/* <FaList /> */}
+                    {/* </button> */}
                   </div>
                 </div>
 
@@ -156,7 +156,7 @@ const ProductLayouts = ({
                   </div> */}
                   <section
                     className="collapse-container-class z-20 bg-body dark:bg-darkmode-body w-full px-4 rounded-md"
-                    // {...getCollapseProps()}
+                  // {...getCollapseProps()}
                   >
                     <div className="pb-8">
                       {/* <ProductFilters
