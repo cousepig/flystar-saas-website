@@ -7,7 +7,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 const { blog_folder } = config.settings;
 
 // blog pagination
-const BlogPagination = async ({ params }) => {
+const BlogPagination = async ({ params }: any) => {
   //
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;

@@ -18,7 +18,7 @@ import SectionTitle from "@/components/SectionTitle";
 import Breadcrumb from "@/components/Breadcrumb";
 
 // blog pagination
-const BlogPagination = async ({ params }) => {
+const BlogPagination = async ({ params }: any) => {
   //
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;

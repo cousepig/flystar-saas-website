@@ -6,7 +6,7 @@ import Image from "next/image";
 import MDXContent from "@/components/partials/MDXContent";
 import Link from "next/link";
 // post single layout
-const Article = async ({ params }) => {
+const Article = async ({ params }: any) => {
   const { single } = params;
   const posts = await getSinglePage(`content/${blog_folder}`);
   const post = posts.filter((p) => p.slug == single);

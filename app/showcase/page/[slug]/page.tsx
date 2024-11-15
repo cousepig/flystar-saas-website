@@ -12,7 +12,7 @@ const { case_folders } = config.settings;
  * @param params - 包含分页参数的对象
  * @returns 渲染后的 JSX 元素
  */
-const BlogPagination = async ({ params }) => {
+const BlogPagination = async ({ params }: any) => {
 
     const currentPage = parseInt((params && params.slug) || 1);
     const { pagination } = config.settings;
