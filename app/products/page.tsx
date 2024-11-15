@@ -55,48 +55,48 @@ const ShowProducts = async ({
       cursor,
     };
 
-    productsData =
-      category && category !== "all"
-        ? await getCollectionProducts({
-          collection: category
-        })
-        : await getProducts(query);
+    // productsData =
+    //   category && category !== "all"
+    //     ? await getCollectionProducts({
+    //       collection: category
+    //     })
+    //     : await getProducts(query);
 
-    const uniqueVendors: string[] = [
-      ...new Set(
-        ((productsData?.products as Product[]) || []).map((product: Product) =>
-          String(product?.vendor || ""),
-        ),
-      ),
-    ];
+    // const uniqueVendors: string[] = [
+    //   ...new Set(
+    //     ((productsData?.products as Product[]) || []).map((product: Product) =>
+    //       String(product?.vendor || ""),
+    //     ),
+    //   ),
+    // ];
 
-    const uniqueCategories: string[] = [
-      ...new Set(
-        ((productsData?.products as Product[]) || []).flatMap(
-          (product: Product) =>
-            product.collections.nodes.map(
-              (collectionNode: any) => collectionNode.title || "",
-            ),
-        ),
-      ),
-    ];
+    // const uniqueCategories: string[] = [
+    //   ...new Set(
+    //     ((productsData?.products as Product[]) || []).flatMap(
+    //       (product: Product) =>
+    //         product.collections.nodes.map(
+    //           (collectionNode: any) => collectionNode.title || "",
+    //         ),
+    //     ),
+    //   ),
+    // ];
 
-    vendorsWithCounts = uniqueVendors.map((vendor: string) => {
-      const productCount = (productsData?.products || []).filter(
-        (product: Product) => product?.vendor === vendor,
-      ).length;
-      return { vendor, productCount };
-    });
+    // vendorsWithCounts = uniqueVendors.map((vendor: string) => {
+    //   const productCount = (productsData?.products || []).filter(
+    //     (product: Product) => product?.vendor === vendor,
+    //   ).length;
+    //   return { vendor, productCount };
+    // });
 
-    categoriesWithCounts = uniqueCategories.map((category: string) => {
-      const productCount = ((productsData?.products as Product[]) || []).filter(
-        (product: Product) =>
-          product.collections.nodes.some(
-            (collectionNode: any) => collectionNode.title === category,
-          ),
-      ).length;
-      return { category, productCount };
-    });
+    // categoriesWithCounts = uniqueCategories.map((category: string) => {
+    //   const productCount = ((productsData?.products as Product[]) || []).filter(
+    //     (product: Product) =>
+    //       product.collections.nodes.some(
+    //         (collectionNode: any) => collectionNode.title === category,
+    //       ),
+    //   ).length;
+    //   return { category, productCount };
+    // });
   } else {
     // Fetch all products
     // productsData = await getProducts({ sortKey, reverse, cursor });
