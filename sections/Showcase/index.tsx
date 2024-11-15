@@ -7,13 +7,13 @@ import { markdownify } from "../../lib/utils/textConverter";
 const { blog_folder } = config.settings;
 // import { allTrains, Train } from "contentlayer/generated";
 
-const Blog = async ({ params }) => {
+const Blog = async ({ params }: any) => {
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;
-  const posts = await getSinglePage(`content/${blog_folder}`).sort(
-    (post1, post2) =>
-      new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
-  );
+  const posts = await getSinglePage(`content/${blog_folder}`);//.sort(
+  //   (post1, post2) =>
+  //     new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
+  // );
   const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
   //
   const indexOfLastPost = currentPage * pagination;
