@@ -5,16 +5,23 @@ import Posts from "@/components/partials/Posts";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 const { blog_folder } = config.settings;
+import { Blog } from "@/types/blog";
 
-// blog pagination
+/**
+ * 分页显示博客内容
+ *
+ * @param params 包含博客分页信息的参数对象
+ * @returns 返回包含面包屑导航、博客标题、描述、博客列表和分页组件的 JSX 元素
+ */
 const BlogPagination = async ({ params }: any) => {
   //
   const currentPage = parseInt((params && params.slug) || 1);
   const { pagination } = config.settings;
-  const posts = await getSinglePage(`content/${blog_folder}`).sort(
-    (post1, post2) =>
-      new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
-  );
+  const posts = await getSinglePage(`content/${blog_folder}`);
+  //   .sort(
+  //   (post1, post2) =>
+  //     new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
+  // );
   const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
   //
   const indexOfLastPost = currentPage * pagination;
