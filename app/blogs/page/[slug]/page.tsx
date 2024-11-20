@@ -2,10 +2,9 @@ import Pagination from "@/components/partials/Pagination";
 import Breadcrumb from "@/components/Breadcrumb";
 import config from "@/config/config.json";
 import Posts from "@/components/partials/Posts";
-import { getListPage, getSinglePage } from "@/lib/contentParser";
-import { markdownify } from "@/lib/utils/textConverter";
+import { getAllArticle } from "@/lib/get-article-data";
 const { blog_folder } = config.settings;
-import { Blog } from "@/types/blog";
+// import { Blog } from "@/types/blog";
 
 /**
  * 分页显示博客内容
@@ -14,34 +13,41 @@ import { Blog } from "@/types/blog";
  * @returns 返回包含面包屑导航、博客标题、描述、博客列表和分页组件的 JSX 元素
  */
 const BlogPagination = async ({ params }: any) => {
-  //
-  const currentPage = parseInt((params && params.slug) || 1);
-  const { pagination } = config.settings;
-  const posts = await getSinglePage(`content/${blog_folder}`);
-  //   .sort(
-  //   (post1, post2) =>
-  //     new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
-  // );
-  const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
-  //
-  const indexOfLastPost = currentPage * pagination;
-  const indexOfFirstPost = indexOfLastPost - pagination;
-  const totalPages = Math.ceil(posts.length / pagination);
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
-  const { frontmatter } = postIndex;
-  const { title, description } = frontmatter;
+
+  const { slug } = await params;
+  const currentPosts = getAllArticle;
+  if (!currentPosts) {
+    return <div>Category not found</div>;
+  }
+
+
+  // const currentPage = parseInt((params && params.slug) || 1);
+  // const { pagination } = config.settings;
+  // const posts = await getSinglePage(`content/${blog_folder}`);
+  // //   .sort(
+  // //   (post1, post2) =>
+  // //     new Date(post2.frontmatter.date) - new Date(post1.frontmatter.date)
+  // // );
+  // const postIndex = await getListPage(`content/${blog_folder}/_index.md`);
+  // //
+  // const indexOfLastPost = currentPage * pagination;
+  // const indexOfFirstPost = indexOfLastPost - pagination;
+  // const totalPages = Math.ceil(posts.length / pagination);
+  // const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  // const { frontmatter } = postIndex;
+  // const { title, description } = frontmatter;
 
   return (
     <>
-      <Breadcrumb pageName={title} />
+      {/* <Breadcrumb pageName={title} /> */}
       <section className="pb-[120px] pt-[120px]">
         <div className="container">
           <div className="relative max-w-3xl px-4 sm:px-6 lg:px-8 mx-auto sm:text-center">
-            {markdownify(title, "h1", "text-center font-normal text-[56px]")}
-            <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p>
+            {/* {markdownify(title, "h1", "text-center font-normal text-[56px]")} */}
+            {/* <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p> */}
           </div>
           <Posts posts={currentPosts} />
-          <Pagination section={blog_folder} totalPages={totalPages} currentPage={currentPage} />
+          {/* <Pagination section={blog_folder} totalPages={totalPages} currentPage={currentPage} /> */}
         </div>
       </section>
     </>

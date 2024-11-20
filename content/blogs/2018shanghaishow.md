@@ -1,0 +1,18 @@
+---
+title: SYRINCS上海展
+description: 8月23日，2018中國國際專業音響·燈光·樂器及技術展覽會（PALM EXPO）在國家會議中心拉開序幕。此次，SYRINCS展出了壹系列富有競爭力的高品質產品及娛樂演藝解決方案
+image: "/images/blog/1471576291.jpg"
+images: [
+  "/images/blog/1444986923.jpg",
+  "/images/blog/1444981825.jpg",
+  "/images/blog/1444981735.jpg",
+  "/images/blog/1444984265.jpg",
+]
+slug: SYRINCS上海
+date: 2018-08-23
+draft: false
+---
+
+
+
+

@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const { withContentlayer } = require('next-contentlayer');
+
 const nextConfig = {
 
     webpack(config) {
@@ -10,5 +12,5 @@ const nextConfig = {
         return config;
     }
 }
-
-module.exports = nextConfig
+module.exports = withContentlayer(nextConfig)
+// module.exports = nextConfig

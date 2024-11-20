@@ -5,6 +5,51 @@ const { blog_folder } = config.settings;
 import Image from "next/image";
 import MDXContent from "@/components/partials/MDXContent";
 import Link from "next/link";
+
+
+import { Metadata } from "next"
+interface PageProps {
+  params: {
+    slug: string[]
+  }
+}
+// async function getPageFromParams(params: PageProps["params"]) {
+//   const slug = params?.slug?.join("/") ?? ""
+
+//   // const { single } = params;
+//   const posts = await getSinglePage(`content/${blog_folder}`);
+//   const post = posts.filter((p) => p.slug == slug);
+//   const { frontmatter, content } = post[0];
+//   let { description, title, image } = frontmatter;
+
+//   // const page = allPosts.find(
+//   //     (page: { slugAsParams: string }) => page.slugAsParams === slug
+//   // )
+//   // if (!page) {
+//   //     null
+//   // }
+
+//   return post
+// }
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const slug = params?.slug?.join("/") ?? ""
+  const page = await getSinglePage(`content/${blog_folder}`)
+
+  // console.log(page)
+  if (!page) {
+    return {}
+  }
+
+  return {
+    // title: page,
+    // description: page,
+  }
+}
+
+
 // post single layout
 const Article = async ({ params }: any) => {
   const { single } = params;
@@ -102,30 +147,11 @@ const Article = async ({ params }: any) => {
                     </div>
                   </div>
                   <div className="mb-8 prose prose-slate">
-                    <MDXContent content={content} />
+                    {content}
+                    {/* <div className="[&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: post.body.html }} /> */}
                   </div>
 
 
-                  {/* <div className="items-center justify-between sm:flex">
-                    <div className="mb-5">
-                      <h4 className="mb-3 text-sm font-medium text-body-color">
-                        Popular Tags :
-                      </h4>
-                      <div className="flex items-center">
-                        <TagButton text="Design" />
-                        <TagButton text="Development" />
-                        <TagButton text="Seo" />
-                      </div>
-                    </div>
-                    <div className="mb-5">
-                      <h5 className="mb-3 text-sm font-medium text-body-color sm:text-right">
-                        Share this post :
-                      </h5>
-                      <div className="flex items-center sm:justify-end">
-                        <SharePost />
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -156,7 +182,7 @@ const Article = async ({ params }: any) => {
                   </button>
                 </div>
               </div>
-              <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
+              {/* <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
                 <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Related Posts
                 </h3>
@@ -184,72 +210,13 @@ const Article = async ({ params }: any) => {
                     </li>
                   ))}
                 </ul>
-              </div>
-              {/* <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
-                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
-                  Popular Category
-                </h3>
-                <ul className="px-8 py-6">
-                  <li>
-                    <a
-                      href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Seo Friendly
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Landing Page
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Admin Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Design
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#0"
-                      className="mb-3 inline-block text-base font-medium text-body-color hover:text-primary"
-                    >
-                      Coding
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-              {/* <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
-                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
-                  Popular Tags
-                </h3>
-                <div className="flex flex-wrap px-8 py-6">
-                  <TagButton text="Analysis" />
-                  <TagButton text="UI Kit" />
-                  <TagButton text="Seo" />
-                  <TagButton text="Development" />
-                  <TagButton text="Website" />
-                </div>
               </div> */}
 
-              {/* <NewsLatterBox /> */}
+
             </div>
-          </div>
-        </div>
-      </section>
+          </div >
+        </div >
+      </section >
     </>
   );
   // return <PostSingle frontmatter={frontmatter} content={content} />;

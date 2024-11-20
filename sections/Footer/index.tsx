@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import categoryData from "@/sections/Features/featuresData";
+import categoryData from "@/sections/products/categoryData";
 
 const Footer = () => {
   return (
@@ -172,7 +172,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/privacy-policy"
+                      href="/privacy"
                       className="dark:text-body-color-dark mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:hover:text-primary"
                     >
                       Privacy Policy

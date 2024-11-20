@@ -4,12 +4,13 @@
 @tailwind utilities;
 
 * {
-  font-family: "Oswald", sans-serif;
+  font-family: "ProximaNova-Regular", sans-serif;
 }
 
+/* Oswald */
 @layer base {
   body {
-    font-family: "Oswald", sans-serif;
+    font-family: "ProximaNova-Regular", sans-serif;
   }
 }
 

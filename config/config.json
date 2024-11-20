@@ -13,7 +13,8 @@
     "pagination": 3,
     "summary_length": 200,
     "blog_folder": "blogs",
-    "case_folders": "showcase"
+    "case_folders": "showcase",
+    "products_folders": "products"
   },
 
   "nav_button": {

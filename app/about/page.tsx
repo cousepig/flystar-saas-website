@@ -1,5 +1,3 @@
-import AboutSection from "@/sections/About/AboutSection";
-import Solutions from "@/sections/About/Solutions";
 import Overview from "@/sections/About/Overview";
 import History from "@/sections/About/History";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -7,18 +5,18 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "关于我们 | 颜如玉 声入心",
-  description: "SYRINCS專業音響品牌，用于安裝或移動、室內或室外、大型或小型，SYRINCS音箱、控制電子設備、機械附件和遠程控制裝置可完全滿足各種應用條件及惡劣的氣候環境。",
+  title: "About Us",
+  description: "SYRINCS is a professional audio brand used for installation or movement, indoor or outdoor, large or small. SYRINCS speakers, control electronics, mechanical accessories, and remote control devices can fully meet various application conditions and harsh weather environments.",
 };
 
 const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="关于我们"
+        pageName="About Us"
       />
       <Overview />
-       <History />
+      <History />
     </>
   );
 };

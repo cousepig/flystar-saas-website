@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HISTORY_ITEMS } from "@/data/history"
+import { HISTORY_ITEMS } from "@/config/history"
 
 const Solutions = () => {
 
@@ -28,7 +28,7 @@ const Solutions = () => {
           </div>
           <div className="w-full px-4 lg:w-2/3">
             <div className="wow fadeInUp " data-wow-delay=".2s">
-              <h1 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">品牌歷程</h1>
+              <h1 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Brand Milestones</h1>
               {HISTORY_ITEMS.map((history) => (
                 <>
                   <div className="mb-9">

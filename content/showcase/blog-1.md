@@ -1,9 +1,20 @@
 ---
-title: "What you need to know about Photography"
-description: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
+title: What you need to know about Photography
 image: "/images/blog/blog-01.jpg"
 date: 2022-04-04T05:00:00Z
 draft: false
+tags:
+  - strapi
+  - cms
+description:
+  Learn how to get started with Strapi which is an Open Source Headless CMS
+  using Docker.
+slug: automate-backend-stuffs-strapi-docker
+categories:
+  - docker
+keywords:
+  - Docker
+  - Strapi
 ---
 
 ##### Heading example

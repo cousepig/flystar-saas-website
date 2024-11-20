@@ -1,0 +1,14 @@
+---
+title: "Electronics"
+description: "SYRINCS carefully creates a complete audio system for use, from power supply to audio output devices, including digital audio processors, voice effects units, wireless microphones and other electronic peripheral devices for your matching use. All peripheral equipment is manufactured in accordance with current international standards to meet your high-quality requirements."
+slug: electronics
+image: "/images/categories/electronics.webp"
+category: electronics
+# tags:
+#   - electronics
+#   - Browser
+#   - JavaScript
+#   - React
+date: 2022-07-04T05:00:00Z
+# draft: false
+---
