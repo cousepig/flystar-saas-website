@@ -9,7 +9,7 @@ import { getCurrentShowcases, getAllShowcases } from "@/lib/get-showcase-data";
 import { allShowcases, Showcase } from "contentlayer/generated";
 
 
-export default async function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
   const slug = `/showcase/${resolvedParams.slug}`;
   const article = getAllShowcases.find((post) => post.slug === slug);
