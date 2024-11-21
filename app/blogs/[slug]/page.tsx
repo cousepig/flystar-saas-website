@@ -9,9 +9,6 @@ import { getAllArticle } from "@/lib/get-article-data";
 // import { allArticles, Article } from "contentlayer/generated";
 
 
-"use client";
-
-
 type Params = Promise<{ slug: string }>
 
 
