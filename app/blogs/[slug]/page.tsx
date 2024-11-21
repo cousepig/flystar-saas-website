@@ -9,11 +9,9 @@ import { getAllArticle } from "@/lib/get-article-data";
 // import { allArticles, Article } from "contentlayer/generated";
 
 
-type Params = Promise<{ slug: string }>
 
-
-export default async function PostPage(props: { params: Params }) {
-  const resolvedParams = await props.params;
+export default async function PostPage({ params }: any) {
+  const resolvedParams = await params;
   const slug = `/blogs/${resolvedParams.slug}`;
   const article = getAllArticle.find((post) => post.slug === slug);
 
