@@ -5,9 +5,6 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { allCategories } from "@/lib/get-categories-data";
 // import { allProducts, Product, allArticles } from "contentlayer/generated";
 
-type CategoryPageProps = {
-  params: { slug: string };
-};
 
 /**
  * 分类页面组件
@@ -15,7 +12,7 @@ type CategoryPageProps = {
  * @param params 包含分类标识的对象
  * @returns 返回渲染的分类页面 JSX 元素
  */
-export default async function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: any) {
   const { slug } = await params;
   const category = allCategories.find((p) => p.category === slug[0]);
   console.log(category, "--- loading");
