@@ -14,7 +14,7 @@ export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
   const slug = `/blogs/${resolvedParams.slug}`;
   const article = getAllArticle.find((post) => post.slug === slug);
-
+  console.log(article);
   const MDXContent = getMDXComponent(article.body.code)
 
   console.log(article.title, '--loading');

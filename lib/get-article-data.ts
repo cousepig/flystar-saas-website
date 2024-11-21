@@ -14,7 +14,7 @@ export const getCurrentArticles = (slug: string) => {
 export const getAllArticle: Article[] = allArticles
     .filter(
         (post) =>
-            post._raw.sourceFilePath.includes("blog") &&
+            post._raw.sourceFilePath.includes("blogs") &&
             !post._raw.sourceFilePath.includes("_index.md"),
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
