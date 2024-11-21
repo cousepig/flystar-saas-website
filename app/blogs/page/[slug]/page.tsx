@@ -41,6 +41,9 @@ const BlogPagination = async () => {
 export default BlogPagination;
 
 export async function generateStaticParams() {
-
+  return (
+    <>
+    </>
+  )
 }
 
