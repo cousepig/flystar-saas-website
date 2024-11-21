@@ -8,11 +8,8 @@ import { getMDXComponent } from 'next-contentlayer/hooks';
 import { getCurrentShowcases, getAllShowcases } from "@/lib/get-showcase-data";
 import { allShowcases, Showcase } from "contentlayer/generated";
 
-type PostPageProps = {
-  params: { slug: string };
-};
 
-export default async function PostPage({ params }: PostPageProps) {
+export default async function PostPage({ params }: { params: { slug: string } }) {
   const resolvedParams = await params;
   const slug = `/showcase/${resolvedParams.slug}`;
   const article = getAllShowcases.find((post) => post.slug === slug);
