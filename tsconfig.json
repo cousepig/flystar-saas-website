@@ -5,6 +5,11 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
+ 
+    "baseUrl": "./", // 设置baseUrl为项目根目录
+    // 其他配置项...
+  
+
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -26,6 +31,6 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts",
-  ".contentlayer/generated"],
+  ".contentlayer/generated", "contentlayer.config.ts", "components/partials/MDXContent.js"],
   "exclude": ["node_modules"]
 }

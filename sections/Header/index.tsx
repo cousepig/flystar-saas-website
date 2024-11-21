@@ -119,17 +119,17 @@ const Header = () => {
                                 </svg>
                               </span>
                             </p>
-                            {/* <div id={'sub' + index} className={`submenu relative left-0 top-full rounded-sm bg-green !bg-opacity-80 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[100%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"}`}>
-                              {menuItem.submenu?.map((submenuItem, subIndex) => (
-
-                                <Link
-                                  href={submenuItem.path ? submenuItem.path : "/"}
-                                  className="block rounded py-2.5 text-sm text-white hover:text-secondary dark:text-white/70 dark:hover:text-white lg:px-3" >
-                                  <span key={subIndex}>{submenuItem.title}</span>
-                                </Link>
-
-                              ))}
-                            </div> */}
+                            <div id={'sub' + index} className={`submenu relative left-0 top-full rounded-sm bg-green !bg-opacity-80 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[100%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "block" : "hidden"}`}>
+                              <ul> {menuItem.submenu?.map((submenuItem, subIndex) => (
+                                <li key={subIndex}>
+                                  <Link
+                                    href={submenuItem.path ? submenuItem.path : "/"}
+                                    className="block rounded py-2.5 text-sm text-white hover:text-secondary dark:text-white/70 dark:hover:text-white lg:px-3" >
+                                    <span key={subIndex}>{submenuItem.title}</span>
+                                  </Link>
+                                </li>
+                              ))}</ul>
+                            </div>
                           </>
                         )}
                       </li>

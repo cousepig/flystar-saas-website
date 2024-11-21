@@ -1,8 +1,9 @@
 
-import ProductCard from "@/components/product/ProductCard";
+import ProductCard from "@/components/partials/ProductCard";
 import SectionTitle from "@/components/SectionTitle";
 import Breadcrumb from "@/components/Breadcrumb";
-import { allCategories } from "@/lib/get-categories-data";
+import { allCategories, allProductsPosts } from "@/lib/get-categories-data";
+import { allProducts, Product, allArticles } from "contentlayer/generated";
 
 type CategoryPageProps = {
   params: { slug: string };
@@ -17,11 +18,11 @@ type CategoryPageProps = {
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { slug } = await params;
   const category = allCategories.find((p) => p.category === slug[0]);
+  console.log(category, "--- loading");
   if (!category) {
     return <div>Category not found</div>;
   }
 
-  console.log(category, "--- loading");
 
   return (
     <>

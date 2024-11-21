@@ -141,10 +141,10 @@ const ErrorPage = () => {
                   </svg>
                 </div>
                 <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
-                抱歉，找不到该页面
+                  抱歉，找不到该页面
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                您查找的页面似乎已被移动、删除或不存在。
+                  您查找的页面似乎已被移动、删除或不存在。
                 </p>
                 <Link
                   href="/"

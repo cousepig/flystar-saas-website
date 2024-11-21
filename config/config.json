@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Bigspring Light Nextjs",
+    "title": "Syrincs The Mathematical Order of Acoustic Art ",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "48",
-    "logo_text": "Bigspring Light"
+    "logo_text": "Syrincs"
   },
 
   "settings": {
@@ -31,8 +31,40 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Syrincs",
     "meta_image": "",
-    "meta_description": "A SAAS template for nextjs"
+    "meta_description": "Syrincs"
+  },
+  "socials": { 
+      "facebook": "https://facebook.com/",
+      "twitter": "https://twitter.com/",
+      "instagram": "https://instagram.com/",
+      "youtube": "https://youtube.com/",
+      "linkedin": "https://linkedin.com/",
+      "github": "",
+      "gitlab": "",
+      "discord": "",
+      "slack": "",
+      "medium": "",
+      "codepen": "",
+      "bitbucket": "",
+      "dribbble": "",
+      "behance": "",
+      "pinterest": "",
+      "soundcloud": "",
+      "tumblr": "",
+      "reddit": "",
+      "vk": "",
+      "whatsapp": "",
+      "snapchat": "",
+      "vimeo": "",
+      "tiktok": "",
+      "foursquare": "",
+      "rss": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "skype": "https://skype.com/",
+      "website": ""     
   }
 }

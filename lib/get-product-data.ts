@@ -1,5 +1,5 @@
-import { allProducts } from "contentlayer/generated";
-import { Product } from "@/types/product";
+import { allProducts, Product } from "contentlayer/generated";
+// import { Product } from "@/types/product";
 
 export const getCurrentProducts = (slug: string) => {
     const currentProducts = allProducts.find((product) => product._raw.flattenedPath === slug);
@@ -12,7 +12,7 @@ export const getAllProducts: Product[] = allProducts
     .filter(
         (post) =>
             post._raw.sourceFilePath.includes("product") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
+            !post._raw.sourceFilePath.includes("_index.mdx"),
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

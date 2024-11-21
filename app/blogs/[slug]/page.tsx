@@ -1,14 +1,13 @@
-import config from "@/config/config.json";
-import { notFound } from "next/navigation";
-import { getSinglePage } from "@/lib/contentParser";
-const { blog_folder } = config.settings;
-import Image from "next/image";
-// import MDXContent from "@/components/partials/MDXContent";
-import { useMDXComponent } from 'next-contentlayer/hooks'
-import Link from "next/link";
+import config from "@/config/config.json"
+import { format, parseISO } from 'date-fns'
+import { notFound } from "next/navigation"
+import Link from "next/link"
+import Image from "next/image"
+import { getMDXComponent } from 'next-contentlayer/hooks';
+
 import { getCurrentArticles, getAllArticle } from "@/lib/get-article-data";
 import { allArticles, Article } from "contentlayer/generated";
-import { format, parseISO } from 'date-fns'
+
 type PostPageProps = {
   params: { slug: string };
 };
@@ -16,14 +15,12 @@ type PostPageProps = {
 export default async function PostPage({ params }: PostPageProps) {
   const resolvedParams = await params;
   const slug = `/blogs/${resolvedParams.slug}`;
-  // const product = getCurrentArticles(slug);
   const article = getAllArticle.find((post) => post.slug === slug);
-  console.log(article, '--loading');
-  // const MDXContent = useMDXComponent(article.body.code)
 
-  // console.log(product.title, '--loading');
+  const MDXContent = getMDXComponent(article.body.code)
+
+  console.log(article.title, '--loading');
   const relatedArticle = getAllArticle.sort();
-  console.log(article, '--loading');
   if (!article) {
     return notFound();
   }
@@ -118,9 +115,11 @@ export default async function PostPage({ params }: PostPageProps) {
                     </div>
                   </div>
                   <div className="mb-8 prose prose-slate">
-                    {/* <MDXContent /> */}
+
+                    <MDXContent />
+
                   </div>
-                  {/* {article.images.map((img: any, index: any) => (
+                  {article.images.map((img: any, index: any) => (
 
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] mb-4">
                       <Image src={img} alt={img} className="h-full w-full object-cover object-center"
@@ -128,7 +127,7 @@ export default async function PostPage({ params }: PostPageProps) {
                         priority={true} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     </div>
 
-                  ))} */}
+                  ))}
 
 
                   {/* <div className="items-center justify-between sm:flex">

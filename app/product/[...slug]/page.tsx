@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { allProductsPosts } from "@/lib/get-categories-data";
 import { getCurrentProducts, getAllProducts } from "@/lib/get-product-data";
 import { allProducts, Product } from "contentlayer/generated";
-
+import { getMDXComponent } from 'next-contentlayer/hooks';
 type PostPageProps = {
   params: { slug: string[] };
 };
@@ -17,6 +17,7 @@ export default async function PostPage({ params }: PostPageProps) {
   const product = getCurrentProducts(slug);
   // const product = allProducts.find((post) => post._raw.flattenedPath === slug);
   console.log(product.title, '--loading');
+  const Content = getMDXComponent(product.body.code);
   const relatedProducts = getAllProducts.sort();
   if (!product) {
     return notFound();
@@ -49,8 +50,8 @@ export default async function PostPage({ params }: PostPageProps) {
                   </div>
                 </div>
                 <div className="mb-8 prose prose-slate">
-                  {product.body}1
-                  {/* <MDXContent content={content} /> */}
+                  {/* {product.body.html} */}
+                  <Content />
                 </div>
                 {/* {images.map((img: any, index: any) => (
 

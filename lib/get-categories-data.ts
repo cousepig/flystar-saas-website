@@ -6,7 +6,7 @@ import { Category } from "@/types/category";
  * Returns an array of all category names.
  */
 export const allCategoriesName = allProducts
-    .filter((post) => post._raw.sourceFilePath.includes("_index.md"))
+    .filter((post) => post._raw.sourceFilePath.includes("_index.mdx"))
     .map((post) => post.slug.split("/")[2]);
 
 /**
@@ -16,7 +16,7 @@ export const allProductsPosts: Product[] = allProducts
     .filter(
         (post) =>
             post._raw.sourceFilePath.includes("product") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
+            !post._raw.sourceFilePath.includes("_index.mdx"),
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -25,11 +25,12 @@ export const allProductsPosts: Product[] = allProducts
  * Returns an array of all categories.
  */
 export const allCategories: Category[] = allProducts
-    .filter((post) => post._raw.sourceFilePath.includes("_index.md"))
+    .filter((post) => post._raw.sourceFilePath.includes("_index.mdx"))
     .map((categories) => ({
         ...categories,
         image: categories.image || "",
-        id: categories.id,
+        description: categories.description || "",
+        id: categories.slug.split("/")[2] || "",
         category: categories.slug.split("/")[2],
         products: allProductsPosts
             .filter((post) => categories.slug.includes(post.category))
@@ -57,7 +58,7 @@ export const getProductsByCategory = (category) => {
     return allProducts.filter(
         (post) =>
             post._raw.sourceFilePath.includes("product") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
+            !post._raw.sourceFilePath.includes("_index.mdx"),
     )
         .filter((post) => {
             return post.category.includes(category);
