@@ -1,7 +1,7 @@
 "use client"; // <===== REQUIRED
 
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 // Swiper components, modules and styles
 import { Autoplay, Navigation, Pagination } from "swiper/modules";

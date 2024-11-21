@@ -1,7 +1,7 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 
-import { NextSeo } from "next-seo";
+// import { NextSeo } from "next-seo";
 
 
 import Image from "next/image";

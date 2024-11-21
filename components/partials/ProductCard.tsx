@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import { allProducts, Product } from "contentlayer/generated";
+import { Product } from "contentlayer/generated";
 // import Link from "next/link";
 /**
  * 商品卡片组件

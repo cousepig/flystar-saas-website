@@ -7,39 +7,39 @@ import SingleCategory from "@/sections/products/SingleCategory";
 
 import { Suspense } from "react";
 
-interface SearchParams {
-  c?: string;
-}
+// interface SearchParams {
+//   c?: string;
+// }
 
-const ShowProducts = async ({
-  searchParams,
-}: {
-  searchParams: SearchParams;
-}) => {
-  const {
-    c: category,
-  } = searchParams as {
-    [key: string]: string;
-  };
+const ShowProducts = async () => {
+  // const {
+  //   c: category,
+  // } = searchParams as {
+  //   [key: string]: string;
+  // };
+  // {
+  //   searchParams,
+  // }: {
+  //   searchParams: SearchParams;
+  // }
+  // const { cursor } = searchParams as { [key: string]: string };
 
-  const { layout, cursor } = searchParams as { [key: string]: string };
+  // let productsData: any;
+  // let vendorsWithCounts: { vendor: string; productCount: number }[] = [];
+  // let categoriesWithCounts: { category: string; productCount: number }[] = [];
 
-  let productsData: any;
-  let vendorsWithCounts: { vendor: string; productCount: number }[] = [];
-  let categoriesWithCounts: { category: string; productCount: number }[] = [];
-
-  if (category) {
-    let queryString = "";
-
-
-    const query = {
-      query: queryString,
-      cursor,
-    };
+  // if (category) {
+  // let queryString = "";
 
 
-  } else {
-  }
+  // const query = {
+  //   query: queryString,
+  //   cursor,
+  // };
+
+
+  // } else {
+  // }
 
   return (
     <>
@@ -69,13 +69,14 @@ const ShowProducts = async ({
   );
 };
 
-const ProductsListPage = ({ searchParams }: { searchParams: any }) => {
+const ProductsListPage = () => {
 
+  // { searchParams }: { searchParams: any }
   return (
     <>
-      <Suspense fallback={<LoadingProducts />}>
+      {/* <Suspense fallback={<LoadingProducts />}>
         <ShowProducts searchParams={searchParams} />
-      </Suspense>
+      </Suspense> */}
 
     </>
   );

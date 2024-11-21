@@ -1,12 +1,12 @@
-import config from "@/config/config.json"
+// import config from "@/config/config.json"
 import { format, parseISO } from 'date-fns'
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { getMDXComponent } from 'next-contentlayer/hooks';
 
-import { getCurrentArticles, getAllArticle } from "@/lib/get-article-data";
-import { allArticles, Article } from "contentlayer/generated";
+import { getAllArticle } from "@/lib/get-article-data";
+// import { allArticles, Article } from "contentlayer/generated";
 
 type PostPageProps = {
   params: { slug: string };
@@ -121,7 +121,7 @@ export default async function PostPage({ params }: PostPageProps) {
                   </div>
                   {article.images.map((img: any, index: any) => (
 
-                    <div className="relative aspect-[97/60] w-full sm:aspect-[97/44] mb-4">
+                    <div key={index} className="relative aspect-[97/60] w-full sm:aspect-[97/44] mb-4">
                       <Image src={img} alt={img} className="h-full w-full object-cover object-center"
                         quality={75}
                         priority={true} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
@@ -186,7 +186,7 @@ export default async function PostPage({ params }: PostPageProps) {
                 </h3>
                 <ul className="p-8">
                   {relatedArticle.map((post, index) => (
-                    <li className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
+                    <li key={index} className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
                       <div className="flex items-center lg:block xl:flex">
                         <div className="mr-5 lg:mb-3 xl:mb-0">
                           <div className="relative h-[60px] w-[70px] overflow-hidden rounded-10 sm:h-[75px] sm:w-[85px]">

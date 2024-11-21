@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { allProductsPosts } from "@/lib/get-categories-data";
+// import { allProductsPosts } from "@/lib/get-categories-data";
 import { getCurrentProducts, getAllProducts } from "@/lib/get-product-data";
-import { allProducts, Product } from "contentlayer/generated";
+// import { allProducts, Product } from "contentlayer/generated";
 import { getMDXComponent } from 'next-contentlayer/hooks';
 type PostPageProps = {
   params: { slug: string[] };

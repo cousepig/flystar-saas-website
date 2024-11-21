@@ -1,6 +1,6 @@
-import Pagination from "@/components/partials/Pagination";
+// import Pagination from "@/components/partials/Pagination";
 import Breadcrumb from "@/components/Breadcrumb";
-import config from "@/config/config.json";
+// import config from "@/config/config.json";
 import Posts from "@/components/partials/PostCard";
 import { getAllShowcases } from "@/lib/get-showcase-data";
 import { notFound } from "next/navigation";
@@ -15,7 +15,7 @@ import { notFound } from "next/navigation";
  */
 const BlogPagination = async ({ params }: any) => {
 
-  const { slug } = await params;
+  // const { slug } = await params;
   const caseList = getAllShowcases;
   if (!caseList) {
     return notFound;

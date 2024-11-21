@@ -2,8 +2,8 @@
 import ProductCard from "@/components/partials/ProductCard";
 import SectionTitle from "@/components/SectionTitle";
 import Breadcrumb from "@/components/Breadcrumb";
-import { allCategories, allProductsPosts } from "@/lib/get-categories-data";
-import { allProducts, Product, allArticles } from "contentlayer/generated";
+import { allCategories } from "@/lib/get-categories-data";
+// import { allProducts, Product, allArticles } from "contentlayer/generated";
 
 type CategoryPageProps = {
   params: { slug: string };

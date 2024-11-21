@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 import DemoSlider from "@/components/HomeSlider";
 import dataSlider from "@/components/HomeSlider.json";
