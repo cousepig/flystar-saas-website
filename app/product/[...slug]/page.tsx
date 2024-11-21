@@ -6,12 +6,10 @@ import { notFound } from "next/navigation";
 import { getCurrentProducts, getAllProducts } from "@/lib/get-product-data";
 // import { allProducts, Product } from "contentlayer/generated";
 import { getMDXComponent } from 'next-contentlayer/hooks';
-type PostPageProps = {
-  params: { slug: string[] };
-};
 
 
-export default async function PostPage({ params }: PostPageProps) {
+
+export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
   const slug = `product/${resolvedParams.slug.join("/")}`;
   const product = getCurrentProducts(slug);
