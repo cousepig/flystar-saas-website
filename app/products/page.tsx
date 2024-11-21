@@ -1,27 +1,27 @@
 
-import LoadingProducts from "@/components/skeleton/SkeletonProducts";
+// import LoadingProducts from "@/components/skeleton/SkeletonProducts";
 import SectionTitle from "../../components/SectionTitle";
 import Breadcrumb from "@/components/Breadcrumb";
 import categoryData from "@/sections/products/categoryData";
 import SingleCategory from "@/sections/products/SingleCategory";
 
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
-// interface SearchParams {
-//   c?: string;
-// }
+interface SearchParams {
+  c?: string;
+}
 
-const ShowProducts = async () => {
-  // const {
-  //   c: category,
-  // } = searchParams as {
-  //   [key: string]: string;
-  // };
-  // {
-  //   searchParams,
-  // }: {
-  //   searchParams: SearchParams;
-  // }
+const ShowProducts = async ({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) => {
+  const {
+    c: category,
+  } = searchParams as {
+    [key: string]: string;
+  };
+
   // const { cursor } = searchParams as { [key: string]: string };
 
   // let productsData: any;
@@ -43,11 +43,12 @@ const ShowProducts = async () => {
 
   return (
     <>
-      <Breadcrumb pageName="产品中心  1" />
+      <Breadcrumb pageName="产品中心  " />
       <section
         id="products"
         className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
       >
+        {category}
         <div className="container">
           <SectionTitle
             title="产品中心"
@@ -69,13 +70,13 @@ const ShowProducts = async () => {
   );
 };
 
-const ProductsListPage = () => {
+const ProductsListPage = ({ searchParams }: { searchParams: any }) => {
 
-  // { searchParams }: { searchParams: any }
+  // 
   return (
     <>
+      <ShowProducts searchParams={searchParams} />
       {/* <Suspense fallback={<LoadingProducts />}>
-        <ShowProducts searchParams={searchParams} />
       </Suspense> */}
 
     </>

@@ -11,9 +11,9 @@ import { notFound } from "next/navigation";
  * @param params 包含博客分页信息的参数对象
  * @returns 返回包含面包屑导航、博客标题、描述、博客列表和分页组件的 JSX 元素
  */
-const BlogPagination = async ({ params }: any) => {
+const BlogPagination = async () => {
 
-  // const { slug } = await params;
+  // const { slug } = await params; { params }: any
   const articlesList = getAllArticle;
   if (!articlesList) {
     return notFound;

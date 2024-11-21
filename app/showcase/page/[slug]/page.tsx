@@ -15,7 +15,7 @@ import { notFound } from "next/navigation";
  */
 const BlogPagination = async ({ params }: any) => {
 
-  // const { slug } = await params;
+  const { slug } = await params;
   const caseList = getAllShowcases;
   if (!caseList) {
     return notFound;
@@ -31,6 +31,7 @@ const BlogPagination = async ({ params }: any) => {
         <div className="container">
           <div className="relative max-w-3xl px-4 sm:px-6 lg:px-8 mx-auto sm:text-center">
             <h1 className="text-center font-normal text-[56px]">Case Studies</h1>
+            <p className="hidden">{slug}</p>
             {/* <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p> */}
           </div>
           <Posts posts={caseList} />
