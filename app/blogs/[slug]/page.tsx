@@ -8,12 +8,15 @@ import { getMDXComponent } from 'next-contentlayer/hooks';
 import { getAllArticle } from "@/lib/get-article-data";
 // import { allArticles, Article } from "contentlayer/generated";
 
-type PostPageProps = {
-  params: { slug: string };
-};
 
-export default async function PostPage({ params }: PostPageProps) {
-  const resolvedParams = await params;
+"use client";
+
+
+type Params = Promise<{ slug: string }>
+
+
+export default async function PostPage(props: { params: Params }) {
+  const resolvedParams = await props.params;
   const slug = `/blogs/${resolvedParams.slug}`;
   const article = getAllArticle.find((post) => post.slug === slug);
 
