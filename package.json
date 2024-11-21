@@ -23,6 +23,7 @@
     "date-fns": "^4.1.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^9.1.0",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
