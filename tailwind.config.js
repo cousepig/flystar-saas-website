@@ -12,12 +12,12 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
-    fontSize: {
-      sm: ['12px', '16px'],
-      base: ['12px', '16px'],
-      lg: ['14px', '20px'],
-      xl: ['16px', '24px'],
-    },
+    // fontSize: {
+    //   sm: ['12px', '16px'],
+    //   base: ['12px', '16px'],
+    //   lg: ['14px', '20px'],
+    //   xl: ['16px', '24px'],
+    // },
     screens: {
       xs: "450px",
       // => @media (min-width: 450px) { ... }
