@@ -15,7 +15,7 @@ import { allCategories } from "@/lib/get-categories-data";
 export default async function CategoryPage({ params }: any) {
   const { slug } = await params;
   const category = allCategories.find((p) => p.category === slug[0]);
-  console.log(category, "--- loading");
+  console.log(category.title, "--- loading");
   if (!category) {
     return <div>Category not found</div>;
   }
