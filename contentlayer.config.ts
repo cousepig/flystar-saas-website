@@ -1,5 +1,5 @@
 import { defineDocumentType, makeSource } from "contentlayer2/source-files"
-
+import remarkGfm from 'remark-gfm'
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 // const computedFields = {
@@ -129,4 +129,7 @@ export default makeSource({
   contentDirPath: "./content",
   documentTypes: [Page, Article, Product, Showcase],
   disableImportAliasWarning: true,
+  mdx: {
+    remarkPlugins: [remarkGfm],
+  },
 })

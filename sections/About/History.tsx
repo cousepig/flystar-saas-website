@@ -29,9 +29,9 @@ const Solutions = () => {
           <div className="w-full px-4 lg:w-2/3">
             <div className="wow fadeInUp " data-wow-delay=".2s">
               <h1 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Brand Milestones</h1>
-              {HISTORY_ITEMS.map((history) => (
+              {HISTORY_ITEMS.map((history, index) => (
                 <>
-                  <div className="mb-9">
+                  <div key={index} className="mb-9">
                     <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                       {history.title}
                     </h3>
