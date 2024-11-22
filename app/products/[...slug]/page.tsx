@@ -30,7 +30,7 @@ export default async function CategoryPage({ params }: any) {
         </div>
         <section className="section">
           <div className="container">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
               {category.products.map((feature, index) => (
                 <ProductCard key={index} product={feature} />
               ))}

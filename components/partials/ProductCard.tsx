@@ -14,7 +14,7 @@ const ProductCard = ({ product }: { product: Product }) => {
         <div className="section row pb-0">
             <div className="w-full border-green border rounded-lg px-6 py-6 ">
                 <div className="wow fadeInUp relative" data-wow-delay=".15s">
-                    <div className="mb-10 flex relative block aspect-[336/240] w-full items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+                    <div className="mb-10 flex relative block aspect-[500/500] w-full items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
                         <Image src={image} alt={title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                     </div>
                     <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">

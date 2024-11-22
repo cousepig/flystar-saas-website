@@ -38,7 +38,7 @@ export default async function PostPage({ params }: any) {
                   {product.description}
                 </p>
                 <div className="mb-10 w-full overflow-hidden rounded">
-                  <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
+                  <div className="relative aspect-[500/500] w-full sm:aspect-[500/500]">
                     <Image
                       src={product.image}
                       alt="image"
