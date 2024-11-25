@@ -21,10 +21,10 @@ const Gallery = ({ data, title }: any) => {
     return (
         <>
             <Swiper
-                style={{
-                    '--swiper-navigation-color': '#1C4C4E',
-                    '--swiper-pagination-color': '#1C4C4E',
-                }}
+                // style={{
+                //     '--swiper-navigation-color': '#1C4C4E',
+                //     '--swiper-pagination-color': '#1C4C4E',
+                // }}
                 spaceBetween={10}
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}
