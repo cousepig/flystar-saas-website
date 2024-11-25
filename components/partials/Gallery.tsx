@@ -1,8 +1,9 @@
 "use client"
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 // Swiper components, modules and styles
-import { Autoplay, Navigation, Pagination, FreeMode, Thumbs } from "swiper/modules";
+import { Navigation, FreeMode, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -20,10 +21,10 @@ const Gallery = ({ data, title }: any) => {
     return (
         <>
             <Swiper
-                style={{
-                    '--swiper-navigation-color': '#1C4C4E',
-                    '--swiper-pagination-color': '#1C4C4E',
-                }}
+                // style={{
+                //     '--swiper-navigation-color': '#1C4C4E',
+                //     '--swiper-pagination-color': '#1C4C4E',
+                // }}
                 spaceBetween={10}
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}
@@ -32,7 +33,7 @@ const Gallery = ({ data, title }: any) => {
             >
                 {data.map((img: any, index: any) => (
                     <SwiperSlide key={index} className='aspect-[500/500] relative transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 '>
-                        <img src={img} alt={title} />
+                        <Image src={img} alt={title} />
                     </SwiperSlide>
                 ))}
             </Swiper>
@@ -47,7 +48,7 @@ const Gallery = ({ data, title }: any) => {
             >
                 {data.map((img: any, index: any) => (
                     <SwiperSlide key={index} className='flex items-center justify-center rounded-md border border-primary hover:bg-gray-50 focus:outline-none cursor-pointer bg-white text-gray-900 shadow-sm  aspect-[100/100] relative transform overflow-hidden shadow-[0_2px_8px_rgba(15,23,42,0.08)] bg-slate-200 '>
-                        <img src={img} alt={title} />
+                        <Image src={img} alt={title} />
                     </SwiperSlide>
                 ))}
             </Swiper>

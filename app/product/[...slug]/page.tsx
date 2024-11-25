@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 // import { allProductsPosts } from "@/lib/get-categories-data";
-import { getCurrentProducts, getAllProducts, getProductsByCategory } from "@/lib/get-product-data";
+import { getCurrentProducts, getProductsByCategory } from "@/lib/get-product-data";
 // import { allProducts } from "contentlayer/generated";
 import { getMDXComponent } from 'next-contentlayer/hooks';
 import Gallery from '@/components/partials/Gallery'
@@ -27,7 +27,7 @@ export default async function PostPage({ params }: any) {
   // const product = allProducts.find((post) => post._raw.flattenedPath === slug);
   console.log(product.title, '--loading');
   const Content = getMDXComponent(product.body.code);
-  const relatedProducts = getAllProducts.sort();
+  // const relatedProducts = getAllProducts.sort();
   if (!product) {
     return notFound();
   }
@@ -157,7 +157,7 @@ export default async function PostPage({ params }: any) {
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {categoryProducts.map((post, index) => (
 
-                <Link
+                <Link key={index}
                   href={post.slug}
                 > <div className="group relative">
                     <div className="relative aspect-[500/500] w-full sm:aspect-[500/500] ">
