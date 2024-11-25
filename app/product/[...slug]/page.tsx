@@ -58,7 +58,7 @@ export default async function PostPage({ params }: any) {
                     {product.description}
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
-                    <div className="relative aspect-[500/500] w-full sm:aspect-[500/500]">
+                    <div className="relative w-full">
                       <Gallery data={product.images} title={product.title + '-' + product.ctitle} />
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default async function PostPage({ params }: any) {
             </div>
           </div>
           <div className="bg-white mx-auto">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">You may also like</h2>
 
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {categoryProducts.map((post, index) => (
