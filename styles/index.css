@@ -3,15 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("fonts/stylesheet.css");
 * {
-  font-family: "ProximaNova-Regular", sans-serif;
+  font-family: "proxima_nova_ththin", sans-serif;
 }
 
 /* Oswald */
 @layer base {
   body {
-    font-family: "ProximaNova-Regular", sans-serif;
+    font-family: "proxima_nova_ththin", sans-serif;
   }
+}
+.pro-font-bold {
+  font-family: "proxima_nova_bold", sans-serif;
 }
 
 @layer components {

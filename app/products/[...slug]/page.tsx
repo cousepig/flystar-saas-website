@@ -5,7 +5,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { allCategories } from "@/lib/get-categories-data";
 // import { allProducts, Product, allArticles } from "contentlayer/generated";
 
-
+// import type { NextRequest } from 'next/server'
+// import { NextResponse } from 'next/server' ,request: NextRequest
+ 
+ 
 /**
  * 分类页面组件
  *
@@ -16,6 +19,13 @@ export default async function CategoryPage({ params }: any) {
   const { slug } = await params;
   const category = allCategories.find((p) => p.category === slug[0]);
   console.log(category.title, "--- loading");
+//   if (category.products.length === 1) {
+//     const productUrl = request.nextUrl.clone()
+//     productUrl.pathname = `${category.products[0].slug}`;
+//     console.log(productUrl, "--- redirect");
+//   return NextResponse.redirect(productUrl, 301)
+    
+// }
   if (!category) {
     return <div>Category not found</div>;
   }
