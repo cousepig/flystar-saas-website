@@ -1,5 +1,5 @@
 // import Pagination from "@/components/partials/Pagination";
-import Breadcrumb from "@/components/Breadcrumb";
+// import Breadcrumb from "@/components/Breadcrumb";
 // import config from "@/config/config.json";
 import Posts from "@/components/partials/PostCard";
 import { getAllShowcases } from "@/lib/get-showcase-data";
@@ -56,6 +56,7 @@ const BlogPagination = async ({ params }: any) => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
               <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
+                <p className="hidden">{slug}</p>
               </div>
             </div>
             <div className="w-full px-4 md:w-4/12 lg:w-5/12">
@@ -85,7 +86,7 @@ const BlogPagination = async ({ params }: any) => {
         <div className="container">
           {/* <div className="relative max-w-3xl px-4 sm:px-6 lg:px-8 mx-auto sm:text-center"> */}
             {/* <h1 className="text-center font-normal text-[56px]">Case Studies</h1> */}
-            {/* <p className="hidden">{slug}</p> */}
+           
             {/* <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p> */}
           {/* </div> */}
           <Posts posts={caseList} />
