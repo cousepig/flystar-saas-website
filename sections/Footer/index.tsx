@@ -41,7 +41,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href={config.socials.twitter}
+                    href={config.socials.tiktok}
                     aria-label="social-link"
                     className="dark:text-body-color-dark mr-6 text-white duration-300 hover:text-secondary"
                   >

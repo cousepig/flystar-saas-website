@@ -14,9 +14,29 @@
     font-family: "proxima_nova_ththin", sans-serif;
   }
 }
+.pro-font-rgbold {
+  font-family: "proxima_nova_rgbold", sans-serif;
+}
+.pro-font-thextrabold {
+  font-family: "proxima_nova_thextrabold", sans-serif;
+}
+
+.pro-font-ltlight {
+  font-family: "proxima_nova_ltlight", sans-serif;
+}
+
+.pro-font-rgregular {
+  font-family: "proxima_nova_rgregular", sans-serif;
+}
 .pro-font-bold {
   font-family: "proxima_nova_bold", sans-serif;
 }
+
+.pro-font-ltsemibold {
+  font-family: "proxima_nova_ltsemibold", sans-serif;
+}
+
+
 
 @layer components {
   input[type="checkbox"]:checked~label span svg {

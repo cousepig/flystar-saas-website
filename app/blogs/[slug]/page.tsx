@@ -14,7 +14,7 @@ export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
   const slug = `/blogs/${resolvedParams.slug}`;
   const article = getAllArticle.find((post) => post.slug === slug);
-  console.log(article);
+  // console.log(article);
   const MDXContent = getMDXComponent(article.body.code)
 
   console.log(article.title, '--loading');
@@ -25,15 +25,74 @@ export default async function PostPage({ params }: any) {
 
   return (
     <>
-      <section className="overflow-hidden pb-[120px] pt-[180px]">
+      
+
+ 
+     
+      <div
+    className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+   
+    <div
+      className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-twe-carousel-active
+            data-twe-carousel-item>
+             <Image
+                        src="/images/banner.jpg"
+                        alt="image"
+                        fill
+                        className="block h-full w-full object-cover object-center"
+                      />
+     
+      <div
+        className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <h5 className="text-xl">News & Information</h5>
+        <p>
+          Some representative placeholder content for the first slide.
+        </p>
+      </div>
+    </div>
+  
+   
+  </div>
+  <section className="relative z-10 overflow-hidden bg-secondary">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
+              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
+              </div>
+            </div>
+            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
+              <div className="text-end">
+                <ul className="flex items-center md:justify-end">
+                  <li className="flex items-center">
+                    <Link
+                      href="/"
+                      className="pr-1 text-base font-medium text-body-color hover:text-primary"
+                    >
+                      Home
+                    </Link>
+                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                  </li>
+                  <li className="text-base font-medium text-primary">
+                  News & Information
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section className="pb-[120px] pt-[30px]">
+   
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-8/12">
               <div>
-                <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
+                <h1 className="mb-8 text-3xl font-bold leading-tight text-primary">
                   {article.title}
                 </h1>
-                <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                {/* <div className="mb-10 flex flex-wrap items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <div className="flex flex-wrap items-center">
 
                     <div className="mb-5 flex items-center">
@@ -97,11 +156,11 @@ export default async function PostPage({ params }: any) {
                       Design
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  {/* <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     {article.description}
-                  </p>
+                  </p> */}
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                       <Image
@@ -112,7 +171,7 @@ export default async function PostPage({ params }: any) {
                       />
                     </div>
                   </div>
-                  <div className="mb-8 prose prose-slate">
+                  <div className="mb-8 prose prose-sm prose-slate">
 
                     <MDXContent />
 
@@ -152,7 +211,7 @@ export default async function PostPage({ params }: any) {
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
-              <div className="shadow-three dark:bg-gray-dark mb-10 mt-12 rounded-sm bg-white p-6 dark:shadow-none lg:mt-0">
+              {/* <div className="shadow-three dark:bg-gray-dark mb-10 mt-12 rounded-sm bg-white p-6 dark:shadow-none lg:mt-0">
                 <div className="flex items-center justify-between">
                   <input
                     type="text"
@@ -177,32 +236,36 @@ export default async function PostPage({ params }: any) {
                     </svg>
                   </button>
                 </div>
-              </div>
+              </div> */}
               <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
-                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+                <h3 className="bg-primary border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-white pro-font-rgbold uppercase">
                   Related Posts
                 </h3>
                 <ul className="p-8">
                   {relatedArticle.map((post, index) => (
                     <li key={index} className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
+                      <Link
+                              href={post.slug}
+                      > 
                       <div className="flex items-center lg:block xl:flex">
                         <div className="mr-5 lg:mb-3 xl:mb-0">
-                          <div className="relative h-[60px] w-[70px] overflow-hidden rounded-10 sm:h-[75px] sm:w-[85px]">
+                          <div className="relative h-[100px] w-[100px] overflow-hidden rounded-5">
                             <Image src={post.image} alt={post.title} fill />
                           </div>
                         </div>
+
                         <div className="w-full">
-                          <h5>
-                            <Link
-                              href={post.slug}
-                              className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
-                            >
+                          
+                        <h5  className="mb-[6px] block text-base font-medium leading-snug text-primary hover:text-primary dark:text-white dark:hover:text-primary"
+                        >
+                           
                               {post.title}
-                            </Link>
-                          </h5>
-                          <p className="text-xs font-medium text-body-color">{post.date}</p>
+                           
+                      </h5>
+                    
+                          <p className="text-xs font-medium text-body-color">{post.description}</p>
                         </div>
-                      </div>
+                      </div></Link>
                     </li>
                   ))}
                 </ul>

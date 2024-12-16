@@ -56,7 +56,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data }) => {
                                 </div>
                                 <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
                                 <div className="relative z-10 h-full flex items-center justify-center h-screen" >
-                                    <div className="text-center">
+                                    <div className="text-center hidden">
                                         <h2 className="text-4xl sm:text-4xl lg:text-4xl text-white">
                                             {title}
                                         </h2>
