@@ -107,7 +107,7 @@ export const Article = defineDocumentType(() => ({
     image: { type: "string" },
     images: { type: "json", required: false },
     slug: { type: "string", required: false },
-    draft: { type: "string", required: false },
+    // draft: { type: "string", required: false },
     date: {
       type: "date",
       required: true,
