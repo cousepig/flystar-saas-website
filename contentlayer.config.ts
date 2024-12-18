@@ -124,10 +124,42 @@ export const Article = defineDocumentType(() => ({
     },
   },
 }))
+export const Solution = defineDocumentType(() => ({
+  name: "Solution",
+  filePathPattern: `solutions/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    image: { type: "string" },
+    images: { type: "json", required: false },
+    slug: { type: "string", required: false },
+    // draft: { type: "string", required: false },
+    date: {
+      type: "date",
+      required: true,
+    },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+    slugAsParams: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+    },
+  },
+}))
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Page, Article, Product, Showcase],
+  documentTypes: [Page, Article, Product, Showcase, Solution],
   disableImportAliasWarning: true,
   mdx: {
     remarkPlugins: [remarkGfm],

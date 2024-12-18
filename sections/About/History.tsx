@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { HISTORY_ITEMS } from "@/config/history"
+import { HISTORY_ITEMS } from "@/config/history";
 
 const Solutions = () => {
-
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -28,20 +27,19 @@ const Solutions = () => {
           </div>
           <div className="w-full px-4 lg:w-2/3">
             <div className="wow fadeInUp " data-wow-delay=".2s">
-              <h1 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Brand Milestones</h1>
+              <h1 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                Brand Milestones
+              </h1>
               {HISTORY_ITEMS.map((history, index) => (
-                <>
-                  <div key={index} className="mb-9">
-                    <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                      {history.title}
-                    </h3>
-                    <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                      {history.content}
-                    </p>
-                  </div>
-                </>
-              )
-              )}
+                <div key={index} className="mb-9">
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    {history.title}
+                  </h3>
+                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                    {history.content}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -51,4 +49,3 @@ const Solutions = () => {
 };
 
 export default Solutions;
-

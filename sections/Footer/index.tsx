@@ -3,18 +3,28 @@ import Image from "next/image";
 import Link from "next/link";
 import categoryData from "@/sections/products/categoryData";
 import config from "@/config/config.json";
-import NewsLatterBox from "../Contact/NewsLatterBox";
+// import NewsLatterBox from "../Contact/NewsLatterBox";
 const Footer = () => {
   return (
     <>
+      
+      <div className="py-8 bg-secondary w-full">
+            <p className="text-center pro-font-bold text-xl text-black text-primary">
+          SINCE 1981, GERMANY</p>
+          
+          <p className="text-center text-xl pro-font-bold text-black text-primary">Pro Entertainment Audio System
+            </p>
+          </div>
       <footer
-        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-primary pt-6 md:pt-6 lg:pt-6"
+        className="wow fadeInUp dark:bg-gray-dark relative z-10 bg-primary pt-8"
         data-wow-delay=".1s"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-           <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-3/12">
-              <div className="mb-12 max-w-[360px] lg:mb-6 text-center">
+            {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/10">
+            </div> */}
+           <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-2/10">
+              <div className="mb-12 max-w-[360px] lg:mb-6 ">
                 <Link href="/" className="mb-6 inline-block">
                   <Image
                   src="/images/logo/syrincs-logo-white.webp"
@@ -25,7 +35,7 @@ const Footer = () => {
                   />
                 </Link>
                
-                <div className="flex items-center w-[150px] mx-auto">
+                <div className="flex  w-[150px] mx-6">
                   <a
                     href={config.socials.facebook}
                     aria-label="social-link"
@@ -86,9 +96,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-2 text-base font-bold text-white uppercase">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/10">
+              <div className="mb-6 lg:mb-8">
+                <h2 className="mb-2 text-base font-bold text-white ">
                   Products
                 </h2>
                 <ul>
@@ -96,7 +106,7 @@ const Footer = () => {
                     <li key={footindex}>
                       <a
                         href={`/products/${category.slug}`}
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                       >
                         {category.title}
                       </a>
@@ -106,16 +116,16 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-              <h2 className="mb-2 text-base font-bold text-white uppercase">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/10">
+              <div className="mb-6 lg:mb-8">
+              <h2 className="mb-2 text-base font-bold text-white ">
                   Showcase
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/showcase"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       Party K
                     </a>
@@ -123,7 +133,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       DJ
                     </a>
@@ -131,7 +141,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       Bar
                     </a>
@@ -139,7 +149,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       KTV
                     </a>
@@ -148,16 +158,16 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-              <h2 className="mb-2 text-base font-bold text-white uppercase">
+            <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-2/10">
+              <div className="mb-6 lg:mb-8">
+              <h2 className="mb-2 text-base font-bold text-white ">
                   Support
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/support"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       Support
                     </a>
@@ -165,7 +175,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/privacy"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       Privacy Policy
                     </a>
@@ -173,7 +183,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                        className="mb-1 inline-block text-xs text-white duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
                     >
                       Contact us
                     </a>
@@ -187,7 +197,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           </div>
           <div className="py-8 bg-secondary w-full">
-            <p className="text-center text-xs text-black">
+            <p className="text-center text-xs text-black pro-font-rgregular">
               Copyright © 1988-2024 Syrincs, Inc. - MIT License
             </p>
           </div>

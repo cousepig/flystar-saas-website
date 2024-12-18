@@ -21,7 +21,7 @@ const menuData: Menu[] = [
       {
         id: 31,
         title: "Party K",
-        path: "/solutions/PartyK",
+        path: "/solutions/partyk",
         newTab: false,
       },
       {
@@ -35,14 +35,15 @@ const menuData: Menu[] = [
         title: "Bar",
         path: "/solutions/bar",
         newTab: false,
-      }, {
+      },
+      {
         id: 34,
         title: "KTV",
         path: "/solutions/ktv",
         newTab: false,
       },
     ],
-  }, 
+  },
   {
     id: 3,
     title: "Products",
@@ -65,7 +66,8 @@ const menuData: Menu[] = [
         title: "Processor",
         path: "/products/processor",
         newTab: false,
-      }, {
+      },
+      {
         id: 34,
         title: "Amplifier",
         path: "/products/amplifier",
@@ -82,7 +84,7 @@ const menuData: Menu[] = [
         title: "Electronics",
         path: "/products/electronics",
         newTab: false,
-      }
+      },
     ],
   },
   {
@@ -112,6 +114,12 @@ const menuData: Menu[] = [
         id: 72,
         title: "Downloads",
         path: "/downloads",
+        newTab: false,
+      },
+      {
+        id: 72,
+        title: "Serivce",
+        path: "/support/service",
         newTab: false,
       },
     ],

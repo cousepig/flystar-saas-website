@@ -97,16 +97,16 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-sm lg:mr-0 lg:inline-flex lg:px-0 lg:py-4 ${usePathName === menuItem.path
-                              ? "text-secondary dark:text-white"
-                              : "text-white hover:text-secondary dark:text-white/70 dark:hover:text-white"
+                            className={`flex py-2 text-sm lg:mr-0 pro-font-rgregular lg:inline-flex lg:px-0 lg:py-4 ${usePathName === menuItem.path
+                              ? "text-yellow dark:text-white"
+                              : "text-white hover:text-yellow dark:text-white/70 dark:hover:text-white"
                               }`}
                           >
                             {menuItem.title}
                           </Link>
                         ) : (
                           <>
-                            <p onClick={() => handleSubmenu(index)} className="flex cursor-pointer items-center justify-between py-2 text-sm text-white group-hover:text-secondary dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-4">
+                            <p onClick={() => handleSubmenu(index)} className="flex cursor-pointer items-center justify-between py-2 pro-font-rgregular text-sm text-white group-hover:text-yellow dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-4">
                               {menuItem.title}
                               <span className="pl-1">
                                 <svg width="20" height="20" viewBox="0 1 24 24">
@@ -124,7 +124,7 @@ const Header = () => {
                                 <li key={subIndex}>
                                   <Link
                                     href={submenuItem.path ? submenuItem.path : "/"}
-                                    className="block rounded py-2.5 text-sm text-white hover:text-secondary dark:text-white/70 dark:hover:text-white lg:px-3" >
+                                    className="block rounded py-2.5 text-sm text-white pro-font-rgregular hover:text-yellow dark:text-white/70 dark:hover:text-white lg:px-3" >
                                     <span key={subIndex}>{submenuItem.title}</span>
                                   </Link>
                                 </li>
