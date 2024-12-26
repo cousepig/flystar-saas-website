@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 export async function POST(request) {
 
-    const username = 'info'; //process.env.NEXT_PUBLIC_BURNER_USERNAME;
+    // const username = 'info'; //process.env.NEXT_PUBLIC_BURNER_USERNAME;
     const password = 'DxHaMAbQVDSfcIRj'; //'ALQZ3cAWCAnrj4fn'; //'Z1234567'; //process.env.NEXT_PUBLIC_BURNER_PASSWORD;
     const myEmail = 'info@elderaudio.com'; //process.env.NEXT_PUBLIC_PERSONAL_EMAIL;
     const toEmail = 'syrincsweixin@3g-sys.com'; //process.env.NEXT_PUBLIC_TO_EMAIL;
