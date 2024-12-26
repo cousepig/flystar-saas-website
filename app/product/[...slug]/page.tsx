@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 // import { allProductsPosts } from "@/lib/get-categories-data";
-import { getCurrentProducts, getProductsByCategory } from "@/lib/get-product-data";
+import {
+  getCurrentProducts,
+  getProductsByCategory,
+} from "@/lib/get-product-data";
 // import { allProducts } from "contentlayer/generated";
-import { getMDXComponent } from 'next-contentlayer/hooks';
-import Gallery from '@/components/partials/Gallery'
+import { getMDXComponent } from "next-contentlayer/hooks";
+import Gallery from "@/components/partials/Gallery";
 import TagButton from "@/sections/Showcase/TagButton";
 export async function generateMetadata({ params }: any) {
   const resolvedParams = await params;
@@ -14,7 +17,11 @@ export async function generateMetadata({ params }: any) {
   const product = getCurrentProducts(slug);
   if (!product) return notFound();
   return {
-    title: product.title + '-' + product.ctitle || product.title + '-' + product.ctitle,
+    title:
+      product.title +
+      "-" +
+      product.ctitle +
+      " | Syrincs Pro Entertainment Audio System",
     description: product.description || product.description,
   };
 }
@@ -25,48 +32,41 @@ export default async function PostPage({ params }: any) {
   const product = getCurrentProducts(slug);
 
   // const product = allProducts.find((post) => post._raw.flattenedPath === slug);
-  console.log(product.title, '--loading');
+  console.log(product.title, "--loading");
   const Content = getMDXComponent(product.body.code);
   // const relatedProducts = getAllProducts.sort();
   if (!product) {
     return notFound();
   }
 
-  const categoryProducts = getProductsByCategory(product.category).slice(0, 4);
+  const categoryProducts = getProductsByCategory(product.category).slice(0, 15);
 
   return (
     <>
-      <div
-    className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-   
-    <div
-      className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-active
-            data-twe-carousel-item>
-             <Image
-                        src="/images/banner.jpg"
-                        alt="image"
-                        fill
-                        className="block h-full w-full object-cover object-center"
-                      />
-     
-      <div
-        className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-        <h5 className="text-xl">{product.title}</h5>
-        <p>
-          Some representative placeholder content for the first slide.
-        </p>
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div
+          className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-active
+          data-twe-carousel-item
+        >
+          <Image
+            src="/images/banner.jpg"
+            alt="image"
+            fill
+            className="block h-full w-full object-cover object-center"
+          />
+
+          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h5 className="text-xl">{product.title}</h5>
+            <p> {product.description}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  
-   
-  </div>
-  <section className="relative z-10 overflow-hidden bg-secondary">
+      <section className="relative z-10 overflow-hidden bg-secondary">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
-              </div>
+              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12"></div>
             </div>
             <div className="w-full px-4 md:w-4/12 lg:w-5/12">
               <div className="text-end">
@@ -81,29 +81,28 @@ export default async function PostPage({ params }: any) {
                     <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
                   <li className="text-base font-medium text-primary pro-font-rgregular">
-                  {product.title}
+                    {product.title}
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-      <section className="overflow-hidden pb-[120px] pt-[180px]">
+      <section className="overflow-hidden pb-[20px] pt-[20px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <div className="mb-10 items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
-
                   <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
                     {product.title}
                   </h1>
                   <div className="flex flex-wrap items-center">
                     <div className="mb-5 flex items-center">
                       <p className="mr-5 flex items-center text-base font-medium text-body-color">
-                        {product.ctitle}</p>
+                        {product.ctitle}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -113,7 +112,10 @@ export default async function PostPage({ params }: any) {
                   </p>
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative w-full">
-                      <Gallery data={product.images} title={product.title + '-' + product.ctitle} />
+                      <Gallery
+                        data={product.images}
+                        title={product.title + "-" + product.ctitle}
+                      />
                     </div>
                   </div>
                   <div className="mb-8 prose prose-slate">
@@ -125,10 +127,19 @@ export default async function PostPage({ params }: any) {
                         Popular Tags :
                       </h4>
                       <div className="flex items-center">
-                        <TagButton href="/products/microphone" text="Microphone" />
+                        <TagButton
+                          href="/products/microphone"
+                          text="Microphone"
+                        />
                         <TagButton href="/products/mixer" text="Mixer" />
-                        <TagButton href="/products/processor" text="Processor" />
-                        <TagButton href="/products/amplifier" text="Amplifier" />
+                        <TagButton
+                          href="/products/processor"
+                          text="Processor"
+                        />
+                        <TagButton
+                          href="/products/amplifier"
+                          text="Amplifier"
+                        />
                         <TagButton href="/products/speaker" text="Speaker" />
                       </div>
                     </div>
@@ -145,7 +156,7 @@ export default async function PostPage({ params }: any) {
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
-              <div className="shadow-three dark:bg-gray-dark mb-10 mt-12 rounded-sm bg-white p-6 dark:shadow-none lg:mt-0">
+              {/* <div className="shadow-three dark:bg-gray-dark mb-10 mt-12 rounded-sm bg-white p-6 dark:shadow-none lg:mt-0">
                 <div className="flex items-center justify-between">
                   <input
                     type="text"
@@ -170,17 +181,18 @@ export default async function PostPage({ params }: any) {
                     </svg>
                   </button>
                 </div>
-              </div>
+              </div> */}
               <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
                 <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Related Products
                 </h3>
                 <ul className="p-8">
                   {categoryProducts.map((post, index) => (
-                    <li key={index} className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10">
-                      <Link
-                        href={post.slug}
-                      >
+                    <li
+                      key={index}
+                      className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10"
+                    >
+                      <Link href={post.slug}>
                         <div className="flex items-center lg:block xl:flex">
                           <div className="mr-5 lg:mb-3 xl:mb-0">
                             <div className="relative h-[60px] w-[70px] overflow-hidden rounded-10 sm:h-[75px] sm:w-[85px]">
@@ -188,55 +200,62 @@ export default async function PostPage({ params }: any) {
                             </div>
                           </div>
                           <div className="w-full">
-                            <h5 className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary"
-                            >
+                            <h5 className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary">
                               {post.title}
-
                             </h5>
-                            <p className="text-xs font-medium text-body-color">{post.ctitle}</p>
+                            <p className="text-xs font-medium text-body-color">
+                              {post.ctitle}
+                            </p>
                           </div>
-                        </div></Link>
+                        </div>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
 
-
               {/* <NewsLatterBox /> */}
             </div>
           </div>
           <div className="bg-white mx-auto">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">You may also like</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+              You may also like
+            </h2>
 
             <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
               {categoryProducts.map((post, index) => (
-
-                <Link key={index}
-                  href={post.slug}
-                > <div className="group relative">
+                <Link key={index} href={post.slug}>
+                  {" "}
+                  <div className="group relative">
                     <div className="relative aspect-[500/500] w-full sm:aspect-[500/500] ">
-                      <Image src={post.image} alt={post.title} fill className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                      />
                     </div>
-                    <div className="mt-4 flex justify-between">
-                      <div>
-                        <h3 className="text-sm text-gray-700">
-
-                          <span aria-hidden="true" className="absolute inset-0"></span>
+                    <div className="py-4 flex justify-between">
+                      <div className="text-center w-full">
+                        <h3 className="text-base text-gray-700">
+                          <span
+                            aria-hidden="true"
+                            className="absolute inset-0"
+                          ></span>
                           {post.title}
-
                         </h3>
-                        <p className="mt-1 text-sm text-gray-500">{post.ctitle}</p>
+                        <p className="mt-1 text-sm text-gray-500">
+                          {post.ctitle}
+                        </p>
                       </div>
                     </div>
                   </div>
                 </Link>
               ))}
-
             </div>
           </div>
-        </div >
-      </section >
+        </div>
+      </section>
     </>
-  )
+  );
 }
-

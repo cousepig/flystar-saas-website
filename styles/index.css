@@ -80,7 +80,14 @@
   background-position: center;
   background-size: cover;height: 300px;}
 
-
+  .related-product .image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 300px; */
+  }
+  
+  
 
 .nieuwsbriefinschrijving {
   background-color: #e5e5e5;
@@ -119,11 +126,11 @@
 }
 
 .nieuwsbriefinschrijving input {
-  background-color: #e5e5e5
+  /* background-color: #e5e5e5 */
 }
 
 .nieuwsbriefinschrijving input[type=checkbox] {
-  margin-right: 5px
+  /* margin-right: 5px */
 }
 
 .nieuwsbriefinschrijving input[type=email] {

@@ -7,7 +7,18 @@ import { allCategories } from "@/lib/get-categories-data";
 
 // import type { NextRequest } from 'next/server'
 // import { NextResponse } from 'next/server' ,request: NextRequest
+import { Metadata } from "next";
 
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  // read route params
+  const { slug } = await params;
+  const category = allCategories.find((p) => p.category === slug[0]);
+
+  return {
+    title: category.title + " | Syrincs Pro Entertainment Audio System",
+    description: category.description,
+  };
+}
 /**
  * 分类页面组件
  *
@@ -90,7 +101,7 @@ export default async function CategoryPage({ params }: any) {
         </div> */}
         <section className="section">
           <div className="container">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-2">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
               {category.products.map((feature, index) => (
                 <ProductCard key={index} product={feature} />
               ))}

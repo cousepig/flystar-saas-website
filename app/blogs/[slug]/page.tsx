@@ -7,6 +7,19 @@ import { getMDXComponent } from "next-contentlayer/hooks";
 
 import { getAllArticle } from "@/lib/get-article-data";
 // import { allArticles, Article } from "contentlayer/generated";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  // read route params
+  const resolvedParams = await params;
+  const slug = `/blogs/${resolvedParams.slug}`;
+  const article = getAllArticle.find((post) => post.slug === slug);
+
+  return {
+    title: article.title + " | Syrincs Pro Entertainment Audio System",
+    description: article.description,
+  };
+}
 
 export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
@@ -30,15 +43,18 @@ export default async function PostPage({ params }: any) {
           data-twe-carousel-item
         >
           <Image
-            src="/images/banner.jpg"
+            src="/images/banner-1.jpg"
             alt="image"
             fill
             className="block h-full w-full object-cover object-center"
           />
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl ">News & Information</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 className="text-xl ">News & Information</h5>{" "}
+            <p>
+              Stay updated with the latest news and events from Syrincs.
+              Discover our innovations and industry happenings.
+            </p>
           </div>
         </div>
       </div>

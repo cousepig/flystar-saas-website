@@ -1,14 +1,13 @@
-
 import ScrollUp from "@/components/ScrollToTop/ScrollUp";
 
 import Hero from "@/sections/Hero";
 
-// import { Metadata } from "next";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Syrincs - Home",
-//   description: "This is Home for website",
-// };
+export const metadata: Metadata = {
+  title: "Home | Syrincs Pro Entertainment Audio System",
+  description: "Discover the best audio systems for your entertainment needs.",
+};
 
 export default function Home() {
   return (

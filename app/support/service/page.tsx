@@ -6,8 +6,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact us | Syrincs",
-  description: "This is Contact Page for website",
+  title: "Service | Syrincs Pro Entertainment Audio System",
+  description:
+    "Access our extensive knowledge base and receive expert pre- and after-sales support to maximize your audio system performance. Whether you need guidance on practices, configuration help, or solutions to issues, we’re here to assist.",
 };
 
 const ContactPage = () => {
@@ -28,7 +29,12 @@ const ContactPage = () => {
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
             <h5 className="text-xl">Service</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p>
+              Access our extensive knowledge base and receive expert pre- and
+              after-sales support to maximize your audio system performance.
+              Whether you need guidance on practices, configuration help, or
+              solutions to issues, we’re here to assist.
+            </p>
           </div>
         </div>
       </div>

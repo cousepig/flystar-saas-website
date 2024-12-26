@@ -11,13 +11,13 @@ import { Product } from "contentlayer/generated";
 const ProductCard = ({ product }: { product: Product }) => {
   const { title, image, description, slug } = product;
   return (
-    <div className="col-md-6 related-news mb-5">
+    <div className="col-md-6 related-product mb-5">
       <Link href={"" + slug} className="bg-white h-100 d-block">
         <div
           className="w-full wow fadeInUp hover:shadow-two  group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 "
           data-wow-delay=".1s"
         >
-          <div className="image relative block aspect-[10/20] w-full">
+          <div className="image relative block aspect-[10/10] w-full">
             <Image
               src={image}
               alt={title}

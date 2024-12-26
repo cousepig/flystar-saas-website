@@ -7,7 +7,19 @@ import { getMDXComponent } from "next-contentlayer/hooks";
 
 import { getAllShowcases } from "@/lib/get-showcase-data";
 // import { allShowcases, Showcase } from "contentlayer/generated";
+import type { Metadata } from "next";
 
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  // read route params
+  const resolvedParams = await params;
+  const slug = `/showcase/${resolvedParams.slug}`;
+  const article = getAllShowcases.find((post) => post.slug === slug);
+
+  return {
+    title: article.title + " | Syrincs Pro Entertainment Audio System",
+    description: article.description,
+  };
+}
 export default async function PostPage({ params }: any) {
   const resolvedParams = await params;
   const slug = `/showcase/${resolvedParams.slug}`;
@@ -30,7 +42,7 @@ export default async function PostPage({ params }: any) {
           data-twe-carousel-item
         >
           <Image
-            src="/images/banner.jpg"
+            src="/images/banner-2.jpg"
             alt="image"
             fill
             className="block h-full w-full object-cover object-center"
@@ -38,7 +50,11 @@ export default async function PostPage({ params }: any) {
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
             <h5 className="text-xl">Case Studies</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p>
+              Explore our case studies to see how Syrincs has helped clients
+              achieve their audio goals. Discover our innovative solutions and
+              industry expertise.
+            </p>
           </div>
         </div>
       </div>

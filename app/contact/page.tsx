@@ -5,8 +5,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact us | Syrincs",
-  description: "This is Contact Page for website",
+  title: "Contact us | Syrincs Pro Entertainment Audio System",
+  description:
+    "Get in touch with Syrincs for inquiries about our professional audio equipment. Our team is here to assist you.",
 };
 
 const ContactPage = () => {
@@ -19,15 +20,18 @@ const ContactPage = () => {
           data-twe-carousel-item
         >
           <Image
-            src="/images/banner.jpg"
+            src="/images/banner-1.jpg"
             alt="image"
             fill
             className="block h-full w-full object-cover object-center"
           />
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">Case Studies</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 className="text-xl">Contact us</h5>
+            <p>
+              Get in touch with Syrincs for inquiries about our professional
+              audio equipment. Our team is here to assist you.
+            </p>
           </div>
         </div>
       </div>

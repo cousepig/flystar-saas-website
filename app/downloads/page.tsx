@@ -6,8 +6,9 @@ import { LP_GRID_ITEMS } from "@/lp-items";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact us | Syrincs",
-  description: "This is Contact Page for website",
+  title: "Downloads | Syrincs Pro Entertainment Audio System",
+  description:
+    "Are you looking for user manuals, data sheets, or documents related to Syrincs products? You can go to our download center to download these materials.",
 };
 
 const ContactPage = () => {
@@ -28,7 +29,11 @@ const ContactPage = () => {
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
             <h5 className="text-xl">Downloads</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p>
+              Are you looking for user manuals, data sheets, or documents
+              related to Syrincs products? You can go to our download center to
+              download these materials.
+            </p>
           </div>
         </div>
       </div>

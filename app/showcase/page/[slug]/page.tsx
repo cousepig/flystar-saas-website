@@ -6,7 +6,13 @@ import { getAllShowcases } from "@/lib/get-showcase-data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Case Studies | Syrincs Pro Entertainment Audio System",
+  description:
+    "Explore our case studies to see how Syrincs has helped clients achieve their audio goals. Discover our innovative solutions and industry expertise.",
+};
 /**
  * 分页显示博客内容
  *
@@ -29,7 +35,7 @@ const BlogPagination = async ({ params }: any) => {
           data-twe-carousel-item
         >
           <Image
-            src="/images/banner.jpg"
+            src="/images/banner-2.jpg"
             alt="image"
             fill
             className="block h-full w-full object-cover object-center"
@@ -37,7 +43,11 @@ const BlogPagination = async ({ params }: any) => {
 
           <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
             <h1 className="text-xl">Case Studies</h1>
-            <p>Some representative placeholder content for the first slide.</p>
+            <p>
+              Explore our case studies to see how Syrincs has helped clients
+              achieve their audio goals. Discover our innovative solutions and
+              industry expertise.
+            </p>
           </div>
         </div>
       </div>

@@ -1,11 +1,33 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Form from "next/form";
+// import Form from "next/form";
 import categoryData from "@/sections/products/categoryData";
 import config from "@/config/config.json";
 // import NewsLatterBox from "../Contact/NewsLatterBox";
 const Footer = () => {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "post",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        console.log("falling over");
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData["message"]);
+
+      alert("Message successfully sent");
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+    }
+  }
   return (
     <>
       <div className="py-8 bg-secondary w-full">
@@ -151,41 +173,74 @@ const Footer = () => {
                 <p>Subscribe to the Syrincs newsletter and stay tuned</p>
               </div>
               <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-7/12 inschrijfformulier">
-                <Form action="" onChange={() => {}}>
+                <form onSubmit={handleSubmit} className="mt-8 mb-2 ">
                   <ul>
                     <li>
                       <label>Your market</label>
-
-                      <input
-                        type="checkbox"
-                        value="Commercial"
-                        name="Custom1"
-                      />
-                      <span>Commercial</span>
-
-                      <input
-                        type="checkbox"
-                        value="Touring/Rental"
-                        name="Custom1"
-                      />
-                      <span>Touring/Rental</span>
-
-                      <input
-                        type="checkbox"
-                        value="Installation"
-                        name="Custom1"
-                      />
-                      <span>Installation</span>
-
-                      <input type="checkbox" value="Studio" name="Custom1" />
-                      <span>Studio</span>
+                      <div className="flex gap-3">
+                        <div className="flex h-6 shrink-0 items-center">
+                          <div className="group grid size-4 grid-cols-1">
+                            <input
+                              aria-describedby="comments-description"
+                              value="Commercial"
+                              name="message"
+                              type="checkbox"
+                              className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                            />
+                          </div>
+                          <label className="font-medium text-gray-900 px-1">
+                            Commercial
+                          </label>
+                        </div>
+                        <div className="flex h-6 shrink-0 items-center">
+                          <div className="group grid size-4 grid-cols-1">
+                            <input
+                              aria-describedby="comments-description"
+                              value="Touring/Rental"
+                              name="message"
+                              type="checkbox"
+                              className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                            />
+                          </div>
+                          <label className="font-medium text-gray-900 px-1">
+                            Touring/Rental
+                          </label>
+                        </div>
+                        <div className="flex h-6 shrink-0 items-center">
+                          <div className="group grid size-4 grid-cols-1">
+                            <input
+                              aria-describedby="comments-description"
+                              value="Installation"
+                              name="message"
+                              type="checkbox"
+                              className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                            />
+                          </div>
+                          <label className="font-medium text-gray-900 px-1">
+                            Installation
+                          </label>
+                        </div>
+                        <div className="flex h-6 shrink-0 items-center">
+                          <div className="group grid size-4 grid-cols-1">
+                            <input
+                              aria-describedby="comments-description"
+                              value="Studio"
+                              name="message"
+                              type="checkbox"
+                              className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                            />
+                          </div>
+                          <label className="font-medium text-gray-900 px-1">
+                            Studio
+                          </label>
+                        </div>
+                      </div>
                     </li>
                     <li>
                       <label>E-mail address</label>
                       <input
                         type="email"
-                        value=""
-                        name="Email"
+                        name="email"
                         placeholder="Your email-address"
                       />
                     </li>
@@ -193,7 +248,7 @@ const Footer = () => {
                       <input type="submit" value="Sign Up" />
                     </li>
                   </ul>
-                </Form>
+                </form>
               </div>
             </div>
           </div>

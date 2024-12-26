@@ -1,12 +1,16 @@
-
-// import LoadingProducts from "@/components/skeleton/SkeletonProducts";
-import SectionTitle from "../../components/SectionTitle";
-import Breadcrumb from "@/components/Breadcrumb";
+import Image from "next/image";
+import Link from "next/link";
 import categoryData from "@/sections/products/categoryData";
 import SingleCategory from "@/sections/products/SingleCategory";
 
 // import { Suspense } from "react";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Products | Syrincs Pro Entertainment Audio System",
+  description:
+    "Explore our carefully selected bars that use SYRINCS, Livehouse、PartyK、 Entertainment DJ, on-site installation and application of sound reinforcement system. More DJ musicians and designers trust us.",
+};
 interface SearchParams {
   c?: string;
 }
@@ -16,46 +20,69 @@ const ShowProducts = async ({
 }: {
   searchParams: SearchParams;
 }) => {
-  const {
-    c: category,
-  } = searchParams as {
+  const { c: category } = searchParams as {
     [key: string]: string;
   };
 
-  // const { cursor } = searchParams as { [key: string]: string };
-
-  // let productsData: any;
-  // let vendorsWithCounts: { vendor: string; productCount: number }[] = [];
-  // let categoriesWithCounts: { category: string; productCount: number }[] = [];
-
-  // if (category) {
-  // let queryString = "";
-
-
-  // const query = {
-  //   query: queryString,
-  //   cursor,
-  // };
-
-
-  // } else {
-  // }
-
   return (
     <>
-      <Breadcrumb pageName="产品中心  " />
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div
+          className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-active
+          data-twe-carousel-item
+        >
+          <Image
+            src="/images/banner.jpg"
+            alt="image"
+            fill
+            className="block h-full w-full object-cover object-center"
+          />
+
+          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h1 className="text-xl">Products</h1>
+            <p>
+              Explore our carefully selected bars that use SYRINCS,
+              Livehouse、PartyK、 Entertainment DJ, on-site installation and
+              application of sound reinforcement system. More DJ musicians and
+              designers trust us.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section className="relative z-10 overflow-hidden bg-secondary -mb-20">
+        <div className="container">
+          <div className="-mx-4 flex flex-wrap items-center">
+            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
+              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12"></div>
+            </div>
+            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
+              <div className="text-end">
+                <ul className="flex items-center md:justify-end">
+                  <li className="flex items-center">
+                    <Link
+                      href="/"
+                      className="pr-1 text-base font-medium text-body-color hover:text-primary pro-font-rgregular"
+                    >
+                      Home
+                    </Link>
+                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
+                  </li>
+                  <li className="text-base font-medium text-primary pro-font-rgregular">
+                    Products
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="products"
         className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
       >
         {category}
-        <div className="container">
-          <SectionTitle
-            title="产品中心"
-            paragraph="探索我们精选使用SYRINCS的酒吧，Livehouse、PartyK、娱乐DJ、现场安装应用扩声系统。更多DJ音乐人和设计师都信任我们。"
-            center
-          />
-        </div>
+
         <section className="section">
           <div className="container">
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
@@ -71,14 +98,12 @@ const ShowProducts = async ({
 };
 
 const ProductsListPage = ({ searchParams }: { searchParams: any }) => {
-
-  // 
+  //
   return (
     <>
       <ShowProducts searchParams={searchParams} />
       {/* <Suspense fallback={<LoadingProducts />}>
       </Suspense> */}
-
     </>
   );
 };
