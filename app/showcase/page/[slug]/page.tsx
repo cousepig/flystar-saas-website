@@ -1,12 +1,11 @@
 // import Pagination from "@/components/partials/Pagination";
 // import Breadcrumb from "@/components/Breadcrumb";
 // import config from "@/config/config.json";
-import Posts from "@/components/partials/PostCard";
+import CaseCard from "@/components/partials/CaseCard";
 import { getAllShowcases } from "@/lib/get-showcase-data";
 import { notFound } from "next/navigation";
-import Image from "next/image"
-import Link from "next/link"
-
+import Image from "next/image";
+import Link from "next/link";
 
 /**
  * 分页显示博客内容
@@ -15,41 +14,32 @@ import Link from "next/link"
  * @returns 返回包含面包屑导航、博客标题、描述、博客列表和分页组件的 JSX 元素
  */
 const BlogPagination = async ({ params }: any) => {
-
   const { slug } = await params;
   const caseList = getAllShowcases;
   if (!caseList) {
     return notFound;
   }
 
-
   return (
     <>
+      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div
+          className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-active
+          data-twe-carousel-item
+        >
+          <Image
+            src="/images/banner.jpg"
+            alt="image"
+            fill
+            className="block h-full w-full object-cover object-center"
+          />
 
-       <div
-    className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-   
-    <div
-      className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-active
-            data-twe-carousel-item>
-             <Image
-                        src="/images/banner.jpg"
-                        alt="image"
-                        fill
-                        className="block h-full w-full object-cover object-center"
-                      />
-     
-      <div
-        className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-        <h1 className="text-xl">Case Studies</h1>
-        <p>
-          Some representative placeholder content for the first slide.
-        </p>
-      </div>
-    </div>
-  
-   
+          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+            <h1 className="text-xl">Case Studies</h1>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
       </div>
       <section className="relative z-10 overflow-hidden bg-secondary -mb-20">
         <div className="container">
@@ -72,24 +62,23 @@ const BlogPagination = async ({ params }: any) => {
                     <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
                   </li>
                   <li className="text-base font-medium text-primary pro-font-rgregular">
-                  Case Studies
+                    Case Studies
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-    
+
       <section className="pb-[20px] pt-[20px]">
         <div className="container">
           {/* <div className="relative max-w-3xl px-4 sm:px-6 lg:px-8 mx-auto sm:text-center"> */}
-            {/* <h1 className="text-center font-normal text-[56px]">Case Studies</h1> */}
-           
-            {/* <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p> */}
+          {/* <h1 className="text-center font-normal text-[56px]">Case Studies</h1> */}
+
+          {/* <p className="mt-4 text-lg text-slate-600 dark:text-slate-400">{description}</p> */}
           {/* </div> */}
-          <Posts posts={caseList} />
+          <CaseCard posts={caseList} />
           {/* <Pagination section={blog_folder} totalPages={totalPages} currentPage={currentPage} /> */}
         </div>
       </section>

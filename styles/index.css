@@ -74,3 +74,247 @@
   background-size: cover;
   height: 200px;
 }
+
+.related-showcase .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;height: 300px;}
+
+
+
+.nieuwsbriefinschrijving {
+  background-color: #e5e5e5;
+  margin-bottom: 15px
+}
+
+.nieuwsbriefinschrijving h2 {
+  font-size: 42px
+}
+
+.nieuwsbriefinschrijving p {
+  color: #00555a
+}
+
+.nieuwsbriefinschrijving ul {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
+
+.nieuwsbriefinschrijving li {
+  overflow: hidden;
+  display: inline-block
+}
+
+.nieuwsbriefinschrijving li ul li {
+  margin-right: 15px
+}
+
+.nieuwsbriefinschrijving label {
+  float: left;
+  font-size: 15px;
+  color: #00555a;
+  font-weight: 400;
+  margin-right: 15px
+}
+
+.nieuwsbriefinschrijving input {
+  background-color: #e5e5e5
+}
+
+.nieuwsbriefinschrijving input[type=checkbox] {
+  margin-right: 5px
+}
+
+.nieuwsbriefinschrijving input[type=email] {
+  border-radius: 5px;
+  border: transparent;
+  background-color: #ccc;
+  padding: 5px 25px;
+  height: 35px;
+  margin-top: 15px
+}
+
+.nieuwsbriefinschrijving input[type=submit] {
+  border-radius: 5px;
+  border: 2px solid #00555a;
+  height: 35px;
+  margin-top: 15px;
+  color: #00555a
+}
+
+.nieuwsbriefinschrijving span {
+  font-size: 15px;
+  color: #00555a;
+  font-weight: 400
+}
+
+.nieuwsbriefinschrijving .inschrijfformulier {
+  padding-top: 15px
+}
+
+@media (max-width: 992px) {
+  .nieuwsbriefinschrijving .inschrijfformulier li {
+      width:100%
+  }
+}
+
+.nieuwsbriefinschrijving form {
+  margin-bottom: 5px
+}
+
+.nieuwsbriefinschrijving form>ul>li:nth-of-type(2) label {
+  display: none
+}
+
+.nieuwsbriefinschrijving form>ul>li:first-of-type {
+  display: block
+}
+
+.nieuwsbriefinschrijving form>ul>li:nth-of-type(2) {
+  width: 65%;
+  margin-right: 5%
+}
+
+.nieuwsbriefinschrijving form>ul>li:nth-of-type(2) input {
+  width: 100%
+}
+
+.nieuwsbriefinschrijving form>ul>li:nth-of-type(3) {
+  width: 30%
+}
+
+.nieuwsbriefinschrijving form>ul>li:nth-of-type(3) input {
+  width: 100%
+}
+
+.nieuwsbriefinschrijving ::-webkit-input-placeholder {
+  color: #00555a
+}
+
+.nieuwsbriefinschrijving :-moz-placeholder {
+  color: #00555a
+}
+
+.nieuwsbriefinschrijving ::-moz-placeholder {
+  color: #00555a
+}
+
+.nieuwsbriefinschrijving :-ms-input-placeholder {
+  color: #00555a
+}
+
+
+footer {
+  color: #00555a
+}
+
+footer h2 {
+  color: #00555a;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+  font-size: 24px
+}
+
+footer h2 div {
+  float: right;
+  font-size: 14px;
+  line-height: 20px
+}
+
+@media (max-width: 768px) {
+  footer h2 {
+      width:100%;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center
+  }
+}
+
+footer p {
+  color: #00555a;
+  float: left
+}
+
+@media (max-width: 768px) {
+  footer p {
+      float:none;
+      text-align: center;
+      padding: 5px 5%
+  }
+}
+
+footer .social {
+  margin-top: 15px;
+  float: left;
+  list-style: none;
+  padding: 0
+}
+
+footer .social li {
+  display: inline-block;
+  /* font-size: 26px; */
+  margin-right: 40px
+}
+
+@media (max-width: 768px) {
+  footer .social {
+      float:none;
+      margin: 0 auto;
+      margin-top: 15px;
+      text-align: center
+  }
+
+  footer .social li {
+      margin: 0 7px
+  }
+}
+
+footer .row:last-of-type {
+  padding: 15px 0 10px
+}
+
+footer hr {
+  margin: 0;
+  border-top: 1px solid #00555a
+}
+
+@media (max-width: 768px) {
+  footer #menu-footermenu {
+      float:none!important;
+      text-align: center;
+      margin: 0 auto
+  }
+}
+
+footer .nav li {
+  display: inline-block;
+  padding-right: 10px
+}
+
+footer .nav li:before {
+  position: absolute;
+  margin-left: -10px;
+  content: " - "
+}
+
+footer .nav li:first-child:before {
+  content: ""
+}
+
+footer .nav li:last-child {
+  padding-right: 0
+}
+
+footer .nav li a {
+  padding: 0
+}
+
+footer .nav li a:hover {
+  background: 0 0;
+  text-decoration: underline
+}
+
+footer .nav li:last-of-type a:after {
+  content: ""
+}
