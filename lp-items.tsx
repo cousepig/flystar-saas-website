@@ -185,6 +185,14 @@ export const LP_GRID_ITEMS = [
         type: "manual",
         filename: "download/syrincs_ds135_manual.pdf",
       },
+      {
+        id: 52,
+        title: "Syrincs DS136 Manual",
+        slug: "ds136",
+        lang: "cn",
+        type: "manual",
+        filename: "download/syrincs_ds136_manual.pdf",
+      },
     ],
   },
   {
@@ -496,4 +504,4 @@ export const LP_GRID_ITEMS = [
       },
     ],
   },
-]
+];

@@ -21,7 +21,7 @@ const Posts = ({ posts }: any) => {
                 className="w-full wow fadeInUp hover:shadow-two  group relative overflow-hidden rounded-sm bg-white shadow-one duration-300 "
                 data-wow-delay=".1s"
               >
-                <div className="image relative block aspect-[10/20] w-full">
+                <div className="image relative block aspect-[35/98] w-full">
                   <Image
                     src={post.image}
                     alt={post.title}

@@ -1,6 +1,30 @@
+"use client";
+// import Link from "next/link"
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "post",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        console.log("falling over");
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData["message"]);
+
+      alert("Message successfully sent");
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+    }
+  }
   return (
     <section id="contact" className="overflow-hidden py-10 md:py-10 lg:py-10">
       <div className="container">
@@ -61,7 +85,7 @@ const Contact = () => {
                 We &APOS; ll respond to your inquiry as soon as possible via
                 email.
               </p>
-              <form>
+              <form onSubmit={handleSubmit} className="mt-8 mb-2 ">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -72,6 +96,7 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
+                        name="name"
                         type="text"
                         placeholder="Enter your name"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#11211f] dark:focus:border-primary dark:focus:shadow-none"
@@ -87,6 +112,7 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
+                        name="email"
                         type="email"
                         placeholder="Enter your email"
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#11211f] dark:focus:border-primary dark:focus:shadow-none"
