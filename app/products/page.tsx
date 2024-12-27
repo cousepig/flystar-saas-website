@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import categoryData from "@/sections/products/categoryData";
 import SingleCategory from "@/sections/products/SingleCategory";
 

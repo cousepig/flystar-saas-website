@@ -70,16 +70,9 @@ export default async function PostPage({ params }: any) {
             <div className="w-full px-4 lg:w-8/12">
               <div>
                 <div className="mb-10 items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
-                  <h1 className="mb-8 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight">
-                    {product.title}
+                  <h1 className="mb-8 text-xl font-bold leading-tight text-parmary ">
+                    {product.title} {product.ctitle}
                   </h1>
-                  <div className="flex flex-wrap items-center">
-                    <div className="mb-5 flex items-center">
-                      <p className="mr-5 flex items-center text-base font-medium text-body-color">
-                        {product.ctitle}
-                      </p>
-                    </div>
-                  </div>
                 </div>
                 <div>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">

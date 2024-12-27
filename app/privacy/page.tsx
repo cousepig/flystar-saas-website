@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   description:
     "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.",
 };
-import Image from "next/image";
 import SectionTitle from "../../components/SectionTitle";
 
 const AboutPage = () => {
@@ -255,6 +254,7 @@ const AboutPage = () => {
                         cookies on{" "}
                         <a
                           href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
+                          rel="external nofollow noopener"
                           target="_blank"
                         >
                           TermsFeed website
