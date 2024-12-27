@@ -10,19 +10,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-interface ReProduct {
-  title: string;
-  ctitle: string;
-  image: string;
-  slug: string;
-  description: string;
-}
+// interface ReProduct {
+//   title: string;
+//   ctitle: string;
+//   image: string;
+//   slug: string;
+//   description: string;
+// }
 
-interface DemoSliderProps {
-  data: ReProduct[];
-}
+// interface DemoSliderProps {
+//   data: ReProduct[];
+// }
 
-const RelateProducts: React.FC<DemoSliderProps> = ({ data }) => {
+const RelateProducts = ({ data }: any) => {
   return (
     <section className="w-full">
       <Swiper
