@@ -148,7 +148,7 @@ const AboutPage = () => {
                             accessible from{" "}
                             <a
                               href="https://www.syrincs.hk"
-                              rel="external nofollow noopener"
+                              rel="noreferrer nofollow noopener"
                               target="_blank"
                             >
                               https://www.syrincs.hk
@@ -254,7 +254,7 @@ const AboutPage = () => {
                         cookies on{" "}
                         <a
                           href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
-                          rel="external nofollow noopener"
+                          rel="noreferrer nofollow noopener"
                           target="_blank"
                         >
                           TermsFeed website
@@ -614,7 +614,7 @@ const AboutPage = () => {
                           By visiting this page on our website:{" "}
                           <a
                             href="https://www.syrincs.hk/contact"
-                            rel="external nofollow noopener"
+                            rel="noreferrer nofollow noopener"
                             target="_blank"
                           >
                             https://www.syrincs.hk/contact
