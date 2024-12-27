@@ -85,13 +85,65 @@
 }
 .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullet-active
 {
-  color: #edefea !important;opacity: 0.5;
+  color: #1c4c4e !important;opacity: 0.5;
 }
 .swiper-pagination-bullet-active
 {
   background-color: #edefea !important;opacity: 0.5;
 }
 
+.specifications {
+  /* background: url(../images/green-bg.jpg) repeat; */
+  background-color: rgb(26 76 79 / 0.8);
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 60px
+}
+
+.specifications h1,.specifications h2,.specifications h3,.specifications h4,.specifications h5,.specifications p {
+  color: #fff;
+  font-weight: 400
+}
+
+/* .specifications h2 {
+  font-size: 23px
+} */
+
+/* .specifications .col-md-4 {
+  margin-top: 40px
+}
+
+.specifications table {
+  margin-top: 40px
+} */
+
+.specifications table tr {
+  border-bottom: 1px solid #579092
+}
+
+.specifications table tr td {
+  padding: 10px 0
+}
+
+.specifications table tr:last-of-type {
+  border-bottom: none
+}
+
+.description .descriptiontext.two-column {
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 50px;
+  column-gap: 50px
+}
+
+@media (max-width: 768px) {
+  .description .descriptiontext.two-column {
+      -moz-column-count:1;
+      column-count: 1;
+      -moz-column-gap: 0;
+      column-gap: 0
+  }
+}
 .related-news .image {
   background-repeat: no-repeat;
   background-position: center;
@@ -108,7 +160,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* height: 300px; */
+    height: 300px;
   }
   
   
@@ -149,13 +201,6 @@
   margin-right: 15px
 }
 
-.nieuwsbriefinschrijving input {
-  /* background-color: #e5e5e5 */
-}
-
-.nieuwsbriefinschrijving input[type=checkbox] {
-  /* margin-right: 5px */
-}
 
 .nieuwsbriefinschrijving input[type=email] {
   border-radius: 5px;

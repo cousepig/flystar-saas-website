@@ -50,13 +50,10 @@ export default async function CategoryPage({ params }: any) {
     <>
       <ImageBanner banner={banner} />
       <Breadcrumb data={breadcrumbs} />
-      <section
-        id="products"
-        className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
-      >
+      <section id="products" className="py-16 md:py-20 lg:py-28">
         <section className="section">
           <div className="container">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10 ">
               {category.products.map((feature, index) => (
                 <ProductCard key={index} product={feature} />
               ))}
