@@ -1,5 +1,4 @@
-
-import Breadcrumb from "@/components/Breadcrumb";
+// import Breadcrumb from "@/components/Breadcrumb";
 import Pricing from "@/sections/Pricing";
 import { Metadata } from "next";
 
@@ -11,10 +10,10 @@ export const metadata: Metadata = {
 const PricePage = () => {
   return (
     <>
-      <Breadcrumb
+      {/* <Breadcrumb
         pageName="Pricing"
-      />
-    <Pricing />
+      /> */}
+      <Pricing />
     </>
   );
 };

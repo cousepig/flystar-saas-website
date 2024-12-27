@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "抱歉，找不到该页面 | 颜如玉 声入心",
-  description: "抱歉，找不到该页面",
+  title: "Sorry, the page cannot be found | Syrincs",
+  description: "Sorry, the page cannot be found",
 };
 
 const ErrorPage = () => {

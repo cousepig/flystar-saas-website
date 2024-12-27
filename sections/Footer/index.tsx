@@ -131,15 +131,28 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-2/10 text-center">
               <div className="mb-6 lg:mb-8">
                 <h2 className="mb-2 text-base font-bold text-white ">
-                  Support
+                  <a
+                    href="/support"
+                    className="mb-1 inline-block text-white duration-300 hover:text-secondary"
+                  >
+                    Support
+                  </a>
                 </h2>
                 <ul>
                   <li>
                     <a
-                      href="/support"
+                      href="/support/service"
                       className="mb-1 inline-block font-light text-xs text-white duration-300 hover:text-secondary"
                     >
-                      Support
+                      Service
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/downloads"
+                      className="mb-1 inline-block font-light text-xs text-white duration-300 hover:text-secondary"
+                    >
+                      Downloads
                     </a>
                   </li>
                   <li>

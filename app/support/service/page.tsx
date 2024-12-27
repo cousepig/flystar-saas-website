@@ -20,7 +20,7 @@ const ContactPage = () => {
   ][0];
   const breadcrumbs = [
     { name: "Home", href: "/" },
-    { name: "Service", href: "/service" },
+    { name: "Service", href: "/support/service" },
   ];
 
   return (

@@ -3,6 +3,8 @@ import Link from "next/link";
 import categoryData from "@/sections/products/categoryData";
 import SingleCategory from "@/sections/products/SingleCategory";
 
+import ImageBanner from "@/components/partials/ImageBanner";
+import Breadcrumb from "@/components/Breadcrumb";
 // import { Suspense } from "react";
 import { Metadata } from "next";
 
@@ -23,64 +25,24 @@ const ShowProducts = async ({
   const { c: category } = searchParams as {
     [key: string]: string;
   };
-
+  const banner = [
+    {
+      title: "Products",
+      description:
+        " Explore our carefully selected bars that use SYRINCS, Livehouse、PartyK、 Entertainment DJ, on-site installation and application of sound reinforcement system. More DJ musicians and designers trust us.",
+      image: "/images/banner.jpg",
+    },
+  ][0];
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Products", href: "/products" },
+  ];
   return (
     <>
-      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-        <div
-          className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-active
-          data-twe-carousel-item
-        >
-          <Image
-            src="/images/banner.jpg"
-            alt="image"
-            fill
-            className="block h-full w-full object-cover object-center"
-          />
+      <ImageBanner banner={banner} />
+      <Breadcrumb data={breadcrumbs} />
 
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h1 className="text-xl">Products</h1>
-            <p>
-              Explore our carefully selected bars that use SYRINCS,
-              Livehouse、PartyK、 Entertainment DJ, on-site installation and
-              application of sound reinforcement system. More DJ musicians and
-              designers trust us.
-            </p>
-          </div>
-        </div>
-      </div>
-      <section className="relative z-10 overflow-hidden bg-secondary -mb-20">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12"></div>
-            </div>
-            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary pro-font-rgregular"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-base font-medium text-primary pro-font-rgregular">
-                    Products
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        id="products"
-        className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
-      >
+      <section id="products" className="py-16 ">
         {category}
 
         <section className="section">

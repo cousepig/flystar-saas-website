@@ -33,10 +33,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           </div>
           <div className="p-5 pb-8">
             <h6 className="mb-3 pro-font-rgregular ">{title}</h6>
-            <small className="mb-5 pro-font-rgregular  font-family-narrow-normal d-block">
-              {" "}
-              {description}
-            </small>
+            <small className="mb-5 font-light d-block"> {description}</small>
             <div className="btn btn-link-normal pro-font-rgregular ">
               Learn More
             </div>
