@@ -27,13 +27,13 @@ const NewsLatterBox = () => {
   }
   return (
     <div
-      className="wow fadeInUp shadow-three dark:bg-gray-dark relative z-10 rounded-sm bg-white p-8 sm:p-11 lg:p-8 xl:p-11"
+      className="wow fadeInUp relative z-10 rounded-sm bg-white p-8 sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
+      <h3 className="mb-4 text-xl font-bold leading-tight text-black">
         Subscribe to receive future updates
       </h3>
-      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
+      <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base font-light leading-relaxed text-body-color">
         Subscribe to the Syrincs newsletter and stay tuned
       </p>
       <div>
@@ -55,7 +55,7 @@ const NewsLatterBox = () => {
             value="Subscribe"
             className="shadow-submit dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
           />
-          <p className="dark:text-body-color-dark text-center text-base leading-relaxed text-body-color">
+          <p className="text-center  font-light leading-relaxed text-body-color">
             No spam guaranteed, So please don’t send any spam mail.
           </p>
         </form>

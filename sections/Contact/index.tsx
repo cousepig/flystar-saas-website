@@ -31,25 +31,25 @@ const Contact = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="wow fadeInUp shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-xl font-bold text-black">
                 Germany Office
               </h2>
 
-              <div className="mb-12 text-base text-body-color">
+              <div className="mb-12 font-light text-body-color">
                 <p>A: Hans-Thomann-Str.196138 Burgebrach Germany</p>
                 <p>T: +49 (0) 9549 9223-66</p>
                 <p>F: +49 (0) 9549 9223-24</p>
                 <p>E: info@syrincs.hk</p>
               </div>
 
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-xl font-bold text-black  ">
                 Hong Kong Office
               </h2>
-              <div className="mb-12 text-base text-body-color">
+              <div className="mb-12 font-light text-body-color">
                 <p>
                   <b>High-Sound (Hong kong) Company Limited.</b>
                 </p>
@@ -62,10 +62,10 @@ const Contact = () => {
                 <p>E: vip@syrincs.hk</p>
               </div>
 
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-xl font-bold text-black  ">
                 China Office
               </h2>
-              <div className="mb-12 text-base text-body-color">
+              <div className="mb-12 font-light text-body-color">
                 <p>
                   <b>Dongguan 3G Audio Technology Co.,Ltd.</b>
                 </p>
@@ -78,10 +78,10 @@ const Contact = () => {
                 <p>E: vip@syrincs.hk</p>
               </div>
 
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+              <h2 className="mb-3 text-xl font-bold text-black ">
                 Get Assistance by Opening a Ticket
               </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
+              <p className="mb-12 font-light text-body-color">
                 We &APOS; ll respond to your inquiry as soon as possible via
                 email.
               </p>
@@ -91,7 +91,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="name"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-primary "
                       >
                         Your Name
                       </label>
@@ -107,7 +107,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-primary "
                       >
                         Your Email
                       </label>
@@ -123,7 +123,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="mb-3 block text-sm font-medium text-primary "
                       >
                         Your Message
                       </label>

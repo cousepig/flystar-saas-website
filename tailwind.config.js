@@ -8,16 +8,37 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    fontFamily: {
+      // 'sans': ['ui-sans-serif', 'system-ui'],
+      // 'serif': ['ui-serif', 'Georgia'],
+      // 'mono': ['ui-monospace', 'SFMono-Regular'],
+      'display': ['Oswald','Lato','Indie Flower'],
+      'body': ['"Open Sans"'],
+    },
     container: {
       center: true,
       padding: "1rem",
     },
-    // fontSize: {
-    //   sm: ['12px', '16px'],
-    //   base: ['12px', '16px'],
-    //   lg: ['14px', '20px'],
-    //   xl: ['16px', '24px'],
-    // },
+    fontSize: {
+      sm: ['14px', '18px'],
+      xs: ['15px', '21px'],
+      base: ['16px', '20px'],
+      lg: ['20px', '24px'],
+      xl: ['24px', '28px'],
+      "2xl": ['28px', '32px'],
+      "3xl": ['32px', '36px'],
+    },
+    fontWeight: {
+      hairline: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      'extra-bold': '800',
+      black: '900',
+    },
     screens: {
       xs: "450px",
       // => @media (min-width: 450px) { ... }

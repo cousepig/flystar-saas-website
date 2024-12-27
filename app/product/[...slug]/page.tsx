@@ -7,10 +7,13 @@ import {
   getCurrentProducts,
   getProductsByCategory,
 } from "@/lib/get-product-data";
+import { allCategories } from "@/lib/get-categories-data";
 // import { allProducts } from "contentlayer/generated";
 import { getMDXComponent } from "next-contentlayer/hooks";
 import Gallery from "@/components/partials/Gallery";
 import TagButton from "@/sections/Showcase/TagButton";
+import ImageBanner from "@/components/partials/ImageBanner";
+import Breadcrumb from "@/components/Breadcrumb";
 export async function generateMetadata({ params }: any) {
   const resolvedParams = await params;
   const slug = `product/${resolvedParams.slug.join("/")}`;
@@ -38,57 +41,29 @@ export default async function PostPage({ params }: any) {
   if (!product) {
     return notFound();
   }
+  const category = allCategories.find((p) => p.category === product.category);
 
   const categoryProducts = getProductsByCategory(product.category).slice(0, 15);
 
+  const banner = [
+    {
+      title: category.title,
+      description: category.description,
+      image: "/images/banner.jpg",
+    },
+  ][0];
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Products", href: "/products" },
+    { name: category.title, href: `/products/${category.category}` },
+    { name: product.title, href: `/products/${slug}` },
+  ];
+
   return (
     <>
-      <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-        <div
-          className="relative h-[300px] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-twe-carousel-active
-          data-twe-carousel-item
-        >
-          <Image
-            src="/images/banner.jpg"
-            alt="image"
-            fill
-            className="block h-full w-full object-cover object-center"
-          />
+      <ImageBanner banner={banner} />
+      <Breadcrumb data={breadcrumbs} />
 
-          <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-            <h5 className="text-xl">{product.title}</h5>
-            <p> {product.description}</p>
-          </div>
-        </div>
-      </div>
-      <section className="relative z-10 overflow-hidden bg-secondary">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4 md:w-8/12 lg:w-7/12">
-              <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12"></div>
-            </div>
-            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="pr-1 text-base font-medium text-body-color hover:text-primary pro-font-rgregular"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-r-2 border-t-2 border-body-color"></span>
-                  </li>
-                  <li className="text-base font-medium text-primary pro-font-rgregular">
-                    {product.title}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section className="overflow-hidden pb-[20px] pt-[20px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">

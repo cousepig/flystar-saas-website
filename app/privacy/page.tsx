@@ -1,23 +1,35 @@
-
+import ImageBanner from "@/components/partials/ImageBanner";
 import Breadcrumb from "@/components/Breadcrumb";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "SYRINCS is a professional audio brand used for installation or movement, indoor or outdoor, large or small. SYRINCS speakers, control electronics, mechanical accessories, and remote control devices can fully meet various application conditions and harsh weather environments.",
+  description:
+    "SYRINCS is a professional audio brand used for installation or movement, indoor or outdoor, large or small. SYRINCS speakers, control electronics, mechanical accessories, and remote control devices can fully meet various application conditions and harsh weather environments.",
 };
 import Image from "next/image";
 import SectionTitle from "../../components/SectionTitle";
 
-
-
 const AboutPage = () => {
+  const banner = [
+    {
+      title: "Privacy",
+      description:
+        "SYRINCS is a professional audio brand used for installation or movement, indoor or outdoor, large or small. SYRINCS speakers, control electronics, mechanical accessories, and remote control devices can fully meet various application conditions and harsh weather environments.",
+
+      image: "/images/banner-1.jpg",
+    },
+  ][0];
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Privacy", href: "/privacy" },
+  ];
+
   return (
     <>
-      <Breadcrumb
-        pageName="Privacy"
-      />
+      <ImageBanner banner={banner} />
+      <Breadcrumb data={breadcrumbs} />
       <section id="about" className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
           <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
@@ -35,11 +47,30 @@ const AboutPage = () => {
                 >
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 lg:w-full ">
+                      <p className="mb-9 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                        In 1981, SYRINCS professional audio brand was founded by
+                        Dr. Wolfgang Bartsch, Conrad Schucht, and J ü rgen
+                        Eggling in Berlin, Germany. In the design of tone usage,
+                        a very rigorous mathematical order is used. This amazing
+                        mathematical order is not boring, but brings us a
+                        satisfied smile on our face. With over thirty years of
+                        glorious history, we have successively launched Club
+                        passive speaker system, MPA speaker system, S3 and S2
+                        compact high pressure level speaker systems, Eurosub
+                        speaker system used in large clubs, Odaiko high-end Hi
+                        Fi subwoofer, and modern and fashionable MusicMate
+                        series speakers. In 2000, the M3-220DT was launched and
+                        has been selling well ever since.
+                      </p>
 
-                      <p className="mb-9 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">In 1981, SYRINCS professional audio brand was founded by Dr. Wolfgang Bartsch, Conrad Schucht, and J ü rgen Eggling in Berlin, Germany. In the design of tone usage, a very rigorous mathematical order is used. This amazing mathematical order is not boring, but brings us a satisfied smile on our face. With over thirty years of glorious history, we have successively launched Club passive speaker system, MPA speaker system, S3 and S2 compact high pressure level speaker systems, Eurosub speaker system used in large clubs, Odaiko high-end Hi Fi subwoofer, and modern and fashionable MusicMate series speakers. In 2000, the M3-220DT was launched and has been selling well ever since.</p>
-
-                      <p className="mb-9 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">SYRINCS is a professional audio brand used for installation or movement, indoor or outdoor, large or small. SYRINCS speakers, control electronics, mechanical accessories, and remote control devices can fully meet various application conditions and harsh weather environments.</p>
-
+                      <p className="mb-9 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                        SYRINCS is a professional audio brand used for
+                        installation or movement, indoor or outdoor, large or
+                        small. SYRINCS speakers, control electronics, mechanical
+                        accessories, and remote control devices can fully meet
+                        various application conditions and harsh weather
+                        environments.
+                      </p>
                     </div>
                   </div>
                 </div>
