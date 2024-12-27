@@ -3,7 +3,7 @@ const SharePost = ({
 }: {
   share: { title: string; description: string; image: string; url: string };
 }) => {
-  const { title, description, image, url } = share;
+  const { title, description, url } = share;
   return (
     <>
       <h5 className="mb-3 text-sm font-medium text-primary sm:text-right">
