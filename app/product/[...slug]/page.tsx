@@ -64,20 +64,28 @@ export default async function PostPage({ params }: any) {
       <ImageBanner banner={banner} />
       <Breadcrumb data={breadcrumbs} />
 
-      <section className="overflow-hidden pb-[20px] pt-[20px]">
-        <div className="container">
+      <section className="overflow-hidden pb-[20px] ">
+        <section className="page-description">
+          <div className="container">
+            <h1 className="text-3xl pt-[20px]">
+              {product.title} {product.ctitle}
+            </h1>
+            <p className="text-xs font-light"></p>
+          </div>
+        </section>
+        <div className="container pt-[20px]">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-8/12">
               <div>
-                <div className="mb-10 items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
+                {/* <div className="mb-10 items-center justify-between border-b border-body-color border-opacity-10 pb-4 dark:border-white dark:border-opacity-10">
                   <h1 className="mb-8 text-xl font-bold leading-tight text-parmary ">
-                    {product.title} {product.ctitle}
+                   
                   </h1>
-                </div>
+                </div> */}
                 <div>
-                  <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
+                  {/* <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     {product.description}
-                  </p>
+                  </p> */}
                   <div className="mb-10 w-full overflow-hidden rounded">
                     <div className="relative w-full">
                       <Gallery
@@ -150,15 +158,15 @@ export default async function PostPage({ params }: any) {
                   </button>
                 </div>
               </div> */}
-              <div className="shadow-three dark:bg-gray-dark mb-10 rounded-sm bg-white dark:shadow-none">
-                <h3 className="border-b border-body-color border-opacity-10 px-8 py-4 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
+              <div className="mb-10 bg-white">
+                <h3 className="border-b border-body-color border-opacity-10 py-4 text-lg font-medium text-black">
                   Related Products
                 </h3>
-                <ul className="p-8">
+                <ul className="py-8">
                   {categoryProducts.map((post, index) => (
                     <li
                       key={index}
-                      className="mb-6 border-b border-body-color border-opacity-10 pb-6 dark:border-white dark:border-opacity-10"
+                      className="mb-6 border-b border-body-color border-opacity-10 pb-6"
                     >
                       <Link href={post.slug}>
                         <div className="flex items-center lg:block xl:flex">
@@ -181,7 +189,36 @@ export default async function PostPage({ params }: any) {
                   ))}
                 </ul>
               </div>
+              <h3 className="border-b border-body-color border-opacity-10 py-4 mb-4 text-lg font-medium text-black">
+                Downloads
+              </h3>
+              <ul className="da-attachments-list">
+                <li className="pdf mb-6 border-b border-body-color border-opacity-10 pb-6 flex">
+                  <div className="relative h-[20px] w-[30px] overflow-hidden rounded-10 my-2">
+                    <img
+                      className="attachment-icon lazy loaded"
+                      src="https://www.alconsaudio.com/wp-content/plugins/download-attachments/images/ext/pdf.gif?x74439"
+                      data-src="https://www.alconsaudio.com/wp-content/plugins/download-attachments/images/ext/pdf.gif?x74439"
+                      alt="pdf"
+                      data-was-processed="true"
+                    />
+                  </div>
 
+                  <div className="w-full">
+                    <a
+                      href="#"
+                      title=""
+                      className="block text-base font-medium leading-snug text-primary hover:text-black  "
+                    >
+                      Technical specs
+                    </a>
+                    <span className="text-xs font-light text-body-color">
+                      <span className="attachment-label">File size: </span> 513
+                      KB
+                    </span>
+                  </div>
+                </li>
+              </ul>
               {/* <NewsLatterBox /> */}
             </div>
           </div>

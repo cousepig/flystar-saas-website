@@ -41,7 +41,7 @@ const AboutPage = () => {
                   data-wow-delay=".15s"
                 >
                   <div className=" flex flex-wrap">
-                    <div className="mb-8 prose font-light prose-slate prose-img:rounded-xl prose-headings:underline prose-a:text-primary">
+                    {/* <div className="mb-8 prose font-light prose-slate prose-img:rounded-xl prose-headings:underline prose-a:text-primary">
                       <p>Last updated: December 27, 2024</p>
                       <p>
                         We use Your Personal data to provide and improve the
@@ -145,7 +145,7 @@ const AboutPage = () => {
                         <li>
                           <p>
                             <strong>Website</strong> refers to Syrincs,
-                            accessible from{" "}
+                            accessible from
                             <a
                               href="https://www.syrincs.hk"
                               rel="noreferrer nofollow noopener"
@@ -251,14 +251,14 @@ const AboutPage = () => {
                         on Your personal computer or mobile device when You go
                         offline, while Session Cookies are deleted as soon as
                         You close Your web browser. You can learn more about
-                        cookies on{" "}
+                        cookies on
                         <a
                           href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
                           rel="noreferrer nofollow noopener"
                           target="_blank"
                         >
                           TermsFeed website
-                        </a>{" "}
+                        </a>
                         article.
                       </p>
                       <p>
@@ -341,7 +341,7 @@ const AboutPage = () => {
                         </li>
                         <li>
                           <p>
-                            <strong>For the performance of a contract:</strong>{" "}
+                            <strong>For the performance of a contract:</strong>
                             the development, compliance and undertaking of the
                             purchase contract for the products, items or
                             services You have purchased or of any other contract
@@ -611,7 +611,7 @@ const AboutPage = () => {
                       </p>
                       <ul>
                         <li>
-                          By visiting this page on our website:{" "}
+                          By visiting this page on our website:
                           <a
                             href="https://www.syrincs.hk/contact"
                             rel="noreferrer nofollow noopener"
@@ -621,7 +621,7 @@ const AboutPage = () => {
                           </a>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
