@@ -19,6 +19,7 @@ const SharePost = ({
         }
         aria-label="social-share"
         target="_blank"
+        rel="noreferrer"
         className="bg-primary text-white hover:bg-gray-light hover:text-primary font-light mb-3 inline-flex h-9 w-32 items-center justify-center rounded-sm duration-300 sm:ml-3"
       >
         <svg
@@ -43,6 +44,7 @@ const SharePost = ({
         href={`https://twitter.com/intent/tweet?original_referer=${url}&via=Syrincs&tw_p=tweetbutton&url=${url}&text=${description} Read more:${url}`}
         aria-label="social-share"
         target="_blank"
+        rel="noreferrer"
         className="bg-primary text-white hover:bg-gray-light hover:text-primary font-light mb-3 ml-3 inline-flex h-9 w-32 items-center justify-center rounded-sm duration-300 "
       >
         <svg
@@ -59,6 +61,7 @@ const SharePost = ({
         href={"http://www.facebook.com/sharer/sharer.php?u=" + url + ""}
         aria-label="social-share"
         target="_blank"
+        rel="noreferrer"
         className="bg-primary text-white hover:bg-gray-light hover:text-primary font-light mb-3 ml-3 inline-flex h-9 w-32 items-center justify-center rounded-sm duration-300"
       >
         <svg width="9" height="18" viewBox="0 0 9 18" className="fill-current">
@@ -70,6 +73,7 @@ const SharePost = ({
         href={`mailto:?subject=${title}&body=${description} Read more:${url}`}
         aria-label="social-share"
         target="_blank"
+        rel="noreferrer"
         className="bg-primary text-white hover:bg-gray-light hover:text-primary font-light mb-3 ml-3 inline-flex h-9 w-32 items-center justify-center rounded-sm duration-300"
       >
         <svg

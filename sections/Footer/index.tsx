@@ -76,7 +76,7 @@ const Footer = () => {
                     <li key={footindex}>
                       <a
                         href={`/products/${category.slug}`}
-                        className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                        className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
                         {category.title}
                       </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       Party K
                     </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       DJ
                     </a>
@@ -111,7 +111,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       Bar
                     </a>
@@ -119,7 +119,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/showcase"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       KTV
                     </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/support"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block font-light text-xs text-white duration-300 hover:text-secondary"
                     >
                       Support
                     </a>
@@ -145,7 +145,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/privacy"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       Privacy Policy
                     </a>
@@ -153,7 +153,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/contact"
-                      className="mb-1 inline-block text-xs text-white pro-font-rgregular duration-300 hover:text-secondary"
+                      className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                     >
                       Contact us
                     </a>
@@ -264,7 +264,9 @@ const Footer = () => {
                   <a
                     href={config.socials.facebook}
                     aria-label="social-link"
-                    className="mr-6 text-primary duration-300 hover:text-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mr-6 text-primary duration-300 hover:text-black"
                   >
                     <svg
                       width="24"
@@ -280,7 +282,9 @@ const Footer = () => {
                   <a
                     href={config.socials.tiktok}
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-primary duration-300 hover:text-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mr-6 text-primary duration-300 hover:text-black"
                   >
                     <svg
                       width="24"
@@ -296,7 +300,9 @@ const Footer = () => {
                   <a
                     href={config.socials.youtube}
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-primary duration-300 hover:text-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" mr-6 text-primary duration-300 hover:text-black"
                   >
                     <svg
                       width="24"
@@ -312,7 +318,9 @@ const Footer = () => {
                   <a
                     href={config.socials.instagram}
                     aria-label="social-link"
-                    className="dark:text-body-color-dark mr-6 text-primary duration-300 hover:text-secondary"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mr-6 text-primary duration-300 hover:text-black"
                   >
                     <svg
                       width="24"
@@ -327,54 +335,37 @@ const Footer = () => {
               </ul>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
-              <h2 className="text-right pro-font-rgbold">
-                We Ascend, Sound Soar
-              </h2>
+              <h2 className="text-right">Sound Soar</h2>
             </div>
           </div>
 
           <div className="row">
-            <div className="col-md-12 border"></div>
+            <div className="col-md-12 border-t"></div>
           </div>
 
           <div className="flex flex-wrap items-center justify-between py-4">
             <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
-              <p className="text-center text-base text-primary pro-font-rgregular">
+              <p className="text-center font-light text-primary text-xs">
                 Copyright © 1988-2024 Syrincs, Inc. - MIT License
               </p>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
-              <ul id="menu-footer" className="nav text-right">
-                <li
-                  id="menu-item-11"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-11"
-                >
+              <ul className="nav text-right font-light text-primary text-xs">
+                <li className="">
                   <a href="/" aria-current="page">
                     Home
                   </a>
                 </li>
-                <li
-                  id="menu-item-170"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"
-                >
+                <li>
                   <a href="/products/">Products</a>
                 </li>
-                <li
-                  id="menu-item-170"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"
-                >
+                <li>
                   <a href="/showcase/">Showcase</a>
                 </li>
-                <li
-                  id="menu-item-6612"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6612"
-                >
+                <li>
                   <a href="/downloads">Downloads</a>
                 </li>
-                <li
-                  id="menu-item-169"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"
-                >
+                <li>
                   <a href="/contact/">Contact</a>
                 </li>
               </ul>
