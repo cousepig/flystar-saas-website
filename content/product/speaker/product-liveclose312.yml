@@ -1,0 +1,101 @@
+title: liveclose312
+ctitle: High sound pressure three-way passive full frequency speaker
+description: Rated power (AES) bass:LF:360W | Sensitivity（ 1W@1M ）Bass:LF:100dB | Maximum SPL Bass:LF:122dB/128dB (peak)
+image: /images/products/liveclose312/liveclose312-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/liveclose312/liveclose312-1.jpg",
+    "/images/products/liveclose312/liveclose312-2.jpg",
+    "/images/products/liveclose312/liveclose312-3.jpg",
+    "/images/products/liveclose312/liveclose312-4.jpg",
+    "/images/products/liveclose312/liveclose312-5.jpg",
+    "/images/products/liveclose312/liveclose312-6.jpg",
+    "/images/products/liveclose312/liveclose312-7.jpg",
+  ]
+category: speaker
+slug: liveclose312
+date: 2024-03-02
+features:
+  [
+    "The combination of 14 inch low-frequency provides high fidelity sound effects.",
+    "The rated power is 1200W, and the maximum can reach 4800W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  liveclose312 is a subwoofer designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  liveclose312, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification: [
+    {
+      name: "Frequency Response(-3db)",
+      value: "LF: 110Hz-1.1 kHz (-3dB) MF: 360Hz-4.1 kHz (-3dB) HF: 2kHz-17.5kHz (-3dB)",
+    },
+    { name: "Frequency Response(-10db)", value: "34Hz-150Hz" },
+    { name: "Rated Power(AES)", value: "LF: 360W MF: 140W HF: 40W" },
+    # { name: "Total Power(MUSIC)", value: "2400W" },
+    # { name: "Total Power(PEAK)", value: "4800W" },
+    {
+      name: "Max SPL @ 1m",
+      value: "LF: 122dB/128dB (peak) MF: 121 dB/127dB (peak) HF: 118dB/124dB (peak)  ",
+    },
+    { name: "Dispersion (H x V)", value: "90 °× 40 ° " },
+    { name: "Sensitivity 1W @ 1m", value: "LF:100dB MF:103dB HF:105dB " },
+    { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
+    { name: "Crossover Frequencies", value: "MF/LF: 500Hz, MF/HF:2.5KHz" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "14 inch subwoofer" },
+    { name: "Woofer", value: "1 x 12 inch" },
+    { name: "Mid driver", value: "1 x 6 inch" },
+    {
+      name: "Compression driver",
+      value: "44mm high frequency compression driver",
+    },
+    { name: "Cabinet/Case Material", value: "18mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "466 × 480 × 708mm" },
+    { name: "Package Dimensions(W x D x H):", value: "595 × 565 × 825mm" },
+    { name: "Net weight", value: "35.7kg" },
+    { name: "Gross weight", value: "39.7kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# ---
+
+# | Specification parameters       |                                                                                                          |
+# | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+# | Box construction               | 15mm laminated Russian birch wood                                                                        |
+# | Unit composition Transformer   | LF: 1x12 "MF: 1x6" HF: 44mm high frequency compression driver                                            |
+# | Frequency Response (-3dB)      | LF: 110Hz-1.1 kHz (-3dB) MF: 360Hz-4.1 kHz (-3dB) HF: 2kHz-17.5kHz (-3dB)                                |
+# | Rated Power (AES)              | LF: 360W MF: 140W HF: 40W                                                                                |
+# | Sensitivity（ 1W@1M )          | LF:100dB MF:103dB HF:105dB                                                                               |
+# | Maximum SPL                    | LF: 122dB/128dB (peak) MF: 121 dB/127dB (peak) HF: 118dB/124dB (peak)                                    |
+# | Rated Impedance                | 8 OHM                                                                                                    |
+# | Directional Dispersion (H × V) | 90 °× 40 °                                                                                               |
+# | Frequency division point       | MF/LF: 500Hz, MF/HF:2.5KHz                                                                               |
+# | Connector                      | 2 x NL4 (INPUTI: midrange 2+1-, INPUTI: High frequency 1+2- INPUT2: Low frequency 1+1-, INPUT2: NC 2+2-) |
+# | Dimensions (W × D × H)         | 466 × 480 × 708mm                                                                                        |
+# | Package Dimension              | 595 × 565 × 825mm                                                                                        |
+# | Net Weight                     | 35.7kg                                                                                                   |
+# | Gross Weight                   | 39.7kg                                                                                                   |

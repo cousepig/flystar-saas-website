@@ -1,0 +1,75 @@
+title: liveclose 21B
+ctitle: 21 inch low-frequency speaker system
+description: Frequency response (-3dB) 37Hz-150kHz | Rated power (AES) 2000W | Sensitivity（ 1W@1M ）98dB | Maximum SPL 124dB/130dB (peak)
+image: /images/products/liveclose21b/liveclose21b-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images: ["/images/products/liveclose21b/liveclose21b-1.jpg"]
+category: speaker
+slug: liveclose21b
+date: 2024-04-01
+features:
+  [
+    "The combination of 21 inch low-frequency provides high fidelity sound effects.",
+    "The rated power is 500W, and the maximum can reach 2000W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  liveclose 21B is a subwoofer designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  liveclose 21B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "33Hz-130Hz" },
+    # { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
+    { name: "Rated Power(AES)", value: "2000W" },
+    { name: "Total Power(MUSIC)", value: "4000W" },
+    { name: "Total Power(PEAK)", value: "8000W" },
+    { name: "Max SPL @ 1m", value: "124dB/130dB (PEAK)" },
+    { name: "Sensitivity 1W @ 1m", value: "98 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "21 inch subwoofer" },
+    { name: "Woofer", value: "1 x 21 'Low Frequency Unit" },
+    { name: "Cabinet/Case Material", value: "15mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "724 × 725 × 921mm" },
+    { name: "Package Dimensions(W x D x H):", value: "880 × 855 × 1045mm" },
+    { name: "Net weight", value: "92kg" },
+    { name: "Gross weight", value: "97kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters     |                                                        |
+# | ---------------------------- | ------------------------------------------------------ |
+# | Box Construction             | 21mm Russian birch laminated board                     |
+# | Unit Composition Transformer | 1 x 21 "Low Frequency Unit                             |
+# | Frequency Response (-3dB)    | 37Hz-150Hz                                             |
+# | Rated Power (AES)            | 2000W                                                  |
+# | Sensitivity（ 1W@1M )        | 98dB                                                   |
+# | Maximum SPL                  | 124dB/130dB (peak)                                     |
+# | Rated Impedance              | 4 OHM                                                  |
+# | Install                      | 25 steel suspension points, 1xM20 steel mounting plate |
+# | Dimensions (W × D × H)       | 724 × 725 × 921mm                                      |
+# | Package Dimension            | 880 × 855 × 1045mm                                     |
+# | Net Weight                   | 92kg                                                   |
+# | Gross Weight                 | 97kg                                                   |

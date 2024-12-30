@@ -1,14 +1,6 @@
----
 title: "Microphone"
 description: "Streamlined appearance design, user-friendly interface, beautiful and elegant; High definition TBM LCD display screen, intuitive and clear; Adopting PLL dual channel phase-locked loop design, the old code locks the self selected channel function."
 slug: microphone
 image: "/images/categories/microphone.webp"
 category: microphone
-# tags:
-#   - microphone
-#   - Browser
-#   - JavaScript
-#   - React
-date: 2022-07-04T05:00:00Z
-#
----
+date: 2022-07-04

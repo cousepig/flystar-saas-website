@@ -1,12 +1,11 @@
 import { Product, allProducts } from "contentlayer/generated";
 import { Category } from "@/types/category";
-// import { compareDesc } from "date-fns";
 
 /**
  * Returns an array of all category names.
  */
 export const allCategoriesName = allProducts
-    .filter((post) => post._raw.sourceFilePath.includes("_index.mdx"))
+    .filter((post) => post._raw.sourceFilePath.includes("_index.yml"))
     .map((post) => post.slug.split("/")[2]);
 
 /**
@@ -16,7 +15,7 @@ export const allProductsPosts: Product[] = allProducts
     .filter(
         (post) =>
             post._raw.sourceFilePath.includes("product") &&
-            !post._raw.sourceFilePath.includes("_index.mdx"),
+            !post._raw.sourceFilePath.includes("_index.yml"),
     )
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -25,7 +24,7 @@ export const allProductsPosts: Product[] = allProducts
  * Returns an array of all categories.
  */
 export const allCategories: Category[] = allProducts
-    .filter((post) => post._raw.sourceFilePath.includes("_index.mdx"))
+    .filter((post) => post._raw.sourceFilePath.includes("_index.yml"))
     .map((categories) => ({
         ...categories,
         image: categories.image || "",
@@ -34,7 +33,7 @@ export const allCategories: Category[] = allProducts
         category: categories.slug.split("/")[2],
         products: allProductsPosts
             .filter((post) => categories.slug.includes(post.category))
-            .reverse(),
+            .reverse().sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()),
     }))
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 /**
@@ -58,21 +57,10 @@ export const getProductsByCategory = (category) => {
     return allProducts.filter(
         (post) =>
             post._raw.sourceFilePath.includes("product") &&
-            !post._raw.sourceFilePath.includes("_index.mdx"),
+            !post._raw.sourceFilePath.includes("_index.yml"),
     )
         .filter((post) => {
             return post.category.includes(category);
         })
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    // .sort((a, b) => {
-    //     return compareDesc(new Date(a.publishedAt), new Date(b.publishedAt));
-    // });
 };
-
-// export const allTags = Array.from(
-//     [...allProductsPosts].reduce((ac, v) => {
-//         v.tags.forEach((tag) => ac.add(tag));
-//         return ac;
-//     }, new Set<string>([])),
-// ).filter(Boolean);
-// export const reducedAllBlogPosts = allBlogPosts.map(reducePost);

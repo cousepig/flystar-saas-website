@@ -1,0 +1,130 @@
+title: D-QUICK2
+ctitle: Digital mixing console
+description: The D-QUICK2 digital mixing console comes with 20 linear level inputs, 16 microphone preamplifiers, and a playback engine; 31 segment GEQ processor; DSP effect; Although the auxiliary bus has such powerful functions, its operation is very simple.
+image: /images/products/d-quick2/d-quick2-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/d-quick2/d-quick2-1.jpg",
+    "/images/products/d-quick2/d-quick2-2.jpg",
+    "/images/products/d-quick2/d-quick2-3.jpg",
+    "/images/products/d-quick2/d-quick2-4.jpg",
+    "/images/products/d-quick2/d-quick2-5.jpg",
+    "/images/products/d-quick2/d-quick2-6.jpg",
+  ]
+category: mixer
+slug: d-quick2
+date: 2024-11-28
+
+features:
+  [
+    "16 microphone preamplifiers with professional level control",
+    "20 linear level inputs",
+    "8 auxiliary conveyors",
+    "2 internal effects",
+    "1 main output",
+    "All channel control room outputs",
+    "2 headphone outputs",
+    "100mm precision electric push rod",
+    "7-inch color touch screen, visual interface and settings",
+    "24 bit/48KHz sampling rate",
+    "Program, save, upload, and copy functions",
+    "Digital noise gate",
+    "Comes with built-in effects (two types)",
+    "Digital compressor/limiter",
+    "Digital 4-segment full parameter EQ",
+    "6 DCA digital controls for audio or mute",
+    "Machine lock and unlock function, password modification function",
+    "Remote control:Ethernet or USB",
+    "IPad App Editor for Wireless Control",
+    "Optional module expansion interfaces:Multi track USB audio recording module, CobraNet module, Dante module, etc",
+  ]
+content:
+  D MATCH 2.6 is a digital audio processor. This device digitizes two analog input audio signals and provides audio processing and speaker management functions, making it very suitable for improving sound quality in small and medium-sized amplification venues. It can also monitor the working status of the system in a centralized control room. By installing system control software on a PC, up to 50 devices on the RS-485 control bus can be monitored and managed, making it easy to handle large and complex applications. The panel has dynamic margin indicators for input and output levels, and can display configuration information for each output channel (audio source, ultra-low frequency, low frequency, mid frequency, and high frequency). The digital display shows the device address code or current user program number, and the address code can be set or the user program can be called using the touch buttons on the panel. This device can flexibly allocate two input signals to six outputs, configured as three stereo channels or up to six mono frequency dividers.
+
+  Two input signals can be flexibly allocated to six outputs, configured as three stereo or up to six mono dividers. In addition, it also includes functions such as delay, compression/limiter, parametric equalizer or graphic equalizer, so this device is very suitable for applications that improve sound quality in amplification venues.
+
+technicalspecification:
+  [
+    {
+      name: "Microphone input                ",
+      value: " Electronic balanced    ",
+    },
+    {
+      name: "Frequency response direct output",
+      value: " 20Hz-20KHz 0dBu ± 1.5dB  ",
+    },
+    {
+      name: "Main output distortion (THDN)    ",
+      value: " 0.01% at 0dBu 1 KHz       ",
+    },
+    { name: "Signal to noise ratio    ", value: " 107dB      " },
+    { name: "Maximum input level      ", value: " +22dBu    " },
+    { name: "Phantom power supply (+/-3V)    ", value: " +48VDC   " },
+  ]
+
+physicalspecification:
+  [
+    { name: "Linear input  ", value: " Unbalanced" },
+    {
+      name: "Frequency response direct output ",
+      value: " 20Hz-20KHz 0dBu ± 1.5dB   ",
+    },
+    { name: " Main output distortion (THDN)   ", value: " 0.01% at 0dBu 1KHz" },
+    { name: "Gain     ", value: " -15dBu~+35dBu     " },
+    { name: "Maximum input level (0dBu gain) ", value: " +20dBu    " },
+    {
+      name: " 17~18/9~20 stereo input ",
+      value: " Balanced (2 stereo pairs)  ",
+    },
+    {
+      name: "Main output frequency response  ",
+      value: " 20Hz-20KHz at 0dBu ± 1.5dB ",
+    },
+    { name: "Main output distortion (THDN)   ", value: " 0.01% at 0dBu 1KHz" },
+    { name: "Gain  ", value: " ∞ to+10dBu " },
+    { name: " Main output    ", value: "  " },
+    { name: "Maximum output level     ", value: "  " },
+    { name: "AUX1~4 output    ", value: " +20dBu     " },
+    { name: "Maximum output level    ", value: "  " },
+    { name: "SUB1-4 output    ", value: " +20dBu    " },
+    { name: "Maximum output level     ", value: " +20dBu     " },
+  ]
+
+  # ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters         |                            |
+# | -------------------------------- | -------------------------- |
+# | Microphone input                 | Electronic balanced        |
+# | Frequency response direct output | 20Hz-20KHz 0dBu ± 1.5dB    |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1 KHz        |
+# | Signal to noise ratio            | 107dB                      |
+# | Maximum input level              | +22dBu                     |
+# | Phantom power supply (+/-3V)     | +48VDC                     |
+# | \* _ Linear input _ \*           | Unbalanced                 |
+# | Frequency response direct output | 20Hz-20KHz 0dBu ± 1.5dB    |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1KHz         |
+# | Gain                             | -15dBu~+35dBu              |
+# | Maximum input level (0dBu gain)  | +20dBu                     |
+# | 17~18/9~20 stereo input          | Balanced (2 stereo pairs)  |
+# | Main output frequency response   | 20Hz-20KHz at 0dBu ± 1.5dB |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1KHz         |
+# | Gain                             | ∞ to+10dBu                 |
+# | \* _ Main output _ \*            |                            |
+# | Maximum output level             |                            |
+# | AUX1~4 output                    | +20dBu                     |
+# | Maximum output level             |                            |
+# | SUB1-4 output                    | +20dBu                     |
+# | Maximum output level             | +20dBu                     |
+
+# Specification:
+# [
+
+# ]

@@ -3,7 +3,6 @@ import SingleCategory from "@/sections/products/SingleCategory";
 
 import ImageBanner from "@/components/partials/ImageBanner";
 import Breadcrumb from "@/components/Breadcrumb";
-// import { Suspense } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -62,8 +61,6 @@ const ProductsListPage = ({ searchParams }: { searchParams: any }) => {
   return (
     <>
       <ShowProducts searchParams={searchParams} />
-      {/* <Suspense fallback={<LoadingProducts />}>
-      </Suspense> */}
     </>
   );
 };

@@ -1,0 +1,107 @@
+title: D MATCH2.6
+ctitle: Digital processor
+description: This device digitizes two analog input audio signals and provides audio processing and speaker management functions, making it very suitable for improving sound quality in small and medium-sized amplification venues. It can also monitor the working status of the system in a centralized control room.
+image: /images/products/dmatch2-6/dmatch2-6-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/dmatch2-6/dmatch2-6-1.jpg",
+    "/images/products/dmatch2-6/dmatch2-6-2.jpg",
+  ]
+category: processor
+slug: dmatch2-6
+date: 2024-06-04
+
+features:
+  [
+    "The combination of 10 inch low-frequency and 1.7-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 300W, and the maximum can reach 1200W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  D MATCH 2.6 is a digital audio processor. This device digitizes two analog input audio signals and provides audio processing and speaker management functions, making it very suitable for improving sound quality in small and medium-sized amplification venues. It can also monitor the working status of the system in a centralized control room. By installing system control software on a PC, up to 50 devices on the RS-485 control bus can be monitored and managed, making it easy to handle large and complex applications. The panel has dynamic margin indicators for input and output levels, and can display configuration information for each output channel (audio source, ultra-low frequency, low frequency, mid frequency, and high frequency). The digital display shows the device address code or current user program number, and the address code can be set or the user program can be called using the touch buttons on the panel. This device can flexibly allocate two input signals to six outputs, configured as three stereo channels or up to six mono frequency dividers.
+
+  Two input signals can be flexibly allocated to six outputs, configured as three stereo or up to six mono dividers. In addition, it also includes functions such as delay, compression/limiter, parametric equalizer or graphic equalizer, so this device is very suitable for applications that improve sound quality in amplification venues.
+
+technicalspecification:
+  [
+    { name: "Frequency response ", value: "20Hz~20KHz, ± 0.5dB" },
+    { name: "Signal to noise ratio ", value: "110dB (typical value)" },
+    { name: "Total harmonic distortion", value: "0.006%" },
+    { name: "Other", value: "" },
+    { name: "Power consumption", value: "18W" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Analog input", value: "" },
+    {
+      name: "Connector",
+      value: "XLR-3 input socket (IN1 and IN2) 6.35 balanced input socket (BGM input)",
+    },
+    { name: "Input impedance", value: "10k Ω" },
+    { name: "Reference level", value: "+4dBu" },
+    { name: "Maximum input level", value: "+20dBu" },
+    {
+      name: "A/D converter",
+      value: "64kHz, 24 bit ∑ - Δ, 128 times oversampling, linear phase",
+    },
+    { name: "Lifting Height", value: "100mm" },
+    { name: "Analog output", value: "" },
+    {
+      name: "Connector",
+      value: "XLR-MALE output XLR-MALE socket (six channels)",
+    },
+    { name: "Output impedance", value: "47 Ω " },
+    { name: "Load impedance", value: "600 Ω " },
+    { name: "Reference level", value: "+4dBu" },
+    { name: "Maximum input level", value: "+20dBu" },
+    {
+      name: "A/D converter",
+      value: "128 times oversampling>64kHz, 24 bit ∑ - Δ",
+    },
+    { name: "Control interface", value: "" },
+    { name: "RS-485 connector", value: "XLR input/output" },
+    { name: "BGM switching control", value: "wiring terminal/DC+24V-48V    " },
+    {
+      name: "LED level meter",
+      value: "-40- 20,- 10,- 6dBFS and OVER (overload)",
+    },
+  ]
+
+  # ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters                    |                                                                         |
+# | ------------------------------------------- | ----------------------------------------------------------------------- |
+# | Audio characteristics (analog input/output) |                                                                         |
+# | Frequency response                          | 20Hz~20KHz, ± 0.5dB                                                     |
+# | Signal to noise ratio                       | 110dB (typical value)                                                   |
+# | Total harmonic distortion                   | 0.006%                                                                  |
+# | Analog input                                |                                                                         |
+# | Connector                                   | XLR-3 input socket (IN1 and IN2) 6.35 balanced input socket (BGM input) |
+# | Input impedance                             | 10k Ω                                                                   |
+# | Reference level                             | +4dBu                                                                   |
+# | Maximum input level                         | +20dBu                                                                  |
+# | A/D converter                               | 64kHz, 24 bit ∑ - Δ, 128 times oversampling, linear phase               |
+# | Analog output                               |                                                                         |
+# | Connector                                   | XLR-MALE output XLR-MALE socket (six channels)                          |
+# | Output impedance                            | 47 Ω                                                                    |
+# | Load impedance                              | 600 Ω                                                                   |
+# | Reference level                             | +4dBu                                                                   |
+# | Maximum input level                         | +20dBu                                                                  |
+# | A/D converter                               | 128 times oversampling>64kHz, 24 bit ∑ - Δ                              |
+# | Control interface                           |                                                                         |
+# | RS-485 connector                            | XLR input/output                                                        |
+# | BGM switching control                       | wiring terminal/DC+24V-48V                                              |
+# | LED level meter                             | -40- 20,- 10,- 6dBFS and OVER (overload)                                |
+# | Other                                       |                                                                         |
+# | Power consumption                           | 18W                                                                     |

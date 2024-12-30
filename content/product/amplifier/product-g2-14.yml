@@ -1,0 +1,106 @@
+title: G2.14
+ctitle: Two channel amplifier
+description: Output power 8 Ω 1300W × 2 | Output power 4 Ω 2600W × 2
+image: /images/products/g2-14/g2-14-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  ["/images/products/g2-14/g2-14-1.jpg", "/images/products/g2-14/g2-14-2.jpg"]
+category: amplifier
+slug: g2-14
+date: 2024-06-09
+
+features:
+  [
+    "1. Innovative amplification circuit, the whole machine ensures sound quality while significantly improving efficiency (the overall efficiency is nearly twice that of traditional design, more energy-efficient);",
+    "2. Unique voltage current temperature management system ensures more stable system operation;",
+    "3. Complete functional settings and model sequences to meet the needs of various application scenarios in the entertainment market.",
+  ]
+content: The G series power amplifier is a professional power amplifier specially launched by SYRINCS for the entertainment market, with exclusive tone tuning. The entire series adopts carefully designed fully balanced amplification circuits, resulting in sweet and powerful tones.
+technicalspecification:
+  [
+    { name: "Dynamic output power (1 kHz 1% THD)", value: " " },
+    { name: "Stereo 8 Ω", value: "1300W " },
+    { name: "Stereo 4 Ω", value: "2600W " },
+    {
+      name: "Distortion limited output power @ 1kHz, 60s, THD+N=1% 8 Ω",
+      value: "",
+    },
+    { name: "0.775V", value: "0.73V " },
+    { name: "1V", value: "0.92V " },
+    { name: "32dB (40x gain)", value: "32dB " },
+    { name: "Total harmonic distortion ", value: "0.05% @ 8 Ω, 1kHz" },
+    { name: "Intermodulation distortion", value: "lt.1% @ 8 Ω, 60Hz/7kHz 4:1" },
+    { name: "Frequency response ", value: "20Hz-20kHz ± 2dB " },
+    { name: "Damping coefficient", value: "200 @ 8 Ω, 100Hz " },
+    {
+      name: "Signal to noise ratio",
+      value: "100dB @ 8 Ω, 1kHz, 32dB range, A-weighted",
+    },
+  ]
+
+physicalspecification:
+  [
+    {
+      name: "Input impedance",
+      value: "Unbalanced input 10k Ω Balanced input 20k Ω ",
+    },
+    {
+      name: "Rated consumption current @ 1/8 maximum output power, 4 Ω",
+      value: "0.9A",
+    },
+    {
+      name: "Maximum consumption current @ 1/3 maximum output power, 4 Ω",
+      value: "2.39A",
+    },
+    { name: "Net weight", value: "14.8kg" },
+    { name: "Input interface", value: "XLRx2" },
+    { name: "Output interface ", value: "Cascade output: XLRx2" },
+    { name: "Power output ", value: "NL4x2" },
+    { name: "Rated power supply voltage", value: "220V~50Hz" },
+    {
+      name: "Cooling method ",
+      value: "Air cooling, temperature controlled variable speed, airflow from front to back cooling",
+    },
+    {
+      name: "Environmental temperature ",
+      value: "Operating temperature -10 ℃~40 ℃ Storage and transportation temperature -25 ℃~80 ℃ ",
+    },
+    {
+      name: "Size",
+      value: "89mm × 483mm × 279mm (including 305mm rack ears) ",
+    },
+  ]
+
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters                                    |                                                                                        |
+# | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+# | Dynamic output power @ 1kHz, 40ms                           |
+# | Stereo 8 Ω                                                  | 1300W                                                                                  |
+# | Stereo 4 Ω                                                  | 2600W                                                                                  |
+# | Input sensitivity (three levels optional) @ 8 Ω 1kHz ± 10%  |
+# | 0.775V                                                      | 0.73V                                                                                  |
+# | 1V                                                          | 0.92V                                                                                  |
+# | 32dB (40x gain)                                             | 32dB                                                                                   |
+# | Total harmonic distortion                                   | lt.05% @ 8 Ω, 1kHz                                                                     |
+# | Intermodulation distortion                                  | lt.1% @ 8 Ω, 60Hz/7kHz 4:1                                                             |
+# | Frequency response                                          | 20Hz-20kHz ± 2dB                                                                       |
+# | Damping coefficient                                         | >200 @ 8 Ω, 100Hz                                                                      |
+# | Signal to noise ratio                                       | >100dB @ 8 Ω, 1kHz, 32dB range, A-weighted                                             |
+# | Input impedance                                             | Unbalanced input 10k Ω Balanced input 20k Ω                                            |
+# | Rated consumption current @ 1/8 maximum output power, 4 Ω   | 0.9A                                                                                   |
+# | Maximum consumption current @ 1/3 maximum output power, 4 Ω | 2.39A                                                                                  |
+# | Net weight                                                  | \ -                                                                                    |
+# | Input interface                                             | XLRx2                                                                                  |
+# | Output interface                                            | Cascade output: XLRx2                                                                  |
+# | Power output                                                | NL4x2                                                                                  |
+# | Rated power supply voltage                                  | 220V~50Hz                                                                              |
+# | Cooling method                                              | Air cooling, temperature controlled variable speed, airflow from front to back cooling |
+# | Environmental temperature                                   | Operating temperature -10 ℃~40 ℃ Storage and transportation temperature -25 ℃~80 ℃     |
+# | Size                                                        | 89mm × 483mm × 279mm (including 305mm rack ears)                                       |

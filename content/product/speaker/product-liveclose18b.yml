@@ -1,0 +1,83 @@
+title: liveclose 18B
+ctitle: 18 inch high sound pressure subwoofer
+description: Frequency response (-3dB) 33Hz-130Hz | Rated power (RMS) 500W | Sensitivity（ 1W@1M ）97dB | Maximum SPL 130dB/136dB (peak)
+image: /images/products/liveclose18b/liveclose18b-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/liveclose18b/liveclose18b-1.jpg",
+    "/images/products/liveclose18b/liveclose18b-2.jpg",
+    "/images/products/liveclose18b/liveclose18b-3.jpg",
+    "/images/products/liveclose18b/liveclose18b-4.jpg",
+    "/images/products/liveclose18b/liveclose18b-5.jpg",
+    "/images/products/liveclose18b/liveclose18b-6.jpg",
+    "/images/products/liveclose18b/liveclose18b-7.jpg",
+  ]
+category: speaker
+slug: liveclose18b
+date: 2024-03-03
+features:
+  [
+    "The combination of 18 inch low-frequency provides high fidelity sound effects.",
+    "The rated power is 500W, and the maximum can reach 2000W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  liveclose 18B is a subwoofer designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  liveclose 18B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification:
+  [
+    { name: "Frequency Response(-3db)", value: "33Hz-130Hz" },
+    { name: "Rated Power(AES)", value: "500W" },
+    { name: "Total Power(MUSIC)", value: "1000W" },
+    { name: "Total Power(PEAK)", value: "2000W" },
+    { name: "Max SPL @ 1m", value: "130dB/136dB (PEAK)" },
+    { name: "Sensitivity 1W @ 1m", value: "97 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "18 inch subwoofer" },
+    { name: "Woofer", value: "1 x 18 'Low Frequency Unit" },
+    { name: "Cabinet/Case Material", value: "15mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "700 × 655 × 683mm" },
+    { name: "Package Dimensions(W x D x H):", value: "768 × 762 × 809mm" },
+    { name: "Net weight", value: "45kg" },
+    { name: "Gross weight", value: "48kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters     |                            |
+# | ---------------------------- | -------------------------- |
+# | Box                          | 15mm laminated board       |
+# | Unit Composition Transformer | 1 x 18 "Low Frequency Unit |
+# | Frequency Response (-3dB)    | 33Hz-130Hz                 |
+# | Rated Power (RMS)            | 500W                       |
+# | Sensitivity（ 1W@1M )        | 97dB                       |
+# | Maximum SPL                  | 130dB/136dB (peak)         |
+# | Rated Impedance              | 8 OHM                      |
+# | Dimensions (W × D × H)       | 700 × 655 × 683mm          |
+# | Package Dimension            | 768 × 762 × 809mm          |
+# | Net Weight                   | 45Kg                       |
+# | Gross Weight                 | 48Kg                       |

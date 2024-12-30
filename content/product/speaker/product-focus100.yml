@@ -1,0 +1,80 @@
+title: FOCUS100
+ctitle: 10 inch Two Way Full Range Speaker
+description: Frequency response 70Hz-18kHz (-3dB) | 60Hz-20kHz (-10dB) | Rated power AES 300W | Sensitivity 94 dB
+image: /images/products/focus100/focus100-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/focus100/focus100-1.jpg",
+    "/images/products/focus100/focus100-2.jpg",
+    "/images/products/focus100/focus100-3.jpg",
+    "/images/products/focus100/focus100-4.jpg",
+    "/images/products/focus100/focus100-5.jpg",
+    "/images/products/focus100/focus100-6.jpg",
+    "/images/products/focus100/focus100-7.jpg",
+    "/images/products/focus100/focus100-8.jpg",
+  ]
+category: speaker
+slug: focus100
+date: 2024-01-01
+features:
+  [
+    "The combination of 10 inch low-frequency and 1.7-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 300W, and the maximum can reach 1200W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  FOCUS100 is a full range speaker designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  FOCUS100, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification:
+  [
+    { name: "Frequency Response(-3db)", value: "70Hz-18kHz" },
+    { name: "Frequency Response(-10db)", value: "60Hz-20kHz" },
+    { name: "Rated Power(AES)", value: "300W" },
+    { name: "Total Power(MUSIC)", value: "600W" },
+    { name: "Total Power(PEAK)", value: "1200W" },
+    { name: "Max SPL @ 1m", value: "120dB/126dB (PEAK)" },
+    { name: "Dispersion (H x V)", value: "130° x 120°" },
+    { name: "Sensitivity 1W @ 1m", value: "94 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
+    { name: "Crossover Frequencies", value: "2.2kHz" },
+    { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "10 inch Two Way Full Range Speaker" },
+    { name: "Woofer", value: "1 x 10 'low-frequency unit" },
+    { name: "Compression driver", value: "1 x 1.7' high-frequency driver" },
+    {
+      name: "Frequency division mode",
+      value: "Built in two-way frequency divider",
+    },
+    { name: "Cabinet/Case Material", value: "15mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "300 x 380 x 540mm" },
+    { name: "Package Dimensions(W x D x H):", value: "396 x 478 x 640mm" },
+    { name: "Net weight", value: "18.80kg" },
+    { name: "Gross weight", value: "20.80kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]

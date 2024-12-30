@@ -1,0 +1,103 @@
+title: MJ1239
+ctitle: 3-way dual 12 inch waterproof full frequency linear array speaker
+description: Frequency response 55Hz-19kHz (± 3dB) | Rated power LF:600W HF:2000W | Sensitivity LF:108dB HF:114dB
+image: /images/products/mj1239/mj1239-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/mj1239/mj1239-1.jpg",
+    "/images/products/mj1239/mj1239-2.jpg",
+    "/images/products/mj1239/mj1239-3.jpg",
+    "/images/products/mj1239/mj1239-4.jpg",
+    "/images/products/mj1239/mj1239-5.jpg",
+    "/images/products/mj1239/mj1239-6.jpg",
+    "/images/products/mj1239/mj1239-7.jpg",
+    "/images/products/mj1239/mj1239-8.jpg",
+  ]
+category: speaker
+slug: mj1239
+date: 2024-04-02
+
+features:
+  [
+    "The combination of dual 12 inch low-frequency and 1.75-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 2000W, and the maximum can reach 8000W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  Dual 12 inch low-frequency paired with dual coaxial mid to high frequency compression driver
+  Accurate linear phase response brings perfect sound quality
+  Vertical angle adjustment range:0 ° to 10 °, with an adjustment accuracy of 1 °, suitable for various venues
+  Built in three-point hanging system, which can be conveniently and quickly hung or stacked for installation
+  IP55 dustproof and waterproof certification
+
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "55Hz-19kHz" },
+    # { name: "Frequency Response(-10db)", value: "60Hz-20kHz" },
+    { name: "Rated Power(AES)", value: "LF: 600W HF: 2000W" },
+    { name: "Total Power(MUSIC)", value: "LF: 108dB HF: 114dB" },
+    { name: "Total Power(PEAK)", value: "LF: 137dB HF: 143dB" },
+    { name: "Max SPL @ 1m", value: "120dB/126dB (PEAK)" },
+    {
+      name: "Dispersion (H x V)",
+      value: "Horizontal 100 °, vertically adjustable ",
+    },
+    { name: "Sensitivity 1W @ 1m", value: "94 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
+    # { name: "Crossover Frequencies", value: "2.3kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "Dual 12 inch Waterproof Linear Array Speaker" },
+    { name: "Woofer", value: "2 x 12 'low-frequency unit" },
+    { name: "Compression driver", value: "2 x 3' high-frequency driver" },
+    {
+      name: "Frequency division mode",
+      value: "Built in two-way frequency divider",
+    },
+    { name: "Cabinet/Case Material", value: "12mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 6mm steel orifice plate  ",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "810 × 354 × 490mm " },
+    { name: "Package Dimensions(W x D x H):", value: "935 × 455 × 590mm " },
+    { name: "Net weight", value: "48kg" },
+    { name: "Gross weight", value: "53kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters         |                                                                                                               |
+# | -------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+# | System Type                      | Dual 12 inch Waterproof Linear Array Speaker System                                                           |
+# | System composition               | 2 × T100-44 coaxial mid high frequency unit 2 × 12 "neodymium iron boron internal magnetic low-frequency unit |
+# | Frequency response               | 55Hz-19kHz (± 3dB)                                                                                            |
+# | Rated power                      | LF: 600W HF: 2000W                                                                                            |
+# | Sensitivity                      | LF: 108dB HF: 114dB                                                                                           |
+# | Maximum SPL                      | LF: 137dB HF: 143dB                                                                                           |
+# | Rated impedance                  | 4 Ω                                                                                                           |
+# | Directionality                   | Horizontal 100 °, vertically adjustable                                                                       |
+# | Box                              | 18mm laminated board                                                                                          |
+# | Box surface treatment            | Black polyurethane spray coating                                                                              |
+# | Mesh                             | Black plastic powder coating, 6mm steel orifice plate                                                         |
+# | Connector                        | 2 × NL4                                                                                                       |
+# | Dimensions (W × D × H)           | 810 × 354 × 490mm                                                                                             |
+# | Packaging dimensions (W × D × H) | 935 × 455 × 590mm                                                                                             |
+# | Net weight                       | 48kg                                                                                                          |
+# | Gross weight                     | 53kg                                                                                                          |

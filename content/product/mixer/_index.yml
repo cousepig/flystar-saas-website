@@ -1,14 +1,6 @@
----
 title: "Mixer"
 description: "The SYRINCS digital mixing console comes with 20 linear level inputs, 16 microphone preamplifiers, and a playback engine; 31 segment GEQ processor; DSP effect; Although the auxiliary bus has such powerful functions, its operation is very simple."
 slug: mixer
 image: "/images/categories/mixer.webp"
 category: mixer
-# tags:
-#   - mixer
-#   - Browser
-#   - JavaScript
-#   - React
-date: 2022-07-04T05:00:00Z
-#
----
+date: 2022-07-04

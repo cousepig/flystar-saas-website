@@ -7,8 +7,11 @@ import {
   getCurrentProducts,
   getProductsByCategory,
 } from "@/lib/get-product-data";
-import { allCategories } from "@/lib/get-categories-data";
-import { getMDXComponent } from "next-contentlayer/hooks";
+import {
+  allCategories,
+  // getSingleCategoryData,
+} from "@/lib/get-categories-data";
+// import { getMDXComponent } from "next-contentlayer/hooks";
 import Gallery from "@/components/partials/Gallery";
 import TagButton from "@/sections/Showcase/TagButton";
 import ImageBanner from "@/components/partials/ImageBanner";
@@ -33,21 +36,19 @@ export default async function PostPage({ params }: any) {
   const slug = `product/${resolvedParams.slug.join("/")}`;
   const product = getCurrentProducts(slug);
 
-  // const product = allProducts.find((post) => post._raw.flattenedPath === slug);
   console.log(product.title, "--loading");
-  const Content = getMDXComponent(product.body.code);
-  // const relatedProducts = getAllProducts.sort();
   if (!product) {
     return notFound();
   }
-  const category = allCategories.find((p) => p.category === product.category);
-
+  const category = allCategories.find((p) => p.category === "speaker");
+  // const category = getSingleCategoryData("speaker");
+  console.log(category.title, "category");
   const categoryProducts = getProductsByCategory(product.category).slice(0, 15);
 
   const banner = [
     {
-      title: category.title,
-      description: category.description,
+      title: category["title"],
+      description: category["description"],
       image: "/images/banner.jpg",
     },
   ][0];
@@ -57,63 +58,24 @@ export default async function PostPage({ params }: any) {
     { name: category.title, href: `/products/${category.category}` },
     { name: product.title, href: `/products/${slug}` },
   ];
-  const features = [
-    {
-      name: "Push to deploy.",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-      // icon: CloudArrowUpIcon,
-    },
-    {
-      name: "SSL certificates.",
-      description:
-        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-      // icon: LockClosedIcon,
-    },
-    {
-      name: "Database backups.",
-      description:
-        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-      // icon: ServerIcon,
-    },
-  ];
-  const downloads = [
-    {
-      title: "Technical specs",
-      url: "",
-      icon: "/images/pdf.gif",
-    },
-    {
-      title: "Hi-res photo",
-      url: "",
-      icon: "/images/jpg.gif",
-    },
-    {
-      title: "Manual",
-      url: "",
-      icon: "/images/pdf.gif",
-    },
-    {
-      title: "Dimensional drawing",
-      url: "",
-      icon: "/images/pdf.gif",
-    },
-    {
-      title: "Software",
-      url: "",
-      icon: "/images/unknown.gif",
-    },
-  ];
   return (
     <>
       <ImageBanner banner={banner} />
       <Breadcrumb data={breadcrumbs} />
-
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: We trust the content of the JSON object
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(product?.structuredData),
+        }}
+      />
       <section className="overflow-hidden pb-[20px] ">
         <section className="page-description">
           <div className="container">
             <h1 className="text-3xl pt-[20px]">
-              {product.title} {product.ctitle}
+              <b className="py-1"> {product.title} </b>
+              <br />
+              <span className="text-xl py-4"> {product.ctitle}</span>
             </h1>
             <p className="text-xs font-light"></p>
           </div>
@@ -130,10 +92,10 @@ export default async function PostPage({ params }: any) {
                 </div>
               </div>
               <div className="bg-slate-200 mt-6 py-6 grid grid-cols-2 gap-6">
-                {features.map((feature) => (
-                  <div key={feature.name} className="relative pl-6">
+                {product.features.map((feature, index) => (
+                  <div key={index} className="relative pl-6">
                     <dd className="inline font-light text-primary">
-                      》{feature.description}
+                      》{feature}
                     </dd>
                   </div>
                 ))}
@@ -142,7 +104,7 @@ export default async function PostPage({ params }: any) {
                 Product Description
               </h2>
               <div className="mb-8 font-light prose prose-slate">
-                <Content />
+                {product.content}
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
@@ -160,17 +122,18 @@ export default async function PostPage({ params }: any) {
                 Downloads
               </h3>
               <ul className="da-attachments-list">
-                {downloads.map((download) => (
+                {product.downloads.map((download) => (
                   <li
                     key={download.title}
                     className="pdf mb-3 border-b border-body-color border-opacity-10 pb-3 flex"
                   >
-                    <div className="relative h-[20px] w-[30px] overflow-hidden rounded-10 my-2">
-                      <img
+                    <div className="relative h-[20px] w-[20px] overflow-hidden rounded-10 my-2 mx-2">
+                      <Image
                         className="attachment-icon lazy loaded"
                         src={download.icon}
                         alt="pdf"
                         data-was-processed="true"
+                        fill
                       />
                     </div>
 
@@ -226,22 +189,21 @@ export default async function PostPage({ params }: any) {
         <section className="specifications">
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
-              <div className="w-full px-4 lg:w-4/12">
+              <div className=" w-full px-4 lg:w-4/12">
                 <h2 className="py-6 font-normal text-primary text-xl">
                   Dimensional drawing
                 </h2>
-
-                <a
-                  href="https://www.alconsaudio.com/wp-content/uploads/2015/03/vr12-technical.png?x74439"
-                  className="technical-drawing"
-                >
-                  <img
-                    className="lazy loaded"
-                    src="https://www.alconsaudio.com/wp-content/uploads/2015/03/vr12-technical-325x500.png?x74439"
-                    data-src="https://www.alconsaudio.com/wp-content/uploads/2015/03/vr12-technical-325x500.png?x74439"
-                    data-was-processed="true"
-                  />
-                </a>
+                <div className="relative w-full  h-[600px] w-[300px]  overflow-hidden rounded">
+                  <a href={product.dimensional} className="technical-drawing">
+                    <Image
+                      className="lazy loaded"
+                      src={product.dimensional}
+                      alt="Dimensional drawing"
+                      data-was-processed="true"
+                      fill
+                    />
+                  </a>
+                </div>
               </div>
               <div className="w-full px-4 lg:w-4/12">
                 <h2 className="py-6 font-normal text-primary text-xl">
@@ -249,11 +211,13 @@ export default async function PostPage({ params }: any) {
                 </h2>
                 <table className="table text-xs font-light mt-0">
                   <tbody>
-                    <tr>
-                      <td>Frequency response</td>
-                      <td>60 Hz – 20.000 Hz (+/- 3 dB) 50 Hz - (+/- 10 dB)</td>
-                    </tr>
-                    <tr>
+                    {product.technicalspecification.map((technical, index) => (
+                      <tr key={index}>
+                        <td>{technical.name}</td>
+                        <td>{technical.value}</td>
+                      </tr>
+                    ))}
+                    {/* <tr>
                       <td>Sensitivity nominal</td>
                       <td>100 dB (200 Hz - 10 kHz)</td>
                     </tr>
@@ -277,7 +241,7 @@ export default async function PostPage({ params }: any) {
                     <tr>
                       <td>Dispersion H x V</td>
                       <td>90° x 40° or 40° x 90° (40° line-source)</td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>
@@ -287,7 +251,13 @@ export default async function PostPage({ params }: any) {
                 </h2>
                 <table className="table text-xs font-light mt-0">
                   <tbody>
-                    <tr>
+                    {product.physicalspecification.map((physical, index) => (
+                      <tr key={index}>
+                        <td>{physical.name}</td>
+                        <td>{physical.value}</td>
+                      </tr>
+                    ))}
+                    {/* <tr>
                       <td>System</td>
                       <td>2-way, full-range</td>
                     </tr>
@@ -348,9 +318,9 @@ export default async function PostPage({ params }: any) {
                     <tr>
                       <td>Warranty</td>
                       <td>6 years limited</td>
-                    </tr>
+                    </tr> */}
                   </tbody>
-                </table>{" "}
+                </table>
               </div>
             </div>
           </div>
@@ -361,7 +331,6 @@ export default async function PostPage({ params }: any) {
               You may also like
             </h2>
             <RelateProducts data={categoryProducts} />
-            <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"></div>
           </div>
         </div>
       </section>

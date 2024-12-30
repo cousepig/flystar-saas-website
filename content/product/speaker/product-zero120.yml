@@ -1,0 +1,105 @@
+title: ZERO120
+ctitle: 12 inch full range speaker
+description: Frequency response 50Hz-18kHz (-3dB) | 45Hz-20kHz (-10dB) | Rated power AES 500W | Sensitivity 99 dB
+image: /images/products/zero120/zero120-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.jpg
+images:
+  [
+    "/images/products/zero120/zero120-1.jpg",
+    "/images/products/zero120/zero120-2.jpg",
+    "/images/products/zero120/zero120-3.jpg",
+    "/images/products/zero120/zero120-4.jpg",
+    "/images/products/zero120/zero120-5.jpg",
+    "/images/products/zero120/zero120-6.jpg",
+    "/images/products/zero120/zero120-7.jpg",
+    "/images/products/zero120/zero120-8.jpg",
+    "/images/products/zero120/zero120-9.jpg",
+  ]
+category: speaker
+slug: zero120
+date: 2024-01-05
+
+features:
+  [
+    "The combination of 12 inch low-frequency and 1.75-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 400W, and the maximum can reach 1600W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  ZERO120 is a full range speaker designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  ZERO120, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification:
+  [
+    { name: "Frequency Response(-3db)", value: "50Hz-18kHz" },
+    { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
+    { name: "Rated Power(AES)", value: "400W" },
+    { name: "Total Power(MUSIC)", value: "800W" },
+    { name: "Total Power(PEAK)", value: "1600W" },
+    { name: "Max SPL @ 1m", value: "123dB/129dB (PEAK)" },
+    { name: "Dispersion (H x V)", value: "90 x 95" },
+    { name: "Sensitivity 1W @ 1m", value: "99 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
+    { name: "Crossover Frequencies", value: "1.9kHz" },
+    { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "12 inch Two Way Full Range Speaker" },
+    { name: "Woofer", value: "1 x 12 'low-frequency unit" },
+    { name: "Compression driver", value: "1 x 1.75' high-frequency driver" },
+    {
+      name: "Frequency division mode",
+      value: "Built in two-way frequency divider",
+    },
+    { name: "Cabinet/Case Material", value: "12mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "352 × 381 × 600mm" },
+    { name: "Package Dimensions(W x D x H):", value: "415 × 510 × 680mm" },
+    { name: "Net weight", value: "22.70kg" },
+    { name: "Gross weight", value: "25kg" },
+  ]
+downloads:
+  [
+    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
+    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters       |                                                             |
+# | ------------------------------ | ----------------------------------------------------------- |
+# | System Type                    | Bass Reflective Design                                      |
+# | Unit composition               | LF: DS12W65-8-FC HF: 44 core compression driver DS44T25-8FP |
+# | Frequency division mode        | Built in two-way frequency divider                          |
+# | Frequency response             | 50Hz-18kHz (-3dB)                                           |
+# | Frequency response             | 45Hz-20kHz (-10dB)                                          |
+# | Rated power                    | Suitable for ZERO P power amplifier                         |
+# | Frequency division point       | 1.9kHz                                                      |
+# | Sensitivity                    | 99 dB                                                       |
+# | Maximum sound pressure level   | 123dB/129dB (peak)                                          |
+# | Effective sound pressure level | 107dB/113dB (peak)                                          |
+# | Impedance                      | 4 Ω                                                         |
+# | Installation                   | Top and Side Lifting Points                                 |
+# | Box                            | 12mm laminated board                                        |
+# | Box surface treatment          | 3 # coal gray 0.9 small dot paint                           |
+# | Iron Mesh                      | Electrostatic Powder Black, 1.2mm Low Carbon Steel          |
+# | Connector                      | 2 × NL4                                                     |
+# | Optional accessories           | Lifting kit                                                 |
+# | Dimensions (W × D × H)         | 352 × 381 × 600mm                                           |
+# | Packaging size                 | 415 × 510 × 680mm                                           |
+# | Net weight                     | 22.7kg                                                      |
+# | Gross weight                   | 25kg                                                        |
