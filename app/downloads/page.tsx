@@ -57,7 +57,7 @@ const ContactPage = () => {
                                 <div className="flex items-center">
                                   <div className="flex flex-col justify-start">
                                     <Link
-                                      href={`https://docs.syrincs.hk/static/${singleItem.filename}`}
+                                      href={`/${singleItem.filename}`}
                                       target="_blank"
                                       className="mb-1 transition-colors duration-200 ease-in-out  text-secondary-inverse hover:text-primary"
                                     >
@@ -83,7 +83,7 @@ const ContactPage = () => {
                               </td>
                               <td className="p-3 pr-5 text-end">
                                 <Link
-                                  href={`https://docs.syrincs.hk/static/${singleItem.filename}`}
+                                  href={`/${singleItem.filename}`}
                                   target="_blank"
                                 >
                                   <button className="ml-auto relative text-secondary-dark bg-light-dark hover:text-primary flex items-center h-[25px] w-[25px] text-base font-medium leading-normal text-center align-middle cursor-pointer rounded-2xl transition-colors duration-200 ease-in-out shadow-none border-0 justify-center">

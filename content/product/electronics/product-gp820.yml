@@ -36,13 +36,16 @@ physicalspecification:
     { name: "Total weight (kg/Pcs)", value: "6kg" },
   ]
 
-downloads:
-  [
+downloads: [
     { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
     { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
-    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    {
+      title: "Manual",
+      url: "/download/syrincs_gp820_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
     { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    { title: "Software", url: "", icon: "/images/unknown.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters                   |                  |
 # | ------------------------------------------ | ---------------- |

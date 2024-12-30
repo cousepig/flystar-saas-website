@@ -70,11 +70,14 @@ physicalspecification:
     { name: "Net weight", value: "18.80kg" },
     { name: "Gross weight", value: "20.80kg" },
   ]
-downloads:
-  [
+downloads: [
     { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
     { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
-    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    {
+      title: "Manual",
+      url: "/download/syrincs_focus100_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
     { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    { title: "Software", url: "", icon: "/images/unknown.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]

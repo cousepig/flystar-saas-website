@@ -25,7 +25,8 @@ content:
 
   liveclose 218B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
 
-technicalspecification: [
+technicalspecification:
+  [
     { name: "Frequency Response(-3db)", value: "40Hz-150Hz" },
     { name: "Frequency Response(-10db)", value: "34Hz-150Hz" },
     { name: "Rated Power(AES)", value: "1200W" },
@@ -39,7 +40,7 @@ technicalspecification: [
 physicalspecification:
   [
     { name: "Box", value: "dual 18 inch subwoofer" },
-    { name: "Woofer", value: "2 x 18 "Low frequency unit 18" Neodymium woofer" },
+    { name: "Woofer", value: "2 x 18 inch  Neodymium woofer" },
     { name: "Cabinet/Case Material", value: "18mm laminated board" },
     {
       name: "Box surface treatment",
@@ -56,13 +57,16 @@ physicalspecification:
     { name: "Net weight", value: "91.2kg " },
     { name: "Gross weight", value: "97kg" },
   ]
-downloads:
-  [
+downloads: [
     { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
     { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
-    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    {
+      title: "Manual",
+      url: "/download/syrincs_live_close218b_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
     { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    { title: "Software", url: "", icon: "/images/unknown.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # ---
 

@@ -76,9 +76,13 @@ downloads:
   [
     { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
     { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
-    { title: "Manual", url: "", icon: "/images/pdf.gif" },
+    {
+      title: "Manual",
+      url: "/download/Syrincs_d_macth_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
     { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    { title: "Software", url: "", icon: "/images/unknown.gif" },
+    { title: "Software", url: "/soft/dmatch.rar", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters                    |                                                                         |
 # | ------------------------------------------- | ----------------------------------------------------------------------- |
