@@ -72,7 +72,6 @@ physicalspecification:
     { name: "Gross weight", value: "18.25kg" },
   ]
 downloads: [
-    { title: "Technical specs", url: "", icon: "/images/pdf.gif" },
     { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
     {
       title: "Manual",

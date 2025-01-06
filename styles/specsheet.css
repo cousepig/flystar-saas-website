@@ -1,0 +1,68 @@
+
+/*  */
+@media print {
+    .page {
+        page-break-after: always;
+    }
+    html { -webkit-print-color-adjust: exact; margin-top: 0px; }
+}
+.specsheet .page-header {
+  background: rgb(26 76 79 / 0.8);
+  border-bottom: 1px solid #b5b5b5;
+  margin: 0;
+  padding: 10px 0;
+  
+}
+.specsheet .features p{
+    
+  padding: 5px;
+  font-size: 10px;
+  line-height: 21px;
+}
+.specsheet .features
+{
+  padding:  0;
+}
+.specsheet .features dd{
+  
+  padding: 5px;
+  font-size: 10px
+}
+.specsheet .datasheet {
+  color: #000;
+  /* padding: 20px 0;
+  margin-top: 20px */
+}
+.specsheet  h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.specsheet  h2{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.specsheet  h3{
+    background: rgb(26 76 79 / 0.8);
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.specsheet p {
+
+  font-weight: 400
+}
+ 
+.specsheet table tr {
+  border-bottom: 1px solid #323232
+}
+
+.specsheet table tr td {
+  padding: 5px;
+  font-size: 10px
+}
+
+.specsheet table tr:last-of-type {
+  border-bottom: none
+}

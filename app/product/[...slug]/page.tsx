@@ -36,7 +36,7 @@ export default async function PostPage({ params }: any) {
   const slug = `product/${resolvedParams.slug.join("/")}`;
   const product = getCurrentProducts(slug);
 
-  console.log(product.title, "--loading");
+  console.log(product, "--loading");
   if (!product) {
     return notFound();
   }
@@ -44,7 +44,7 @@ export default async function PostPage({ params }: any) {
   // const category = getSingleCategoryData("speaker");
   console.log(category.title, "category");
   const categoryProducts = getProductsByCategory(product.category).slice(0, 15);
-
+  const fileName = product._raw.sourceFileName.replace(".yml", "");
   const banner = [
     {
       title: category["title"],
@@ -145,13 +145,44 @@ export default async function PostPage({ params }: any) {
                       >
                         {product.title + " " + download.title}
                       </a>
+                      {/* <a
+                        href={`/api/datasheet/${fileName}.pdf`}
+                        className="text-xs font-light text-body-color"
+                      >
+                        pdf
+                      </a> */}
                       <span className="text-xs font-light text-body-color">
-                        <span className="attachment-label">File size: </span>{" "}
-                        513 KB
+                        {/* <span className="attachment-label">File size: </span>{" "}
+                        513 KB */}
                       </span>
                     </div>
                   </li>
                 ))}
+                <li className="pdf mb-3 border-b border-body-color border-opacity-10 pb-3 flex">
+                  <div className="relative h-[20px] w-[20px] overflow-hidden rounded-10 my-2 mx-2">
+                    <Image
+                      className="attachment-icon lazy loaded"
+                      src="/images/pdf.gif"
+                      alt="pdf"
+                      data-was-processed="true"
+                      fill
+                    />
+                  </div>
+
+                  <div className="w-full">
+                    <a
+                      href={`/api/datasheet/${fileName}.pdf`}
+                      title={product.title + " Technical specs"}
+                      className="block text-base font-medium leading-snug text-primary hover:text-black  "
+                    >
+                      {product.title + " Technical specs"}
+                    </a>
+                    <span className="text-xs font-light text-body-color">
+                      {/* <span className="attachment-label">File size: </span> 513
+                      KB */}
+                    </span>
+                  </div>
+                </li>
               </ul>
               <h3 className="border-b border-body-color border-opacity-10 py-4 text-lg font-medium text-black">
                 Related Products

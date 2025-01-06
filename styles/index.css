@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("specsheet.css");
 /* */@import url("fonts/stylesheet.css");
 * {
   font-family: "Open Sans", sans-serif;
@@ -128,6 +128,7 @@
 .specifications table tr:last-of-type {
   border-bottom: none
 }
+
 
 .description .descriptiontext.two-column {
   -moz-column-count: 2;
