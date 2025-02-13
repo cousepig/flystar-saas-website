@@ -8,7 +8,8 @@ export async function GET(
   { params }: { params: Promise<{ slug: string }> }
 ) {
   let slug = (await params).slug.replace(".pdf", ".yml");
-  const chromiumPack = "chromium-v121.0.0-pack.tar";
+  const chromiumPack =
+    "https://github.com/Sparticuz/chromium/releases/download/v121.0.0/chromium-v121.0.0-pack.tar";
   // const browser = await launch();
   const browser = await puppeteer.launch({
     args: chromium.args,
