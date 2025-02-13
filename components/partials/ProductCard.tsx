@@ -9,7 +9,7 @@ import { Product } from "contentlayer/generated";
  * @returns 返回渲染后的商品卡片DOM结构
  */
 const ProductCard = ({ product }: { product: Product }) => {
-  const { title, image, description, slug } = product;
+  const { title, image, description, slug, ctitle, content } = product;
   return (
     <div className="col-md-6 related-product mb-5">
       <Link href={"" + slug} className="bg-white h-100 d-block">
@@ -29,9 +29,13 @@ const ProductCard = ({ product }: { product: Product }) => {
           </div>
           <div className="p-5 pb-8  col-span-2">
             <h6 className="mb-3 text-xl text-primary pro-font-rgregular ">
-              {title}
+              {title} {ctitle}
             </h6>
-            <small className="mb-5 font-light d-block"> {description}</small>
+            <small className="mb-5 font-light d-block">
+              {description}
+              <br />
+              {content}
+            </small>
             <div className="btn btn-link-normal  text-primary font-light">
               Learn More
             </div>

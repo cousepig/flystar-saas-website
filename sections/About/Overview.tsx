@@ -79,34 +79,65 @@ const AboutSection = () => {
 
           <div className="mt-10 -mx-4 flex flex-wrap items-center border-t border-body-color/[.15] pt-12 dark:border-white/[.15]">
             <h2 className="w-full px-4 lg:w-12/12 mb-4 text-xl font-normal !leading-tight text-primary">
-              Long term presence
+              Technical features:
             </h2>
             <div className="w-full px-4 lg:w-6/12">
               <div className={`wow fadeInUp w-full `} data-wow-delay=".1s">
                 <p className="text-xs font-light !leading-relaxed text-black ">
-                  The initiative to start Alcons Audio was taken by its three
-                  current owners. These shareholders are active in the company’s
-                  daily operations, which not only brings 100% commitment but
-                  also offers the ideal basis for turning Alcons potential into
-                  a long-term presence in the pro-audio market. It’s not easy to
-                  meet and exceed today’s clients’ expectations. It takes
-                  high-quality products and an experienced organization to
-                  achieve that and to meet the challenges of tomorrow in a
-                  highly competitive marketplace.
+                  SYRINCS， Inheriting the rigor and solidity of German design,
+                  it is reflected in its timbre, using a very rigorous
+                  mathematical order in the design of timbre, and its timbre is
+                  full of rigorous rationalist color charm.
+                </p>
+
+                <p className="text-xs font-light !leading-relaxed text-black  mb-9">
+                  SYRINCS， It is an art based on rationality, concretizing in
+                  an incredible way, giving abstract reality and bringing us a
+                  satisfied smile on our faces.
                 </p>
               </div>
             </div>
             <div className="w-full px-4 lg:w-6/12">
               <p className="text-xs font-light !leading-relaxed text-black ">
-                The initiative to start Alcons Audio was taken by its three
-                current owners. These shareholders are active in the company’s
-                daily operations, which not only brings 100% commitment but also
-                offers the ideal basis for turning Alcons potential into a
-                long-term presence in the pro-audio market. It’s not easy to
-                meet and exceed today’s clients’ expectations. It takes
-                high-quality products and an experienced organization to achieve
-                that and to meet the challenges of tomorrow in a highly
-                competitive marketplace.
+                SYRINCS speakers have strong directional control capabilities.
+                Through reasonable sound design, they effectively avoid
+                excessive reflection on ceilings/side walls, improve the direct
+                sound energy ratio, enhance clarity, and match the neutral sound
+                characteristics of speakers. They have strong music expression
+                and extremely high fidelity, suitable for different types of
+                music amplification needs;
+              </p>
+
+              <p className="text-xs font-light !leading-relaxed text-black  mb-9">
+                The speaker system formed by the array has a particularly high
+                and controllable Q value, and the sound produces constant
+                directional coverage on the horizontal coverage. SYRINCS
+                low-frequency speaker is designed with a low-frequency
+                directional multi grid short horn angular sound lens, which not
+                only increases sound pressure but also reduces the impact of
+                emitted sound on clarity, resulting in a balanced sound field
+                coverage area.
+              </p>
+
+              <p className="text-xs font-light !leading-relaxed text-black  mb-9">
+                The power amplifier system is a SYRINCS supporting system, and
+                the digital power amplifier system has both digital and analog
+                signal input interfaces, allowing the system signal to be
+                connected to the later stage through two ways; At the same time,
+                the digital interface can meet the condition that the sound
+                amplification system only undergoes one A/D and D/A conversion
+                from pickup to return, thereby further improving the high
+                fidelity of the sound. SYRINCS products not only ensure system
+                performance, but also pursue amplification quality and accuracy.
+                Therefore,
+              </p>
+
+              <p className="text-xs font-light !leading-relaxed text-black  mb-9">
+                SYRINCS' speakers are all equipped with dedicated amplifiers of
+                the same brand, which have detailed speaker adjustment
+                parameters built into the amplifiers to achieve maximum matching
+                and ensure that their audio systems work in optimal condition
+                for a long time.
               </p>
             </div>
           </div>

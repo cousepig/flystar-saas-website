@@ -1,8 +1,8 @@
 title: Liveclose 218B
 ctitle: Dual 18 inch low-frequency speakers
-description: Frequency response (-3dB) 40Hz-150kHz | Rated power (AES) 1200W | Sensitivity（ 1W@1M ）98dB | Maximum SPL 124d8 (peak)
+description: Frequency response (-3dB) 38Hz-200Hz | Rated power (RMS) 1000W | Sensitivity（ 1W@1M ）99dB | Maximum SPL 135d8 (peak)
 image: /images/products/liveclose218b/liveclose218b-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/liveclose218b/liveclose218b-dimensions.png
 images:
   [
     "/images/products/liveclose218b/liveclose218b-1.jpg",
@@ -15,7 +15,7 @@ date: 2024-04-02
 features:
   [
     "The combination of dual 18 inch low-frequency provides high fidelity sound effects.",
-    "The rated power is 1200W, and the maximum can reach 4800W, meeting the needs of various scenarios.",
+    "The rated power is 1000W, and the maximum can reach 4000W, meeting the needs of various scenarios.",
     "15mm laminated board box with iron mesh, sturdy and durable.",
     "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
     "Reasonable price, excellent performance, and value for money.",
@@ -25,23 +25,22 @@ content:
 
   liveclose 218B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
 
-technicalspecification:
-  [
-    { name: "Frequency Response(-3db)", value: "40Hz-150Hz" },
-    { name: "Frequency Response(-10db)", value: "34Hz-150Hz" },
-    { name: "Rated Power(AES)", value: "1200W" },
-    { name: "Total Power(MUSIC)", value: "2400W" },
-    { name: "Total Power(PEAK)", value: "4800W" },
-    { name: "Max SPL @ 1m", value: "124dB/130dB (PEAK)" },
-    { name: "Sensitivity 1W @ 1m", value: "98 dB" },
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "38Hz-200Hz" },
+    # { name: "Frequency Response(-10db)", value: "34Hz-150Hz" },
+    { name: "Rated Power(RMS)", value: "1000W" },
+    # { name: "Total Power(MUSIC)", value: "2400W" },
+    # { name: "Total Power(PEAK)", value: "4800W" },
+    { name: "Max SPL @ 1m", value: "129dB/135dB (PEAK)" },
+    { name: "Sensitivity 1W @ 1m", value: "99 dB" },
     { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
   ]
 
 physicalspecification:
   [
     { name: "Box", value: "dual 18 inch subwoofer" },
-    { name: "Woofer", value: "2 x 18 inch  Neodymium woofer" },
-    { name: "Cabinet/Case Material", value: "18mm laminated board" },
+    { name: "Woofer", value: "2 x 18 inch ferrite woofer" },
+    { name: "Cabinet/Case Material", value: "21mm laminated board" },
     {
       name: "Box surface treatment",
       value: "Water based coal grey sand surface paint",
@@ -52,19 +51,23 @@ physicalspecification:
     },
     { name: "Connector", value: "2 x NL4" },
     { name: "Optional Accessories", value: "Lifting kit" },
-    { name: "Dimensions(W x D x H)", value: "558 × 780 × 1078mm " },
+    { name: "Dimensions(W x D x H)", value: "1075 × 786 × 567mm" },
     { name: "Package Dimensions(W x D x H):", value: "1180 × 890 × 690mm" },
-    { name: "Net weight", value: "91.2kg " },
+    { name: "Net weight", value: "80.5kg" },
     { name: "Gross weight", value: "97kg" },
   ]
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/liveclose218b/liveclose218b-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/syrincs_live_close218b_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # ---

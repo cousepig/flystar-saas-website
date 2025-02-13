@@ -2,7 +2,7 @@ title: liveclose 18B
 ctitle: 18 inch high sound pressure subwoofer
 description: Frequency response (-3dB) 33Hz-130Hz | Rated power (RMS) 500W | Sensitivity（ 1W@1M ）97dB | Maximum SPL 130dB/136dB (peak)
 image: /images/products/liveclose18b/liveclose18b-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/liveclose18b/liveclose18b-dimensions.png
 images:
   [
     "/images/products/liveclose18b/liveclose18b-1.jpg",
@@ -20,7 +20,7 @@ features:
   [
     "The combination of 18 inch low-frequency provides high fidelity sound effects.",
     "The rated power is 500W, and the maximum can reach 2000W, meeting the needs of various scenarios.",
-    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "21mm laminated board box with iron mesh, sturdy and durable.",
     "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
     "Reasonable price, excellent performance, and value for money.",
   ]
@@ -29,12 +29,11 @@ content:
 
   liveclose 18B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
 
-technicalspecification:
-  [
+technicalspecification: [
     { name: "Frequency Response(-3db)", value: "33Hz-130Hz" },
-    { name: "Rated Power(AES)", value: "500W" },
-    { name: "Total Power(MUSIC)", value: "1000W" },
-    { name: "Total Power(PEAK)", value: "2000W" },
+    { name: "Rated Power(RMS)", value: "500W" },
+    # { name: "Total Power(MUSIC)", value: "1000W" },
+    # { name: "Total Power(PEAK)", value: "2000W" },
     { name: "Max SPL @ 1m", value: "130dB/136dB (PEAK)" },
     { name: "Sensitivity 1W @ 1m", value: "97 dB" },
     { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
@@ -43,31 +42,32 @@ technicalspecification:
 physicalspecification:
   [
     { name: "Box", value: "18 inch subwoofer" },
-    { name: "Woofer", value: "1 x 18 'Low Frequency Unit" },
-    { name: "Cabinet/Case Material", value: "15mm laminated board" },
+    { name: "Woofer", value: "1 x 18 inch Low Frequency Unit" },
+    { name: "Cabinet/Case Material", value: "21mm laminated board" },
     {
       name: "Box surface treatment",
       value: "Water based coal grey sand surface paint",
     },
-    {
-      name: "Grille",
-      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
-    },
+    { name: "Grille", value: "Dusting coating" },
     { name: "Connector", value: "2 x NL4" },
     { name: "Optional Accessories", value: "Lifting kit" },
-    { name: "Dimensions(W x D x H)", value: "700 × 655 × 683mm" },
-    { name: "Package Dimensions(W x D x H):", value: "768 × 762 × 809mm" },
+    { name: "Dimensions(W x D x H)", value: "700 × 683 × 655mm" },
+    { name: "Package Dimensions(W x D x H):", value: "809 × 768 × 762mm" },
     { name: "Net weight", value: "45kg" },
     { name: "Gross weight", value: "48kg" },
   ]
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/liveclose18b/liveclose18b-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/syrincs_live_close18b_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters     |                            |

@@ -13,37 +13,37 @@ const menuData: Menu[] = [
     path: "/about",
     newTab: false,
   },
-  {
-    id: 2,
-    title: "Solutions",
-    newTab: false,
-    submenu: [
-      {
-        id: 31,
-        title: "Party K",
-        path: "/solutions/partyk",
-        newTab: false,
-      },
-      {
-        id: 32,
-        title: "DJ",
-        path: "/solutions/dj",
-        newTab: false,
-      },
-      {
-        id: 33,
-        title: "Bar",
-        path: "/solutions/bar",
-        newTab: false,
-      },
-      {
-        id: 34,
-        title: "KTV",
-        path: "/solutions/ktv",
-        newTab: false,
-      },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "Solutions",
+  //   newTab: false,
+  //   submenu: [
+  //     {
+  //       id: 31,
+  //       title: "Party K",
+  //       path: "/solutions/partyk",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 32,
+  //       title: "DJ",
+  //       path: "/solutions/dj",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 33,
+  //       title: "Bar",
+  //       path: "/solutions/bar",
+  //       newTab: false,
+  //     },
+  //     {
+  //       id: 34,
+  //       title: "KTV",
+  //       path: "/solutions/ktv",
+  //       newTab: false,
+  //     },
+  //   ],
+  // },
   {
     id: 3,
     title: "Products",

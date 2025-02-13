@@ -36,13 +36,13 @@ export default async function PostPage({ params }: any) {
   const slug = `product/${resolvedParams.slug.join("/")}`;
   const product = getCurrentProducts(slug);
 
-  console.log(product, "--loading");
+  console.log(product.title, "--loading");
   if (!product) {
     return notFound();
   }
-  const category = allCategories.find((p) => p.category === "speaker");
+  const category = allCategories.find((p) => p.category === product.category);
   // const category = getSingleCategoryData("speaker");
-  console.log(category.title, "category");
+  console.log(category.title, "--category loading");
   const categoryProducts = getProductsByCategory(product.category).slice(0, 15);
   const fileName = product._raw.sourceFileName.replace(".yml", "");
   const banner = [
@@ -91,11 +91,11 @@ export default async function PostPage({ params }: any) {
                   />
                 </div>
               </div>
-              <div className="bg-slate-200 mt-6 py-6 grid grid-cols-2 gap-6">
+              <div className="bg-slate-200 mt-6 py-6 grid grid-cols-2 gap-6 px-6">
                 {product.features.map((feature, index) => (
-                  <div key={index} className="relative pl-6">
+                  <div key={index} className="relative ">
                     <dd className="inline font-light text-primary">
-                      》{feature}
+                      {feature}
                     </dd>
                   </div>
                 ))}
@@ -188,30 +188,32 @@ export default async function PostPage({ params }: any) {
                 Related Products
               </h3>
               <ul className="py-4">
-                {categoryProducts.map((post, index) => (
-                  <li
-                    key={index}
-                    className="mb-6 border-b border-body-color border-opacity-10 pb-6"
-                  >
-                    <Link href={post.slug}>
-                      <div className="flex items-center lg:block xl:flex">
-                        <div className="mr-5 lg:mb-3 xl:mb-0">
-                          <div className="relative h-[60px] w-[70px] overflow-hidden rounded-10 sm:h-[75px] sm:w-[85px]">
-                            <Image src={post.image} alt={post.title} fill />
+                {categoryProducts.map((post, index) =>
+                  index >= 6 ? null : (
+                    <li
+                      key={index}
+                      className="mb-6 border-b border-body-color border-opacity-10 pb-6"
+                    >
+                      <Link href={post.slug}>
+                        <div className="flex items-center lg:block xl:flex">
+                          <div className="mr-5 lg:mb-3 xl:mb-0">
+                            <div className="relative h-[60px] w-[70px] overflow-hidden rounded-10 sm:h-[75px] sm:w-[85px]">
+                              <Image src={post.image} alt={post.title} fill />
+                            </div>
+                          </div>
+                          <div className="w-full">
+                            <h5 className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary">
+                              {post.title}
+                            </h5>
+                            <p className="text-xs font-medium text-body-color">
+                              {post.ctitle}
+                            </p>
                           </div>
                         </div>
-                        <div className="w-full">
-                          <h5 className="mb-[6px] block text-base font-medium leading-snug text-black hover:text-primary dark:text-white dark:hover:text-primary">
-                            {post.title}
-                          </h5>
-                          <p className="text-xs font-medium text-body-color">
-                            {post.ctitle}
-                          </p>
-                        </div>
-                      </div>
-                    </Link>
-                  </li>
-                ))}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
           </div>
@@ -225,15 +227,19 @@ export default async function PostPage({ params }: any) {
                   Dimensional drawing
                 </h2>
                 <div className="relative w-full  h-[600px] w-[300px]  overflow-hidden rounded">
-                  <a href={product.dimensional} className="technical-drawing">
-                    <Image
-                      className="lazy loaded"
-                      src={product.dimensional}
-                      alt="Dimensional drawing"
-                      data-was-processed="true"
-                      fill
-                    />
-                  </a>
+                  {product.dimensional === null ? (
+                    ""
+                  ) : (
+                    <a href={product.dimensional} className="technical-drawing">
+                      <Image
+                        className="lazy loaded"
+                        src={product.dimensional}
+                        alt="Dimensional drawing"
+                        data-was-processed="true"
+                        fill
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="w-full px-4 lg:w-4/12">
@@ -248,31 +254,6 @@ export default async function PostPage({ params }: any) {
                         <td>{technical.value}</td>
                       </tr>
                     ))}
-                    {/* <tr>
-                      <td>Sensitivity nominal</td>
-                      <td>100 dB (200 Hz - 10 kHz)</td>
-                    </tr>
-                    <tr>
-                      <td>Nominal impedance&nbsp;&nbsp;</td>
-                      <td>8 ohms</td>
-                    </tr>
-                    <tr>
-                      <td>Recommended drive</td>
-                      <td>
-                        Sentinel3 min., max. 3 pcs. per channel (2.7 ohms)
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Nominal SPL peak</td>
-                      <td>
-                        126 dB (Sentinel3 200 Hz - 10 kHz) 132 dB (Sentinel10
-                        200 Hz - 10 kHz)
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Dispersion H x V</td>
-                      <td>90° x 40° or 40° x 90° (40° line-source)</td>
-                    </tr> */}
                   </tbody>
                 </table>
               </div>
@@ -288,68 +269,6 @@ export default async function PostPage({ params }: any) {
                         <td>{physical.value}</td>
                       </tr>
                     ))}
-                    {/* <tr>
-                      <td>System</td>
-                      <td>2-way, full-range</td>
-                    </tr>
-                    <tr>
-                      <td>Filtering</td>
-                      <td>passive</td>
-                    </tr>
-                    <tr>
-                      <td>Driver LF</td>
-                      <td>1x AW12.3ND-8 12” Neodymium, vented</td>
-                    </tr>
-                    <tr>
-                      <td>Driver HF</td>
-                      <td>1x RBN601 6” pro-ribbon driver</td>
-                    </tr>
-                    <tr>
-                      <td>Connectors</td>
-                      <td>2x Speakon NL4 input/link</td>
-                    </tr>
-                    <tr>
-                      <td>Physical dimensions</td>
-                      <td>
-                        &nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inches
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Height</td>
-                      <td>
-                        673&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        26.5
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Width</td>
-                      <td>
-                        350
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        13.8
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Depth</td>
-                      <td>
-                        345
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        13.6
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Weight (approx.)</td>
-                      <td>
-                        18
-                        kg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        39.6 lb
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Warranty</td>
-                      <td>6 years limited</td>
-                    </tr> */}
                   </tbody>
                 </table>
               </div>

@@ -1,8 +1,8 @@
 title: MJ1239
 ctitle: 3-way dual 12 inch waterproof full frequency linear array speaker
-description: Frequency response 55Hz-19kHz (± 3dB) | Rated power LF:600W HF:2000W | Sensitivity LF:108dB HF:114dB
+description: Frequency response:50Hz-20kHz (-3dB) | Rated power(RMS):LF:800W MF:400W  HF:150W | Sensitivity LF:100dB MF:110dB HF:113dB
 image: /images/products/mj1239/mj1239-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/mj1239/mj1239-dimensions.png
 images:
   [
     "/images/products/mj1239/mj1239-1.jpg",
@@ -34,18 +34,20 @@ content:
   IP55 dustproof and waterproof certification
 
 technicalspecification: [
-    { name: "Frequency Response(-3db)", value: "55Hz-19kHz" },
+    { name: "Frequency Response(-3db)", value: "55Hz-20kHz" },
     # { name: "Frequency Response(-10db)", value: "60Hz-20kHz" },
-    { name: "Rated Power(AES)", value: "LF: 600W HF: 2000W" },
-    { name: "Total Power(MUSIC)", value: "LF: 108dB HF: 114dB" },
-    { name: "Total Power(PEAK)", value: "LF: 137dB HF: 143dB" },
-    { name: "Max SPL @ 1m", value: "120dB/126dB (PEAK)" },
+    { name: "Rated Power(RMS)", value: "LF: 800W MF:400W HF: 150W" },
+    { name: "Total Power(MUSIC)", value: "LF: 1600W MF:800W HF:300W" },
+    { name: "Total Power(PEAK)", value: "LF: 3200W MF:1600W HF:600W" },
+    { name: "Max SPL @ 1m", value: "LF:129dB/135dB(PEAK)
+        MF:136dB/142dB(PEAK)
+        HF:134dB/140dB(PEAK)" },
     {
       name: "Dispersion (H x V)",
-      value: "Horizontal 100 °, vertically adjustable ",
+      value: "Horizontal 100 °, vertically 0-10°(adjustable)",
     },
-    { name: "Sensitivity 1W @ 1m", value: "94 dB" },
-    { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
+    { name: "Sensitivity 1W @ 1m", value: "LF:100dB MF:110dB HF:113dB" },
+    { name: "Nominal Impedance (Ohm)", value: "LF:4 Ω MF:8 Ω HF:16 Ω" },
     # { name: "Crossover Frequencies", value: "2.3kHz" },
     # { name: "Distortion 10% P", value: "≤5%" },
   ]
@@ -53,34 +55,41 @@ technicalspecification: [
 physicalspecification:
   [
     { name: "Box", value: "Dual 12 inch Waterproof Linear Array Speaker" },
-    { name: "Woofer", value: "2 x 12 'low-frequency unit" },
-    { name: "Compression driver", value: "2 x 3' high-frequency driver" },
+    { name: "Woofer", value: "2 × 12 inch imported low frequency unit" },
+    { name: "MF unit", value: "4 × 6 inch imported mid frequency unit" },
+    {
+      name: "Compression driver",
+      value: "3 x 44 core inlet compression driver",
+    },
     {
       name: "Frequency division mode",
-      value: "Built in two-way frequency divider",
+      value: "External two division：200Hz-250Hz",
     },
-    { name: "Cabinet/Case Material", value: "12mm laminated board" },
-    {
-      name: "Box surface treatment",
-      value: "Water based coal grey sand surface paint",
-    },
-    {
-      name: "Grille",
-      value: "Electrostatic powder coating black fine sand matte, 6mm steel orifice plate  ",
-    },
+    { name: "", value: "External tri-division：LF:200Hz-250Hz
+        HF:2.5kHz-3.5kHz" },
+    { name: "Cabinet/Case Material", value: "Import laminate board" },
+    { name: "Box surface treatment", value: "Black polyimide spray" },
+    { name: "Grille", value: "Black powder spraying" },
     { name: "Connector", value: "2 x NL4" },
     { name: "Optional Accessories", value: "Lifting kit" },
-    { name: "Dimensions(W x D x H)", value: "810 × 354 × 490mm " },
-    { name: "Package Dimensions(W x D x H):", value: "935 × 455 × 590mm " },
-    { name: "Net weight", value: "48kg" },
-    { name: "Gross weight", value: "53kg" },
+    { name: "Dimensions(W x D x H)", value: "1100 × 659 × 452mm" },
+    { name: "Package Dimensions(W x D x H):", value: "1220 × 740 × 530mm" },
+    { name: "Net weight", value: "56.5kg" },
+    { name: "Gross weight", value: "62kg" },
   ]
-downloads:
-  [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
-    { title: "Manual", url: "", icon: "/images/pdf.gif" },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    { title: "Software", url: "", icon: "/images/unknown.gif" },
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/mj1239/mj1239-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "Manual",
+      url: "/download/syrincs_mj1239_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters         |                                                                                                               |
 # | -------------------------------- | ------------------------------------------------------------------------------------------------------------- |

@@ -125,6 +125,14 @@ const Footer = () => {
                         KTV
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="/showcase"
+                        className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
+                      >
+                        Club
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>

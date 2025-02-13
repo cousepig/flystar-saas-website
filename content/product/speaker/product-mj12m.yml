@@ -1,8 +1,8 @@
 title: MJ12M
 ctitle: Built in 2-channel 12 inch coaxial point sound source full frequency speaker
-description: Frequency response (-3dB):50Hz-20KH | Rated power:150W | Maximum sound pressure level:113dB/119dB
+description: Frequency response (-3dB):58Hz-20KHz | Rated power:400W | Maximum sound pressure level:124dB/130dB
 image: /images/products/mj12m/mj12m-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/mj12m/mj12m-dimensions.png
 images:
   [
     "/images/products/mj12m/mj12m-1.jpg",
@@ -31,26 +31,28 @@ content:
   -Paired with the bass CLUB18W, it can extend the low frequency to 40Hz;
   -High sound pressure level and high-definition design.
 
-technicalspecification:
-  [
+technicalspecification: [
     { name: "Frequency Response(-3db)", value: "58Hz-20kHz" },
-    { name: "Frequency Response(-10db)", value: "50Hz-20kHz" },
-    { name: "Rated Power(AES)", value: "400W" },
-    { name: "Total Power(MUSIC)", value: "800W" },
-    { name: "Total Power(PEAK)", value: "1600W" },
+    # { name: "Frequency Response(-10db)", value: "50Hz-20kHz" },
+    { name: "Rated Power(RMS)", value: "400W" },
+    # { name: "Total Power(MUSIC)", value: "800W" },
+    # { name: "Total Power(PEAK)", value: "1600W" },
     { name: "Max SPL @ 1m", value: "124dB/130dB (PEAK)" },
     { name: "Dispersion (H x V)", value: "120 x 120" },
     { name: "Sensitivity 1W @ 1m", value: "97 dB" },
     { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
-    { name: "Crossover Frequencies", value: "2.3kHz" },
-    { name: "Distortion 10% P", value: "≤5%" },
+    # { name: "Crossover Frequencies", value: "2.3kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
   ]
 
 physicalspecification:
   [
     { name: "Box", value: "12 inch Two Way Full Range Speaker" },
-    { name: "Woofer", value: "1 x 12 'low-frequency unit" },
-    { name: "Compression driver", value: "1 x 1.75' high-frequency driver" },
+    { name: "Woofer", value: "1 x 12 inch low-frequency unit" },
+    {
+      name: "Compression driver",
+      value: "1 x 1.75 inch high-frequency driver",
+    },
     {
       name: "Frequency division mode",
       value: "Built in two-way frequency divider",
@@ -66,19 +68,23 @@ physicalspecification:
     },
     { name: "Connector", value: "2 x NL4" },
     { name: "Optional Accessories", value: "Lifting kit" },
-    { name: "Dimensions(W x D x H)", value: "540 × 430 × 365mm" },
+    { name: "Dimensions(W x D x H)", value: "540 × 430 × 377mm" },
     { name: "Package Dimensions(W x D x H):", value: "660 × 525 × 460mm" },
-    { name: "Net weight", value: "15.7kg" },
-    { name: "Gross weight", value: "18.25kg" },
+    { name: "Net weight", value: "15.8kg" },
+    { name: "Gross weight", value: "18.3kg" },
   ]
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/mj12m/mj12m-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/Syrincs_mj12m_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters       |                                                                                                  |

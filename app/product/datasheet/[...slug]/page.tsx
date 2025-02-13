@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: any) {
   const product = getCurrentProducts(slug);
   if (!product) return notFound();
   return {
-    title: product.title + "-" + product.ctitle + " Syrincs Specsheet",
+    title: "Syrincs " + product.title + "-" + product.ctitle + " Specsheet",
     description: product.description || product.description,
   };
 }

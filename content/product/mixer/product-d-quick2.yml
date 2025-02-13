@@ -2,7 +2,7 @@ title: D-QUICK2
 ctitle: Digital mixing console
 description: The D-QUICK2 digital mixing console comes with 20 linear level inputs, 16 microphone preamplifiers, and a playback engine; 31 segment GEQ processor; DSP effect; Although the auxiliary bus has such powerful functions, its operation is very simple.
 image: /images/products/d-quick2/d-quick2-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional:
 images:
   [
     "/images/products/d-quick2/d-quick2-1.jpg",
@@ -93,13 +93,17 @@ physicalspecification:
 
   # ]
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/d-quick2/d-quick2-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/Syrincs_d-quick2_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters         |                            |

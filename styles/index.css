@@ -31,7 +31,30 @@
 .page-description a {
   color: #fff
 }
+#containerForBullets{
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  bottom: -10px;
+  z-index: 10;
+}
+.swiper-custom-bullet {
+  display: inline-block; width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;margin: 0 5px;
+  font-size: 12px;
+  color:#000;
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+}
 
+.swiper-custom-bullet.swiper-custom-bullet-active {
+  width: 20px;
+  height: 20px;
+  background-color:  rgb(26 76 79 / 0.8);
+}
 
 @layer base {
   body {

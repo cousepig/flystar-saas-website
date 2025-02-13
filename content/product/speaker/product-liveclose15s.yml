@@ -1,8 +1,8 @@
 title: LiveClose 15S
-ctitle: 15 inch high sound pressure front directional speaker
-description: Frequency response 50Hz-18kHz (-3dB) | 45Hz-20kHz (-10dB) | Rated power AES 750W | Sensitivity 99 dB
+ctitle: 14 inch high sound pressure front directional speaker
+description: Frequency response 50Hz-20kHz (-3dB)  | Rated power RMS 200W | Sensitivity 97dB
 image: /images/products/liveclose15s/liveclose15s-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/liveclose15s/liveclose15s-dimensions.png
 images:
   [
     "/images/products/liveclose15s/liveclose15s-1.jpg",
@@ -21,8 +21,8 @@ date: 2024-03-01
 
 features:
   [
-    "The combination of 15 inch low-frequency and 1.7-inch high-frequency units provides high fidelity sound effects.",
-    "The rated power is 750W, and the maximum can reach 3000W, meeting the needs of various scenarios.",
+    "The combination of 14 inch low-frequency and 1.7-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 200W, and the maximum can reach 800W, meeting the needs of various scenarios.",
     "15mm laminated board box with iron mesh, sturdy and durable.",
     "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
     "Reasonable price, excellent performance, and value for money.",
@@ -32,26 +32,25 @@ content:
 
   LiveClose 15S, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
 
-technicalspecification:
-  [
-    { name: "Frequency Response(-3db)", value: "50Hz-18kHz" },
-    { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
-    { name: "Rated Power(AES)", value: "750W" },
-    { name: "Total Power(MUSIC)", value: "1500W" },
-    { name: "Total Power(PEAK)", value: "3000W" },
-    { name: "Max SPL @ 1m", value: "127dB/133dB (PEAK)" },
-    { name: "Dispersion (H x V)", value: "90 x 95" },
-    { name: "Sensitivity 1W @ 1m", value: "99 dB" },
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "50Hz-20kHz" },
+    # { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
+    { name: "Rated Power(RMS)", value: "200W" },
+    # { name: "Total Power(MUSIC)", value: "1500W" },
+    # { name: "Total Power(PEAK)", value: "3000W" },
+    { name: "Max SPL @ 1m", value: "120dB/126dB (PEAK)" },
+    { name: "Dispersion (H x V)", value: "90 x 85" },
+    { name: "Sensitivity 1W @ 1m", value: "97 dB" },
     { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
-    { name: "Crossover Frequencies", value: "2.2kHz" },
-    { name: "Distortion 10% P", value: "≤5%" },
+    # { name: "Crossover Frequencies", value: "2.2kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
   ]
 
 physicalspecification:
   [
     { name: "Box", value: "14 inch Two Way Full Range Speaker" },
-    { name: "Woofer", value: "1 x 14 'low-frequency unit" },
-    { name: "Compression driver", value: "1 x 1.7' high-frequency driver" },
+    { name: "Woofer", value: "1 x 14 inch low-frequency unit" },
+    { name: "Compression driver", value: "1 x 44-core compression driver" },
     {
       name: "Frequency division mode",
       value: "Built in two-way frequency divider",
@@ -61,25 +60,26 @@ physicalspecification:
       name: "Box surface treatment",
       value: "Water based coal grey sand surface paint",
     },
-    {
-      name: "Grille",
-      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
-    },
+    { name: "Grille", value: "Dusting coating" },
     { name: "Connector", value: "2 x NL4" },
     { name: "Optional Accessories", value: "Lifting kit" },
-    { name: "Dimensions(W x D x H)", value: "385 × 645 × 450 mm" },
+    { name: "Dimensions(W x D x H)", value: "385 × 493 × 645 mm" },
     { name: "Package Dimensions(W x D x H):", value: "465 × 573 × 726 mm" },
-    { name: "Net weight", value: "29.1kg" },
+    { name: "Net weight", value: "29.5kg" },
     { name: "Gross weight", value: "32.1kg" },
   ]
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/liveclose15s/liveclose15s-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/syrincs_live_close15s_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters                  |                                                                            |

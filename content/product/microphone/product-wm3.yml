@@ -3,7 +3,7 @@ title: WM3
 ctitle: UHF wireless microphone
 description: Streamlined appearance design, user-friendly interface, beautiful and elegant; High definition TBM LCD display screen, intuitive and clear; Adopting PLL dual channel phase-locked loop design, the old code locks the self selected channel function.
 image: /images/products/wm3/wm3-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional:
 images:
   [
     "/images/products/wm3/wm3-1.jpg",
@@ -68,13 +68,17 @@ physicalspecification:
   ]
 
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/wm3/wm3-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/Syrincs_wm3_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
     # { title: "Software", url: "", icon: "/images/unknown.gif" },
   ]
 # | Specification parameters   |                                                                |

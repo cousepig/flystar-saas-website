@@ -37,7 +37,7 @@ const ContactPage = () => {
               <div className="flex-auto block py-8 pt-6 px-9">
                 <div className="overflow-x-auto">
                   <table className="w-full my-0 align-middle text-dark border-neutral-200">
-                    <tbody>
+                    <tbody className="bg-neutral-100">
                       {LP_GRID_ITEMS.map((series) => (
                         <>
                           <tr key={series.id}>

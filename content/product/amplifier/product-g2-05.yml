@@ -1,8 +1,8 @@
 title: G2.05
 ctitle: Two channel amplifier
-description: Output power 8 Ω 400W × 2 | Output power 4 Ω 800W × 2
+description: Output power 8 Ω 450W x 2 | Output power 4 Ω 630W x 2
 image: /images/products/g2-05/g2-05-0.jpg
-dimensional: /images/products/focus100/focus100-dimensions.jpg
+dimensional: /images/products/g2-05/g2-05-dimensions.png
 images:
   ["/images/products/g2-05/g2-05-1.jpg", "/images/products/g2-05/g2-05-2.jpg"]
 category: amplifier
@@ -19,23 +19,26 @@ content: The G series power amplifier is a professional power amplifier speciall
 
 technicalspecification:
   [
-    { name: "Dynamic output power (1 kHz 1% THD)", value: " " },
-    { name: "Stereo 8 Ω", value: "400W " },
-    { name: "Stereo 4 Ω", value: "800W " },
+    { name: "Power", value: " " },
+    { name: "Stereo 8 Ω", value: "450W × 2 " },
+    { name: "Stereo 4 Ω", value: "630W × 2 " },
     {
-      name: "Input sensitivity (three levels optional) @ 8 Ω 1kHz ± 10%",
+      name: "Input sensitivity (3 gears optional) @8Ω, 1kHz, ±10% or ±1dB",
       value: "",
     },
     { name: "0.775V", value: "0.7V " },
     { name: "1V", value: "0.9V " },
     { name: "32dB (40x gain)", value: "32dB " },
-    { name: "Total harmonic distortion ", value: "0.05% @ 8 Ω, 1kHz" },
-    { name: "Intermodulation distortion", value: "lt.1% @ 8 Ω, 60Hz/7kHz 4:1" },
+    { name: "Total harmonic distortion ", value: "＜0.1% @ 8 Ω, 1kHz" },
+    {
+      name: "Intermodulation distortion",
+      value: "＜0.5% @ 8 Ω, 60Hz/7kHz 4:1",
+    },
     { name: "Frequency response ", value: "20Hz-20kHz ± 2dB " },
-    { name: "Damping coefficient", value: "200 @ 8 Ω, 100Hz " },
+    { name: "Damping coefficient", value: "＞200 @ 8 Ω, 100Hz" },
     {
       name: "Signal to noise ratio",
-      value: "100dB @ 8 Ω, 1kHz, 32dB range, A-weighted",
+      value: "＞105dB @ 8 Ω, 1kHz, 32dB range, A-weighted",
     },
   ]
 
@@ -45,65 +48,35 @@ physicalspecification:
       name: "Input impedance",
       value: "Unbalanced input 10k Ω Balanced input 20k Ω ",
     },
-    {
-      name: "Rated consumption current @ 1/8 maximum output power, 4 Ω",
-      value: "0.9A ",
-    },
-    {
-      name: "Maximum consumption current @ 1/3 maximum output power, 4 Ω",
-      value: "2.39A",
-    },
-    { name: "Net weight", value: "11.5kg" },
-    { name: "Input interface", value: "XLRx2" },
-    { name: "Output interface ", value: "Cascade output: XLRx2" },
-    { name: "Power output ", value: "NL4x2" },
+    { name: "Rated consumption current
+        @ 1/8 maximum output power, 4 Ω", value: "3A " },
+    { name: "Input interface", value: "XLR x 2" },
+    { name: "Cascade output", value: "XLR x 2" },
+    { name: "Power output ", value: "NL4 x 2" },
     { name: "Rated power supply voltage", value: "220V~50Hz" },
     {
       name: "Cooling method ",
-      value: "Air cooling, temperature controlled variable speed, airflow from front to back cooling",
+      value: "Dual Cooling Fan Controlled by Temperature",
     },
     {
       name: "Environmental temperature ",
-      value: "Operating temperature -10 ℃~40 ℃ Storage and transportation temperature -25 ℃~80 ℃ ",
+      value: "Operating temperature -10 ℃~40 ℃ Storage
+        transportation temperature -25 ℃~80 ℃",
     },
-    {
-      name: "Size",
-      value: "89mm × 483mm × 279mm (including 305mm rack ears) ",
-    },
+    { name: "Net weight", value: "11.5kg" },
+    { name: "Size", value: "89mm × 482mm × 279mm (including 304mm rack)" },
   ]
 
 downloads: [
-    { title: "Hi-res photo", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "Hi-res photo",
+      url: "/images/products/g2-05/g2-05-0.jpg",
+      icon: "/images/jpg.gif",
+    },
     {
       title: "Manual",
       url: "/download/syrincs_g_manual.pdf",
       icon: "/images/pdf.gif",
     },
-    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
-    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
   ]
-# | Specification parameters                                    |                                                                                        |
-# | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-# | Dynamic output power (1 kHz 1% THD)                         |                                                                                        |
-# | Stereo 8 Ω                                                  | 400W                                                                                   |
-# | Stereo 4 Ω                                                  | 800W                                                                                   |
-# | Input sensitivity (three levels optional) @ 8 Ω 1kHz ± 10%  |
-# | 0.775V                                                      | 0.7V                                                                                   |
-# | 1V                                                          | 0.9V                                                                                   |
-# | 32dB (40x gain)                                             | 32dB                                                                                   |
-# | Total harmonic distortion                                   | 0.05% @ 8 Ω, 1kHz                                                                      |
-# | Intermodulation distortion                                  | lt.1% @ 8 Ω, 60Hz/7kHz 4:1                                                             |
-# | Frequency response                                          | 20Hz-20kHz ± 2dB                                                                       |
-# | Damping coefficient                                         | 200 @ 8 Ω, 100Hz                                                                       |
-# | Signal to noise ratio                                       | 100dB @ 8 Ω, 1kHz, 32dB range, A-weighted                                              |
-# | Input impedance                                             | Unbalanced input 10k Ω Balanced input 20k Ω                                            |
-# | Rated consumption current @ 1/8 maximum output power, 4 Ω   | 0.9A                                                                                   |
-# | Maximum consumption current @ 1/3 maximum output power, 4 Ω | 2.39A                                                                                  |
-# | Net weight                                                  | 11.5kg                                                                                 |
-# | Input interface                                             | XLRx2                                                                                  |
-# | Output interface                                            | Cascade output: XLRx2                                                                  |
-# | Power output                                                | NL4x2                                                                                  |
-# | Rated power supply voltage                                  | 220V~50Hz                                                                              |
-# | Cooling method                                              | Air cooling, temperature controlled variable speed, airflow from front to back cooling |
-# | Environmental temperature                                   | Operating temperature -10 ℃~40 ℃ Storage and transportation temperature -25 ℃~80 ℃     |
-# | Size                                                        | 89mm × 483mm × 279mm (including 305mm rack ears)                                       |
