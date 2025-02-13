@@ -31,7 +31,9 @@ export async function GET(
   );
 
   console.log(newslug, "--- slug");
-  await page.goto(`http://localhost:3000${newslug ? `/${newslug}` : ""}`);
+  await page.goto(
+    `https://syrincs.dongxiyun.com${newslug ? `/${newslug}` : ""}`
+  );
   await page.emulateMediaType("screen");
   const idRemovalList = ".header, .page-break, .footer, .bottom-8";
 
