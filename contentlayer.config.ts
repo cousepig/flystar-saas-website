@@ -215,6 +215,7 @@ export const Solution = defineDocumentType(() => ({
     image: { type: "string" },
     images: { type: "json", required: false },
     slug: { type: "string", required: false },
+    language: { type: 'string', required: true },
     date: {
       type: "date",
       required: true,

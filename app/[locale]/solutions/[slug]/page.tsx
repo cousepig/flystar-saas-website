@@ -7,32 +7,36 @@ import ImageBanner from "@/components/partials/ImageBanner";
 import Breadcrumb from "@/components/Breadcrumb";
 import { getAllSolution } from "@/lib/get-solution-data";
 import SharePost from "@/components/partials/SharePost";
+import { createTranslation } from "../../i18n/server";
 export async function generateMetadata({ params }: any) {
-  const resolvedParams = await params;
-  const slug = `/solutions/${resolvedParams.slug}`;
-  const article = getAllSolution.find((post) => post.slug === slug);
+  const { slug, locale } = await params;
+  console.log(slug, "--slug");
+  const { t } = await createTranslation(locale, "showcase");
+
+  const article = getAllSolution(locale).find((post) => post.slug === slug);
   if (!article) return notFound();
   return {
-    title: article.title + "-" + " | Syrincs Pro Entertainment Audio System",
-    description: "Syrincs Pro Entertainment Audio System Solutions",
+    title: article.title + " | " + t("Sitename"),
+    description: article.description,
   };
 }
 export default async function PostPage({ params }: any) {
-  const resolvedParams = await params;
-  const slug = `/solutions/${resolvedParams.slug}`;
-  const article = getAllSolution.find((post) => post.slug === slug);
+  const { slug, locale } = await params;
+
+  const { t } = await createTranslation(locale, "showcase");
+  const article = getAllSolution(locale).find((post) => post.slug === slug);
   // console.log(article);
   const MDXContent = getMDXComponent(article.body.code);
 
   console.log(article.title, "--loading");
-  const relatedArticle = getAllSolution.sort();
+  const relatedArticle = getAllSolution(locale).sort();
   if (!article) {
     return notFound();
   }
   const banner = [
     {
-      title: "Solutions",
-      description: "Syrincs Pro Entertainment Audio System Solutions",
+      title: t("title"),
+      description: t("description"),
 
       image: "/images/banner.jpg",
     },
@@ -46,8 +50,8 @@ export default async function PostPage({ params }: any) {
     },
   ][0];
   const breadcrumbs = [
-    { name: "Home", href: "/" },
-    { name: "Solutions", href: "/solutions" },
+    { name: t("Home"), href: `/${locale}` },
+    { name: t("Solutions"), href: `/${locale}/solutions` },
     { name: article.title, href: slug },
   ];
 

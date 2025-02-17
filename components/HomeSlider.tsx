@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // Our custom button component
-import SliderButtons from "@/components/SliderButtons";
+// import SliderButtons from "@/components/SliderButtons";
 
 interface Slide {
   id: number;
@@ -46,7 +46,7 @@ const DemoSlider: React.FC<DemoSliderProps> = ({ data }) => {
             loop={true}
             modules={[Autoplay, Navigation, Pagination]}
           >
-            {data.map(({ id, image, tagline, title, buttons, link }) => (
+            {data.map(({ id, image, tagline, title, link }) => (
               <SwiperSlide key={id}>
                 <Link href={link} rel="noreferrer">
                   <div

@@ -11,10 +11,14 @@ export const getCurrentSolution = (slug: string) => {
     return currentProducts;
 };
 
-export const getAllSolution: Solution[] = allSolutions
-    .filter(
-        (post) =>
-            post._raw.sourceFilePath.includes("solutions") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
-    )
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+export const getAllSolution = (locale): Solution[] => {
+
+    return allSolutions
+        .filter(
+            (post) =>
+                post._raw.sourceFilePath.includes("solutions") &&
+                !post._raw.sourceFilePath.includes("_index.md"),
+
+        ).filter((post) => post.language === locale)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}

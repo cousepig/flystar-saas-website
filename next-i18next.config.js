@@ -2,16 +2,16 @@
 const languagesConfig = [
   {
     label: "English",
-    value: "en",
+    value: "en-US",
   },
   {
     label: "中文",
-    value: "zh",
+    value: "zh-CN",
   },
 ]
 
 const i18n = {
-  defaultLocale: "en",
+  defaultLocale: "en-US",
   locales: languagesConfig.map((language) => language.value),
 }
 

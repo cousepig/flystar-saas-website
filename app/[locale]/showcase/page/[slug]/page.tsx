@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   const { locale } = await params;
   const { t } = await createTranslation(locale, "showcase");
   return {
-    title: "syrincs",
+    title: t("meta.title"),
     description: t("meta.description"),
   };
 }

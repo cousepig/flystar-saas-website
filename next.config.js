@@ -7,11 +7,11 @@ const nextConfig = {
     async redirects() {
         return [
           // Basic redirect
-          {
-            source: '/',
-            destination: '/en/',
-            permanent: true,
-          },
+          // {
+          //   source: '/',
+          //   destination: '/en/',
+          //   permanent: true,
+          // },
           {
             source: '/:locale/products/microphone',
             destination: '/:locale/product/microphone/product-wm3',
