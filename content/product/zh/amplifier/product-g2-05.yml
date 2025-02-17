@@ -1,0 +1,83 @@
+title: G2.05
+ctitle: 双通道功率放大器
+description: 输出功率 8 Ω 450W x 2 | 输出功率 4 Ω 630W x 2
+image: /images/products/g2-05/g2-05-0.jpg
+dimensional: /images/products/g2-05/g2-05-dimensions.png
+images:
+  ["/images/products/g2-05/g2-05-1.jpg", "/images/products/g2-05/g2-05-2.jpg"]
+category: amplifier
+slug: g2-05
+language: zh
+date: 2024-06-06
+
+features:
+  [
+    "创新放大电路，整机保证音质的同时显著提高效率（整体效率是传统设计的近两倍，更节能）；",
+    "独特的电压电流温度管理系统，确保系统运行更稳定；",
+    "完备的功能设置与机型序列，满足娱乐市场各类应用场景需求。",
+  ]
+content: G系列功率放大器是SYRINCS专门为娱乐市场推出的专业功率放大器，具有独特的音调调谐功能。整个系列采用精心设计的全平衡放大电路，产生甜美而有力的音调。
+
+technicalspecification:
+  [
+    { name: "功率", value: " " },
+    { name: "立体声 8 Ω", value: "450W × 2 " },
+    { name: "立体声 4 Ω", value: "630W × 2 " },
+    {
+      name: "输入灵敏度（三档可选） @8Ω, 1kHz, ±10% or ±1dB",
+      value: "",
+    },
+    { name: "0.775V", value: "0.7V " },
+    { name: "1V", value: "0.9V " },
+    { name: "32dB (40x gain)", value: "32dB " },
+    { name: "总谐波失真 ", value: "＜0.1% @ 8 Ω, 1kHz" },
+    {
+      name: "互调失真",
+      value: "＜0.5% @ 8 Ω, 60Hz/7kHz 4:1",
+    },
+    { name: "频率响应 ", value: "20Hz-20kHz ± 2dB " },
+    { name: "阻尼系数", value: "＞200 @ 8 Ω, 100Hz" },
+    {
+      name: "信噪比",
+      value: "＞105dB @ 8 Ω, 1kHz, 32dB range, A-weighted",
+    },
+  ]
+
+physicalspecification:
+  [
+    {
+      name: "Input impedance",
+      value: "Unbalanced input 10k Ω Balanced input 20k Ω ",
+    },
+    { name: "额定消耗电流
+        @ 1/8 maximum 输出功率, 4 Ω", value: "3A " },
+    { name: "输入接口", value: "XLR x 2" },
+    { name: "级联输出", value: "XLR x 2" },
+    { name: "功率输出 ", value: "NL4 x 2" },
+    { name: "额定电源电压", value: "220V~50Hz" },
+    {
+      name: "冷却方式",
+      value: "温度控制的双冷却风扇",
+    },
+    {
+      name: "环境温度 ",
+      value: "Operating temperature -10 ℃~40 ℃ Storage
+        transportation temperature -25 ℃~80 ℃",
+    },
+    { name: "净重", value: "11.5kg" },
+    { name: "尺寸", value: "89mm × 482mm × 279mm (including 304mm rack)" },
+  ]
+
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/g2-05/g2-05-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_g_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+  ]

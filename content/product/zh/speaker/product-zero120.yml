@@ -1,0 +1,79 @@
+title: ZERO120
+ctitle: 12 英寸双向全频扬声器
+description: 频率响应 50Hz-18kHz (-3dB)  | 额定功率 RMS 500W | 灵敏度 99 dB
+image: /images/products/zero120/zero120-0.jpg
+dimensional: /images/products/zero120/zero120-dimensions.png
+images:
+  [
+    "/images/products/zero120/zero120-1.jpg",
+    "/images/products/zero120/zero120-2.jpg",
+    "/images/products/zero120/zero120-3.jpg",
+    "/images/products/zero120/zero120-4.jpg",
+    "/images/products/zero120/zero120-5.jpg",
+    "/images/products/zero120/zero120-6.jpg",
+    "/images/products/zero120/zero120-7.jpg",
+    "/images/products/zero120/zero120-8.jpg",
+    "/images/products/zero120/zero120-9.jpg",
+  ]
+category: speaker
+slug: zero120
+language: zh
+date: 2024-01-05
+
+features:
+  [
+    "12英寸低频和1.75英寸高频单元的组合，提供了高保真的音效。",
+    "额定功率500W，最大可以达到2000W，满足各种场景的需求。",
+    "15mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+
+content:
+  ZERO120是一款专为追求高品质声音输出的用户设计的全频音箱。箱体采用烤漆木质材质，既保证了音箱的美观度，又拥有良好的声学表现。
+
+  ZERO120凭借出色的性能、优质的用料、精致的设计，无论是在专业音响领域还是日常娱乐场景，都能为用户带来极佳的声音体验。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "50Hz-18kHz" },
+    # { name: "频率响应(-10db)", value: "45Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "500W" },
+    # { name: "Total Power(MUSIC)", value: "800W" },
+    # { name: "Total Power(PEAK)", value: "1600W" },
+    { name: "最大声压级 @ 1m", value: "123dB/129dB (PEAK)" },
+    { name: "指向性 (H x V)", value: "90 x 95" },
+    { name: "灵敏度 1W @ 1m", value: "99 dB" },
+    { name: "额定阻抗 (Ohm)", value: "4 Ω" },
+    # { name: "Crossover Frequencies", value: "1.9kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "12 寸2分频全频扬声器" },
+    { name: "低音扬声器", value: "1 x 12 寸低频单元" },
+    { name: "压缩驱动器", value: "1 x 44-core 压缩驱动器" },
+    { name: "分频模式", value: "内置二路分频器" },
+    { name: "箱体材质", value: "12mm 层压板" },
+    { name: "箱体材质", value: "	煤灰色0.9小点漆" },
+    { name: "面网", value: "静电粉末喷涂黑色，1.2mm 低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "343 × 439 × 600mm" },
+    { name: "包装尺寸(W x D x H):", value: "415 × 510 × 680mm" },
+    { name: "净重", value: "22.70kg" },
+    { name: "毛重", value: "25kg" },
+  ]
+downloads:
+  [
+    {
+      title: "照片",
+      url: "/images/products/zero120/zero120-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_zero100_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+  ]

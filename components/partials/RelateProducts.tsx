@@ -1,5 +1,4 @@
-"use client"; // <===== REQUIRED
-
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,26 +8,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
 
-// interface ReProduct {
-//   title: string;
-//   ctitle: string;
-//   image: string;
-//   slug: string;
-//   description: string;
-// }
-
-// interface DemoSliderProps {
-//   data: ReProduct[];
-// }
-
-const RelateProducts = ({ data }: any) => {
+const RelateProducts = ({ params: { locale }, data }: any) => {
   return (
     <section className="w-full">
       <Swiper
-        // navigation={true}
-        // scrollbar={{ draggable: true }}
         pagination={{
           el: "#containerForBullets",
           type: "bullets",
@@ -46,7 +30,7 @@ const RelateProducts = ({ data }: any) => {
       >
         {data.map(({ image, ctitle, title, description, slug }) => (
           <SwiperSlide key={title} className=" ">
-            <Link href={slug}>
+            <Link href={`/${locale}/product/${slug}`}>
               <div className="w-full wow fadeInUp  group relative rounded-sm bg-white duration-300 ">
                 <div className="image relative block aspect-[10/10] w-full">
                   <Image

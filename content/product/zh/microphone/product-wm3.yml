@@ -1,0 +1,87 @@
+---
+title: WM3
+ctitle: UHF无线麦克风
+description: 流线型外观设计，人性化界面，美观大方；高清TBM液晶显示屏，直观清晰；采用PLL双通道锁相环设计，旧码锁定了自选通道功能。
+image: /images/products/wm3/wm3-0.jpg
+dimensional:
+images:
+  [
+    "/images/products/wm3/wm3-1.jpg",
+    "/images/products/wm3/wm3-2.jpg",
+    "/images/products/wm3/wm3-3.jpg",
+    "/images/products/wm3/wm3-4.jpg",
+  ]
+category: microphone
+slug: wm3
+language: zh
+date: 2024-09-19
+
+features:
+  [
+    "流线型外观设计，人性化操作界面，美观大方；",
+    "高清晰度TBM液晶显示屏，直观、清晰；",
+    "采用PLL双通道锁相环设计，旧码锁定自选频道功能；",
+    "声音曲线经过精心调校，音质温暖、通透；",
+    "可锁定的控制功能选择、可调的无线增益连接功能；",
+    "采用高性能音频处理芯片及超低失真声音处理电路设计；",
+    "超高频动态压缩分裂技术，自动分裂加载高低频，展现出更好的动态表现。",
+    "全新功率调节，具有两级功率调节。",
+  ]
+content: 流线型外观设计，人性化界面，美观大方；高清TBM液晶显示屏，直观清晰；采用PLL双通道锁相环设计，旧码锁定了自选通道功能。
+
+technicalspecification:
+  [
+    { name: "系统规格", value: "" },
+    { name: "频率范围", value: "640-690MHz" },
+    { name: "通道总数", value: "200CH" },
+    { name: "有效使用距离", value: "≈ 50m" },
+    { name: "频率间隔", value: "250KHz" },
+    { name: "频率宽度", value: "50MHz " },
+    { name: "频率模块", value: "25 sets" },
+    { name: "频率振荡模式", value: "PLL锁相频率合成" },
+  ]
+
+physicalspecification:
+  [
+    { name: "接收器", value: "      " },
+    { name: "信噪比", value: "≥ 50dB" },
+    { name: "频率稳定性", value: " ± 5KHz" },
+    { name: "接收方式", value: "CPU控制信号选择+导频识别接收" },
+    { name: "静音锁环电路 ", value: "" },
+    { name: "显示模式", value: "LCD" },
+    { name: "电源", value: "12V DC, 1250mA" },
+    { name: "音频输出接口", value: "2 XLR平衡插座+非平衡TRS 6.3mm插座" },
+  ]
+
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/wm3/wm3-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/Syrincs_wm3_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters   |                                                                |
+# | -------------------------- | -------------------------------------------------------------- |
+# | System specifications      |                                                                |
+# | Frequency range            | 640-690MHz                                                     |
+# | Total number of channels   | 200CH                                                          |
+# | Effective usage distance   | ≈ 50m                                                          |
+# | Frequency Interval         | 250KHz                                                         |
+# | Frequency Width            | 50MHz                                                          |
+# | Frequency module           | 25 sets                                                        |
+# | Frequency oscillation mode | PLL phase locked frequency synthesis                           |
+# | Receiver                   |                                                                |
+# | Signal to noise ratio      | ≥ 50dB                                                         |
+# | Frequency stability        | ± 5KHz                                                         |
+# | Reception method           | CPU controlled signal selection+pilot identification reception |
+# | Mute Lock Loop Circuit     |
+# | Display mode               | LCD                                                            |
+# | Power Supply               | 12V DC, 1250mA                                                 |
+# | Audio output interface     | 2 XLR Balanced Socket+Unbalance TRS 6.3mm Socket               |

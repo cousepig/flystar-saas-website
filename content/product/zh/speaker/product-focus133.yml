@@ -1,0 +1,105 @@
+title: FOCUS133
+ctitle: 14寸二分频全频音箱
+description: 频率响应 50Hz-18kHz (-3dB) | 额定功率 RMS 750W | 灵敏度 99 dB
+image: /images/products/focus133/focus133-0.jpg
+dimensional: /images/products/focus133/focus133-dimensions.png
+images:
+  [
+    "/images/products/focus133/focus133-1.jpg",
+    "/images/products/focus133/focus133-2.jpg",
+    "/images/products/focus133/focus133-3.jpg",
+    "/images/products/focus133/focus133-4.jpg",
+    "/images/products/focus133/focus133-5.jpg",
+    "/images/products/focus133/focus133-6.jpg",
+    "/images/products/focus133/focus133-7.jpg",
+    "/images/products/focus133/focus133-8.jpg",
+    "/images/products/focus133/focus133-9.jpg",
+  ]
+category: speaker
+slug: focus133
+language: zh
+date: 2024-01-03
+
+features:
+  [
+    "14英寸低频和1.7英寸高频单元的组合，提供高保真的音效。",
+    "额定功率750W，最大可达3000W，满足各类场景需求。",
+    "15mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content:
+  FOCUS133是一款专为追求高品质声音输出的用户设计的全频音箱。箱体采用烤漆木质材质，既保证了音箱的美观度，又拥有良好的声学表现。
+
+  FOCUS133凭借出色的性能、优质的用料、精致的设计，无论是在专业音响领域还是日常娱乐场景，都能为用户带来极佳的声音体验。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "50Hz-18kHz" },
+    # { name: "频率响应(-10db)", value: "45Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "750W" },
+    # { name: "Total Power(MUSIC)", value: "1500W" },
+    # { name: "Total Power(PEAK)", value: "3000W" },
+    { name: "最大声压级 @ 1m", value: "127dB/133dB (PEAK)" },
+    { name: "指向性 (H x V)", value: "90 x 80" },
+    { name: "灵敏度 1W @ 1m", value: "99 dB" },
+    { name: "额定阻抗 (Ohm)", value: "8 Ω" },
+    # { name: "Crossover Frequencies", value: "2.2kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "14 寸2分频全频扬声器" },
+    { name: "低音扬声器", value: "1 x 14 寸低频单元" },
+    { name: "压缩驱动器", value: "1 x 44芯压缩驱动器" },
+    { name: "分频模式", value: "内置二路分频器" },
+    { name: "箱体材质", value: "15mm+18mm 层压板" },
+    { name: "箱体材质", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "静电粉末喷涂黑色细砂哑光,1.2mm低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "385 × 493 × 645 mm" },
+    { name: "包装尺寸(W x D x H):", value: "465 × 573 × 726 mm" },
+    { name: "净重", value: "29.1kg" },
+    { name: "毛重", value: "32.1kg" },
+  ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/focus133/focus133-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_focus133_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# specification:
+
+# | Specification parameters                  |                                                                            |
+# | ----------------------------------------- | -------------------------------------------------------------------------- |
+# | Box                                       | Painted Wooden Full Range Speaker                                          |
+# | Unit composition                          | 1 x 14 "low-frequency unit 1 x 1.7" high-frequency driver                  |
+# | 分频模式                   | 内置二路分频器                                         |
+# | 频率响应 (-3dB)                 | 50Hz-18kHz                                                                 |
+# | 频率响应 (-10dB)                | 45Hz-20kHz                                                                 |
+# | 额定功率 AES                           | 750W                                                                       |
+# | Long term maximum power                   | 1500W                                                                      |
+# | Short term maximum power                  | 3000W                                                                      |
+# | Distortion 10% P                          | ≤5%                                                                        |
+# | 灵敏度                               | Built in frequency divider 99 dB                                           |
+# | Maximum sound pressure level pink noise   | Built in frequency divider 127dB/133dB (peak)                              |
+# | Effective Sound Pressure Level Pink Noise | Built in Frequency Division 110dB/116dB (Peak)                             |
+# | Impedance                                 | Built in frequency divider 8 Ω                                             |
+# | Box                                       | 15mm+18mm laminated board                                                  |
+# | 箱体材质                     | Coal gray water-based sand surface paint spraying                          |
+# | Iron mesh                                 | 静电粉末喷涂黑色细砂哑光,1.2mm低碳钢 |
+# | 连接器                                 | 2 × NL4                                                                    |
+# | 可选配件                      | 吊装套件                                                                |
+# | 尺寸 (W × D × H)                    | 385 × 645 × 450 mm                                                         |
+# | Packaging size                            | 465 × 573 × 726 mm                                                         |
+# | 净重                                | 29.1kg                                                                     |
+# | 毛重                              | 32.1kg                                                                     |

@@ -1,0 +1,76 @@
+title: FOCUS100
+ctitle: 10英寸双向全频扬声器
+description: 频率响应65Hz-20kHz（-3dB）|额定功率RMS 300W |灵敏度94 dB
+image: /images/products/focus100/focus100-0.jpg
+dimensional: /images/products/focus100/focus100-dimensions.png
+images:
+  [
+    "/images/products/focus100/focus100-1.jpg",
+    "/images/products/focus100/focus100-2.jpg",
+    "/images/products/focus100/focus100-3.jpg",
+    "/images/products/focus100/focus100-4.jpg",
+    "/images/products/focus100/focus100-5.jpg",
+    "/images/products/focus100/focus100-6.jpg",
+    "/images/products/focus100/focus100-7.jpg",
+    "/images/products/focus100/focus100-8.jpg",
+  ]
+category: speaker
+slug: focus100
+language: zh
+date: 2024-01-01
+features:
+  [
+    "10英寸低频和1.7英寸高频单元的组合提供了高保真的音效。",
+    "额定功率为300W,最大可达1200W,满足各种场景的需求。",
+    "15mm铁网层压板箱,坚固耐用。",
+    "配备NL4连接器和起重套件,可以灵活适应各种场景。",
+    "价格合理,性能卓越,性价比高。",
+  ]
+content:
+  FOCUS100是一款全频扬声器,专为追求高质量声音输出的用户而设计。箱体采用烤漆木质材料制成,不仅保证了扬声器的美观,而且具有良好的声学性能。
+
+  FOCUS100凭借其卓越的性能、优质的材料和精致的设计,可以在专业音频领域和日常娱乐场景中为用户带来卓越的声音体验。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "65Hz-20kHz" },
+    # { name: "频率响应(-10db)", value: "60Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "300W" },
+    # { name: "Total Power(MUSIC)", value: "600W" },
+    # { name: "Total Power(PEAK)", value: "1200W" },
+    { name: "最大声压级@1m", value: "115dB/121dB (峰值)" },
+    { name: "指向性 (H x V)", value: "130° x 120°" },
+    { name: "灵敏度 1W@1m", value: "94 dB" },
+    { name: "额定阻抗 (Ohm)", value: "8 Ω" },
+    # { name: "Crossover Frequencies", value: "2.2kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "10寸2分频全频扬声器" },
+    { name: "低音扬声器", value: "1 x 10' 低频单元" },
+    { name: "压缩驱动器", value: "1 x 44芯压缩驱动器" },
+    { name: "分频模式", value: "内置二路分频器" },
+    { name: "箱体材质", value: "15mm层压板" },
+    { name: "箱体表面处理", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "静电粉末喷涂黑色细砂哑光,1.2mm低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "298 x 382 x 540mm" },
+    { name: "包装尺寸(W x D x H):", value: "396 x 478 x 640mm" },
+    { name: "净重", value: "18.8kg" },
+    { name: "毛重", value: "20.8kg" },
+  ]
+downloads:
+  [
+    {
+      title: "照片",
+      url: "/images/products/focus100/focus100-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_focus100_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+  ]

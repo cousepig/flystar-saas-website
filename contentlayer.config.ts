@@ -14,6 +14,7 @@ export const Product = defineDocumentType(() => ({
     keywords: { type: "json", required: false },
     description: { type: "string", required: false },
     slug: { type: "string", required: true },
+    language: { type: 'string', required: true },
     image: { type: "string" },
     dimensional: { type: "string" },
     features: { type: "json" },
@@ -33,9 +34,17 @@ export const Product = defineDocumentType(() => ({
     "relatedproducts": { type: "json", required: false },
   },
   computedFields: {
+    // slug: {
+    //   type: "string",
+    //   resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    // },
     slug: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+      type: 'string',
+      resolve: (doc) => {
+        // Split the flattenedPath by '/' and take the last part
+        const pathParts = doc._raw.flattenedPath.split('/');
+        return pathParts.slice(2).join('/')
+      },
     },
     slugAsParams: {
       type: "string",
@@ -63,26 +72,26 @@ export const Product = defineDocumentType(() => ({
     },
   },
 }))
-export const Prod = defineDocumentType(() => ({
-  name: "Prod",
-  filePathPattern: `product/**/**/*.mdx`,
-  contentType: "mdx",
+export const Category = defineDocumentType(() => ({
+  name: "Category",
+  filePathPattern: `category/**/**/*.yml`,
+  contentType: "data",
   fields: {
     title: { type: "string", required: true },
-    ctitle: { type: "string", required: false },
     keywords: { type: "json", required: false },
     description: { type: "string", required: false },
     slug: { type: "string", required: true },
+    language: { type: 'string', required: true },
     image: { type: "string" },
-    images: { type: "json", required: false },
     category: { type: "string", required: false },
     date: { type: "date", required: true },
+    products: { type: "json" },
   },
   computedFields: {
-    slug: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
-    },
+    // slug: {
+    //   type: "string",
+    //   resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    // },
     slugAsParams: {
       type: "string",
       resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
@@ -114,6 +123,7 @@ export const Page = defineDocumentType(() => ({
     },
   },
 }))
+
 export const Showcase = defineDocumentType(() => ({
   name: "Showcase",
   filePathPattern: `showcase/**/*.mdx`,
@@ -128,6 +138,7 @@ export const Showcase = defineDocumentType(() => ({
     },
     keywords: { type: "json", required: false },
     slug: { type: "string", required: true },
+    language: { type: 'string', required: true },
     image: { type: "string" },
     images: { type: "json", required: false },
     category: { type: "string", required: false },
@@ -135,12 +146,16 @@ export const Showcase = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
-    // draft: { type: "boolean", required: false },
   },
   computedFields: {
+
     slug: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+      type: 'string',
+      resolve: (doc) => {
+        // Split the flattenedPath by '/' and take the last part
+        const pathParts = doc._raw.flattenedPath.split('/');
+        return pathParts.slice(2).join('/')
+      },
     },
     slugAsParams: {
       type: "string",
@@ -163,16 +178,21 @@ export const Article = defineDocumentType(() => ({
     image: { type: "string" },
     images: { type: "json", required: false },
     slug: { type: "string", required: false },
-    // draft: { type: "string", required: false },
+    language: { type: 'string', required: true },
     date: {
       type: "date",
       required: true,
     },
   },
   computedFields: {
+
     slug: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+      type: 'string',
+      resolve: (doc) => {
+        // Split the flattenedPath by '/' and take the last part
+        const pathParts = doc._raw.flattenedPath.split('/');
+        return pathParts.slice(2).join('/')
+      },
     },
     slugAsParams: {
       type: "string",
@@ -195,7 +215,6 @@ export const Solution = defineDocumentType(() => ({
     image: { type: "string" },
     images: { type: "json", required: false },
     slug: { type: "string", required: false },
-    // draft: { type: "string", required: false },
     date: {
       type: "date",
       required: true,
@@ -203,8 +222,12 @@ export const Solution = defineDocumentType(() => ({
   },
   computedFields: {
     slug: {
-      type: "string",
-      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+      type: 'string',
+      resolve: (doc) => {
+        // Split the flattenedPath by '/' and take the last part
+        const pathParts = doc._raw.flattenedPath.split('/');
+        return pathParts.slice(2).join('/')
+      },
     },
     slugAsParams: {
       type: "string",
@@ -215,7 +238,7 @@ export const Solution = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Page, Article, Product, Prod, Showcase, Solution],
+  documentTypes: [Page, Article, Product, Category, Showcase, Solution],
   disableImportAliasWarning: true,
   mdx: {
     remarkPlugins: [remarkGfm],

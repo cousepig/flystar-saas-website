@@ -5,11 +5,13 @@ export const getCurrentShowcases = (slug: string) => {
     return currentProducts;
 };
 
-export const getAllShowcases: Showcase[] = allShowcases
-    .filter(
-        (post) =>
-            post._raw.sourceFilePath.includes("showcase") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
-    )
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+export const getAllShowcases = (locale): Showcase[] => {
+    return allShowcases
+        .filter(
+            (post) =>
+                post._raw.sourceFilePath.includes("showcase") &&
+                !post._raw.sourceFilePath.includes("_index.md"),
+        ).filter((post) => post.language === locale)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
 

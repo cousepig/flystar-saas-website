@@ -11,10 +11,13 @@ export const getCurrentArticles = (slug: string) => {
     return currentProducts;
 };
 
-export const getAllArticle: Article[] = allArticles
-    .filter(
-        (post) =>
-            post._raw.sourceFilePath.includes("blogs") &&
-            !post._raw.sourceFilePath.includes("_index.md"),
-    )
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+export const getAllArticle = (locale): Article[] => {
+    // export const getAllArticle: Article[] =
+    return allArticles
+        .filter(
+            (post) =>
+                post._raw.sourceFilePath.includes("blogs") &&
+                !post._raw.sourceFilePath.includes("_index.md"),
+        ).filter((post) => post.language === locale)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}

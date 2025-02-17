@@ -1,0 +1,89 @@
+title: Liveclose 218B
+ctitle: Dual 18 inch low-frequency speakers
+description: Frequency response (-3dB) 38Hz-200Hz | Rated power (RMS) 1000W | Sensitivity（ 1W@1M ）99dB | Maximum SPL 135d8 (peak)
+image: /images/products/liveclose218b/liveclose218b-0.jpg
+dimensional: /images/products/liveclose218b/liveclose218b-dimensions.png
+images:
+  [
+    "/images/products/liveclose218b/liveclose218b-1.jpg",
+    "/images/products/liveclose218b/liveclose218b-2.jpg",
+    "/images/products/liveclose218b/liveclose218b-3.jpg",
+  ]
+category: speaker
+slug: liveclose218b
+language: en
+date: 2024-04-02
+features:
+  [
+    "The combination of dual 18 inch low-frequency provides high fidelity sound effects.",
+    "The rated power is 1000W, and the maximum can reach 4000W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  liveclose 218B is a subwoofer designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  liveclose 218B, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "38Hz-200Hz" },
+    # { name: "Frequency Response(-10db)", value: "34Hz-150Hz" },
+    { name: "Rated Power(RMS)", value: "1000W" },
+    # { name: "Total Power(MUSIC)", value: "2400W" },
+    # { name: "Total Power(PEAK)", value: "4800W" },
+    { name: "Max SPL @ 1m", value: "129dB/135dB (PEAK)" },
+    { name: "Sensitivity 1W @ 1m", value: "99 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "4 Ω" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "dual 18 inch subwoofer" },
+    { name: "Woofer", value: "2 x 18 inch ferrite woofer" },
+    { name: "Cabinet/Case Material", value: "21mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "1075 × 786 × 567mm" },
+    { name: "Package Dimensions(W x D x H):", value: "1180 × 890 × 690mm" },
+    { name: "Net weight", value: "80.5kg" },
+    { name: "Gross weight", value: "97kg" },
+  ]
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/liveclose218b/liveclose218b-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "Manual",
+      url: "/download/syrincs_live_close218b_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# ---
+
+# | Specification parameters      |                                                                                                              |
+# | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+# | Box construction              | 18mm laminated board surface polyurethane paint 18mm bird ply wood, durable polyurethane textured base paint |
+# | Unit composition: Transformer | 2X18 "Low frequency unit 18" Neodymium woofer                                                                |
+# | Frequency Response (-3dB)     | 40Hz-150Hz                                                                                                   |
+# | Frequency Response (-10dB)    | 34Hz-150Hz                                                                                                   |
+# | Rated Power (AES)             | 1200W                                                                                                        |
+# | Sensitivity（ 1W@1M )         | 98dB                                                                                                         |
+# | Maximum SPL                   | 124dB/130dB (peak)                                                                                           |
+# | Rated Impedance               | 4 OHM                                                                                                        |
+# | Connector                     | 2 × NL4                                                                                                      |
+# | Dimensions (W × D × H)        | 558 × 780 × 1078mm                                                                                           |
+# | Package Dimension             | 1180 × 890 × 690mm                                                                                           |
+# | Gross Weight                  | 91.2kg                                                                                                       |

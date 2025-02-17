@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import { HISTORY_ITEMS } from "@/config/history";
 
+import { useTranslation } from "app/[locale]/i18n/client";
+import { LocaleTypes } from "app/[locale]/i18n/settings";
+import { useParams } from "next/navigation";
 const Solutions = () => {
+  const locale = useParams()?.locale as LocaleTypes;
+
+  const { t } = useTranslation(locale, "about");
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -9,7 +16,7 @@ const Solutions = () => {
           <div className="w-full px-4 lg:w-2/3">
             <div className="wow fadeInUp " data-wow-delay=".2s">
               <h2 className="mb-4 text-xl font-normal !leading-tight text-primary">
-                Brand Milestones
+                {t("Brand Milestones")}
               </h2>
               {HISTORY_ITEMS.map((history, index) => (
                 <div key={index} className="mb-9">
@@ -17,7 +24,7 @@ const Solutions = () => {
                     {history.title}
                   </h3>
                   <p className="text-xs font-light leading-relaxed text-body-color ">
-                    {history.content}
+                    {t(history.title)}
                   </p>
                 </div>
               ))}

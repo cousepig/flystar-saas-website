@@ -1,36 +1,38 @@
 /** @type {import('next').NextConfig} */
 const { withContentlayer } = require('next-contentlayer2');
 
+// const { i18n } = require('./next-i18next.config.js')
+
 const nextConfig = {
     async redirects() {
         return [
           // Basic redirect
           {
-            source: '/products/microphone',
-            destination: '/product/microphone/product-wm3',
+            source: '/',
+            destination: '/en/',
             permanent: true,
           },
           {
-            source: '/products/mixer',
-            destination: '/product/mixer/product-d-quick2',
+            source: '/:locale/products/microphone',
+            destination: '/:locale/product/microphone/product-wm3',
             permanent: true,
           },
           {
-            source: '/products/processor',
-            destination: '/product/processor/product-dmatch2-6',
+            source: '/:locale/products/mixer',
+            destination: '/:locale/product/mixer/product-d-quick2',
             permanent: true,
           },
           {
-            source: '/products/electronics',
-            destination: '/product/electronics/product-gp820',
+            source: '/:locale/products/processor',
+            destination: '/:locale/product/processor/product-dmatch2-6',
             permanent: true,
           },
-          // Wildcard path matching
           {
-            source: '/blog/:slug',
-            destination: '/news/:slug',
+            source: '/:locale/products/electronics',
+            destination: '/:locale/product/electronics/product-gp820',
             permanent: true,
           },
+         
         ]
       },
     webpack(config) {
@@ -43,4 +45,4 @@ const nextConfig = {
     }
 }
 module.exports = withContentlayer(nextConfig)
-// module.exports = nextConfig
+

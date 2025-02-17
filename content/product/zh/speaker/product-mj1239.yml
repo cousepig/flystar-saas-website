@@ -1,0 +1,98 @@
+title: MJ1239
+ctitle: 3分频双12寸防水全频线性阵列音箱
+description: 频率响应:50Hz-20kHz (-3dB) | 额定功率(RMS):LF:800W MF:400W  HF:150W | 灵敏度 LF:100dB MF:110dB HF:113dB
+image: /images/products/mj1239/mj1239-0.jpg
+dimensional: /images/products/mj1239/mj1239-dimensions.png
+images:
+  [
+    "/images/products/mj1239/mj1239-1.jpg",
+    "/images/products/mj1239/mj1239-2.jpg",
+    "/images/products/mj1239/mj1239-3.jpg",
+    "/images/products/mj1239/mj1239-4.jpg",
+    "/images/products/mj1239/mj1239-5.jpg",
+    "/images/products/mj1239/mj1239-6.jpg",
+    "/images/products/mj1239/mj1239-7.jpg",
+    "/images/products/mj1239/mj1239-8.jpg",
+  ]
+category: speaker
+slug: mj1239
+language: zh
+date: 2024-04-02
+
+features:
+  [
+    "双12英寸低频和1.75英寸高频单元的组合，提供了高保真的音效。",
+    "额定功率2000W，最大可达8000W，满足各类场景需求。",
+    "15mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content: 双12寸低频搭配双同轴中高频压缩驱动器精准的线性相位响应带来完美的音质垂直角度调节范围：0°至10°，调节精度为1°，适合各种场地内置三点吊挂系统，可方便快捷地悬挂或叠放安装IP55防尘防水认证
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "55Hz-20kHz" },
+    # { name: "频率响应(-10db)", value: "60Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "LF: 800W MF:400W HF: 150W" },
+    { name: "总功率(MUSIC)", value: "LF: 1600W MF:800W HF:300W" },
+    { name: "总功率(PEAK)", value: "LF: 3200W MF:1600W HF:600W" },
+    { name: "最大声压级 @ 1m", value: "LF:129dB/135dB(PEAK)
+        MF:136dB/142dB(PEAK)
+        HF:134dB/140dB(PEAK)" },
+    { name: "指向性 (H x V)", value: "水平 100 °, 垂直 0-10°(可调)" },
+    { name: "灵敏度 1W @ 1m", value: "LF:100dB MF:110dB HF:113dB" },
+    { name: "额定阻抗 (Ohm)", value: "LF:4 Ω MF:8 Ω HF:16 Ω" },
+    # { name: "Crossover Frequencies", value: "2.3kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "双 12 英寸防水线性阵列扬声器" },
+    { name: "低音扬声器", value: "2 × 12 寸进口低频单元" },
+    { name: "中频单元", value: "4 × 6 寸进口中频单元" },
+    { name: "压缩驱动器", value: "3 x 44 芯进口压缩驱动器" },
+    { name: "分频模式", value: "外置二分频：200Hz-250Hz" },
+    { name: "", value: "外置三分频：LF:200Hz-250Hz
+        HF:2.5kHz-3.5kHz" },
+    { name: "箱体材质", value: "进口层压板" },
+    { name: "箱体材质", value: "黑色聚酰亚胺喷涂" },
+    { name: "面网", value: "黑色喷粉" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "1100 × 659 × 452mm" },
+    { name: "包装尺寸(W x D x H):", value: "1220 × 740 × 530mm" },
+    { name: "净重", value: "56.5kg" },
+    { name: "毛重", value: "62kg" },
+  ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/mj1239/mj1239-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_mj1239_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters         |                                                                                                               |
+# | -------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+# | System Type                      | Dual 12 inch Waterproof Linear Array Speaker System                                                           |
+# | System composition               | 2 × T100-44 coaxial mid high frequency unit 2 × 12 "neodymium iron boron internal magnetic low-frequency unit |
+# | 频率响应               | 55Hz-19kHz (± 3dB)                                                                                            |
+# | 额定功率                      | LF: 600W HF: 2000W                                                                                            |
+# | 灵敏度                      | LF: 108dB HF: 114dB                                                                                           |
+# | Maximum SPL                      | LF: 137dB HF: 143dB                                                                                           |
+# | Rated impedance                  | 4 Ω                                                                                                           |
+# | Directionality                   | Horizontal 100 °, vertically adjustable                                                                       |
+# | Box                              | 18mm laminated board                                                                                          |
+# | 箱体材质            | Black polyurethane spray coating                                                                              |
+# | Mesh                             | Black plastic powder coating, 6mm steel orifice plate                                                         |
+# | 连接器                        | 2 × NL4                                                                                                       |
+# | 尺寸 (W × D × H)           | 810 × 354 × 490mm                                                                                             |
+# | Packaging 尺寸 (W × D × H) | 935 × 455 × 590mm                                                                                             |
+# | 净重                       | 48kg                                                                                                          |
+# | 毛重                     | 53kg                                                                                                          |

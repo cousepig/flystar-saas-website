@@ -1,8 +1,7 @@
-import { Category } from "@/types/category";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleCategory = ({ category }: { category: Category }) => {
+const SingleCategory = ({ params: { locale }, category }: any) => {
   const { title, image, description, slug } = category;
   return (
     <>
@@ -11,7 +10,7 @@ const SingleCategory = ({ category }: { category: Category }) => {
         data-wow-delay=".1s"
       >
         <Link
-          href={"/products/" + slug}
+          href={`/${locale}/products/${slug}`}
           className="relative block aspect-[37/22] w-full"
         >
           <span className="absolute right-6 top-6 z-20 inline-flex items-center justify-center rounded-10 bg-primary px-4 py-2 text-sm font-semibold capitalize text-white"></span>
@@ -20,7 +19,7 @@ const SingleCategory = ({ category }: { category: Category }) => {
         <div className="py-6 ">
           <h3>
             <Link
-              href={"/products/" + slug}
+              href={`/${locale}/products/${slug}`}
               className="mb-4 block text-xl font-bold text-primary hover:text-yellow  "
             >
               {title}

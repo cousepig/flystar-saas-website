@@ -1,0 +1,90 @@
+title: MJ12M
+ctitle: 内置2声道12寸同轴点音源全频音箱
+description: 频率响应 (-3dB):58Hz-20KHz | 额定功率:400W | 最大声压级:124dB/130dB
+image: /images/products/mj12m/mj12m-0.jpg
+dimensional: /images/products/mj12m/mj12m-dimensions.png
+images:
+  [
+    "/images/products/mj12m/mj12m-1.jpg",
+    "/images/products/mj12m/mj12m-2.jpg",
+    "/images/products/mj12m/mj12m-3.jpg",
+    "/images/products/mj12m/mj12m-4.jpg",
+    "/images/products/mj12m/mj12m-5.jpg",
+  ]
+category: speaker
+slug: mj12m
+language: zh
+date: 2024-04-01
+
+features:
+  [
+    "12英寸低频和1.75英寸高频单元的组合，提供了高保真的音效。",
+    "额定功率400W，最大可达1600W，满足各类场景需求。",
+    "18mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content:
+  多角度紧凑型结构设计，具有30°和60°两个固定角度，可作为主或辅分布式扩声，也可作为重播使用。12寸75芯钕磁设计，低音背面采用44芯同轴安装用于高频，与低音共用同一块钕磁体，设计高效精巧。 -主要为大中型演艺、酒吧、剧院、现场演出等场所设计，环绕声系统提供音频反馈；
+  -与MJ1023、MJ1022或MJ1239配合组成系统；
+  -与低音CLUB18W搭配使用，可将低频延伸至40Hz；
+  -高声压级、高清晰度设计。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "58Hz-20kHz" },
+    # { name: "频率响应(-10db)", value: "50Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "400W" },
+    # { name: "Total Power(MUSIC)", value: "800W" },
+    # { name: "Total Power(PEAK)", value: "1600W" },
+    { name: "最大声压级 @ 1m", value: "124dB/130dB (PEAK)" },
+    { name: "指向性 (H x V)", value: "120 x 120" },
+    { name: "灵敏度 1W @ 1m", value: "97 dB" },
+    { name: "额定阻抗 (Ohm)", value: "8 Ω" },
+    # { name: "Crossover Frequencies", value: "2.3kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "12 寸2分频全频扬声器" },
+    { name: "低音扬声器", value: "1 x 12 寸低频单元" },
+    { name: "压缩驱动器", value: "1 x 1.75 寸高频驱动器" },
+    { name: "分频模式", value: "内置二路分频器" },
+    { name: "箱体材质", value: "18mm 层压板" },
+    { name: "箱体材质", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "静电粉末喷涂黑色细砂哑光,1.2mm低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "540 × 430 × 377mm" },
+    { name: "包装尺寸(W x D x H):", value: "660 × 525 × 460mm" },
+    { name: "净重", value: "15.8kg" },
+    { name: "毛重", value: "18.3kg" },
+  ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/mj12m/mj12m-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/Syrincs_mj12m_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters       |                                                                                                  |
+# | ------------------------------ | ------------------------------------------------------------------------------------------------ |
+# | Box Construction               | 18mm laminated board surface with water-based coal grey sand paint                               |
+# | Unit composition Transformer   | 1 x 12 "low-frequency neodymium magnetic unit 1 x 1.73" neodymium magnetic high-frequency driver |
+# | 频率响应 (-3dB)      | 58Hz-20KHz                                                                                       |
+# | 额定功率 (AES)              | 400W                                                                                             |
+# | 灵敏度（ 1W@1M )          | 97dB                                                                                             |
+# | Maximum SPL                    | 124dB/130dB (peak)                                                                               |
+# | Rated Impedance                | 8 OHM                                                                                            |
+# | Directional 指向性 (H × V) | 120 °× 120 °                                                                                     |
+# | 尺寸 (W × D × H)         | 540mmx430mmx365mm                                                                                |
+# | Package Dimension              | 660mmx525mmx460mm                                                                                |
+# | 净重                     | 15.7KG                                                                                           |
+# | 毛重                   | 18.25KG                                                                                          |

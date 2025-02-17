@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Posts = ({ posts }: any) => {
+const Posts = ({ params: { locale }, posts }: any) => {
   return (
     <div>
       <div>
@@ -23,7 +23,7 @@ const Posts = ({ posts }: any) => {
                 <div className="col-span-2">
                   <Link
                     key={i}
-                    href={`${post.slug}`}
+                    href={`/${locale}/blogs/${post.slug}`}
                     className="bg-white overflow-hidden transition duration-300 ease-in-out"
                   >
                     <div className="image relative block aspect-[35/70] h-[350px] w-full overflow-hidden">
@@ -43,7 +43,7 @@ const Posts = ({ posts }: any) => {
                   <div className="py-5">
                     <Link
                       key={i}
-                      href={`${post.slug}`}
+                      href={`/${locale}/blogs/${post.slug}`}
                       className="bg-white related-news overflow-hidden transition duration-300 ease-in-out"
                     >
                       <h6 className="mb-3 text-xl font-medium ">
@@ -52,9 +52,6 @@ const Posts = ({ posts }: any) => {
                       <small className="mb-5 text-base text-slate-500 font-light d-block">
                         {post.description}
                       </small>
-                      {/* <div className="btn btn-link-normal pro-font-rgregular ">
-                    Learn More
-                  </div> */}
                     </Link>
                   </div>
                 </div>
@@ -77,7 +74,7 @@ const Posts = ({ posts }: any) => {
             i > 0 && (
               <Link
                 key={i}
-                href={`${post.slug}`}
+                href={`/${locale}/blogs/${post.slug}`}
                 className="bg-white related-news border-b border-slate-300 overflow-hidden transition duration-300 ease-in-out"
               >
                 <div
@@ -93,10 +90,6 @@ const Posts = ({ posts }: any) => {
                       quality={75}
                       priority={true}
                       fill
-                      // style={{
-                      //   width: "100%",
-                      //   height: "auto",
-                      // }}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
@@ -105,9 +98,6 @@ const Posts = ({ posts }: any) => {
                     <small className="mb-5 text-slate-500 font-light d-block">
                       {post.description}
                     </small>
-                    {/* <div className="btn btn-link-normal pro-font-rgregular ">
-                    Learn More
-                  </div> */}
                   </div>
                 </div>
               </Link>

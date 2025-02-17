@@ -1,0 +1,114 @@
+title: FOCUS133
+ctitle: 14 inch two way full frequency speaker
+description: Frequency response 50Hz-18kHz (-3dB) | Rated power RMS 750W | Sensitivity 99 dB
+image: /images/products/focus133/focus133-0.jpg
+dimensional: /images/products/focus133/focus133-dimensions.png
+images:
+  [
+    "/images/products/focus133/focus133-1.jpg",
+    "/images/products/focus133/focus133-2.jpg",
+    "/images/products/focus133/focus133-3.jpg",
+    "/images/products/focus133/focus133-4.jpg",
+    "/images/products/focus133/focus133-5.jpg",
+    "/images/products/focus133/focus133-6.jpg",
+    "/images/products/focus133/focus133-7.jpg",
+    "/images/products/focus133/focus133-8.jpg",
+    "/images/products/focus133/focus133-9.jpg",
+  ]
+category: speaker
+slug: focus133
+language: en
+date: 2024-01-03
+
+features:
+  [
+    "The combination of 14 inch low-frequency and 1.7-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 750W, and the maximum can reach 3000W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  FOCUS133 is a full range speaker designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  FOCUS133, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "50Hz-18kHz" },
+    # { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
+    { name: "Rated Power(RMS)", value: "750W" },
+    # { name: "Total Power(MUSIC)", value: "1500W" },
+    # { name: "Total Power(PEAK)", value: "3000W" },
+    { name: "Max SPL @ 1m", value: "127dB/133dB (PEAK)" },
+    { name: "Dispersion (H x V)", value: "90 x 80" },
+    { name: "Sensitivity 1W @ 1m", value: "99 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
+    # { name: "Crossover Frequencies", value: "2.2kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "14 inch Two Way Full Range Speaker" },
+    { name: "Woofer", value: "1 x 14 'low-frequency unit" },
+    { name: "Compression driver", value: "1 x 44-core compression driver" },
+    {
+      name: "Frequency division mode",
+      value: "Built in two-way frequency divider",
+    },
+    { name: "Cabinet/Case Material", value: "15mm+18mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "385 × 493 × 645 mm" },
+    { name: "Package Dimensions(W x D x H):", value: "465 × 573 × 726 mm" },
+    { name: "Net weight", value: "29.1kg" },
+    { name: "Gross weight", value: "32.1kg" },
+  ]
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/focus133/focus133-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "Manual",
+      url: "/download/syrincs_focus133_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# specification:
+
+# | Specification parameters                  |                                                                            |
+# | ----------------------------------------- | -------------------------------------------------------------------------- |
+# | Box                                       | Painted Wooden Full Range Speaker                                          |
+# | Unit composition                          | 1 x 14 "low-frequency unit 1 x 1.7" high-frequency driver                  |
+# | Frequency division mode                   | Built in two-way frequency divider                                         |
+# | Frequency response (-3dB)                 | 50Hz-18kHz                                                                 |
+# | Frequency response (-10dB)                | 45Hz-20kHz                                                                 |
+# | Rated power AES                           | 750W                                                                       |
+# | Long term maximum power                   | 1500W                                                                      |
+# | Short term maximum power                  | 3000W                                                                      |
+# | Distortion 10% P                          | ≤5%                                                                        |
+# | Sensitivity                               | Built in frequency divider 99 dB                                           |
+# | Maximum sound pressure level pink noise   | Built in frequency divider 127dB/133dB (peak)                              |
+# | Effective Sound Pressure Level Pink Noise | Built in Frequency Division 110dB/116dB (Peak)                             |
+# | Impedance                                 | Built in frequency divider 8 Ω                                             |
+# | Box                                       | 15mm+18mm laminated board                                                  |
+# | Box surface treatment                     | Coal gray water-based sand surface paint spraying                          |
+# | Iron mesh                                 | Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel |
+# | Connector                                 | 2 × NL4                                                                    |
+# | Optional accessories                      | Lifting kit                                                                |
+# | Dimensions (W × D × H)                    | 385 × 645 × 450 mm                                                         |
+# | Packaging size                            | 465 × 573 × 726 mm                                                         |
+# | Net weight                                | 29.1kg                                                                     |
+# | Gross weight                              | 32.1kg                                                                     |

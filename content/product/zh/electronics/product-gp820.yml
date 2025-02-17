@@ -1,0 +1,67 @@
+title: GP820
+ctitle: 电源控制器
+description: GP820是一款专业的电源定时分配器,可以将输入主电源分为八个电源输出,并可以按时间顺序依次打开和关闭每个电源,有效地减少了对系统的影响。它特别适用于大规模音频工程,如录音棚、广播站和大型演出等场合。它具有紧凑结实的设计,易于安装和使用。
+image: /images/products/gp820/gp820-0.jpg
+dimensional:
+images:
+  ["/images/products/gp820/gp820-1.jpg", "/images/products/gp820/gp820-2.jpg"]
+category: electronics
+slug: gp820
+language: zh
+date: 2024-08-01
+
+features:
+  [
+    "一个主电路输入和八个受控电源输出。",
+    "内部微处理器控制,能够顺序启动和反向关闭,可以与多个单元级联使用",
+    "每个通道都有LED开/关指示灯,一目了然。",
+    "配备旁通开关和每个通道的独立控制开关。使用灵活。",
+    "面板上有一个USB 5V充电接口。",
+    "紧凑坚固。",
+  ]
+content: GP820是一款专业的电源定时分配器,可以将输入主电源分为八个电源输出,并可以按时间顺序依次打开和关闭每个电源,有效地减少了对系统的影响。它特别适用于大规模音频工程,如录音棚、广播站和大型演出等场合。它具有紧凑结实的设计,易于安装和使用。
+
+technicalspecification:
+  [
+    { name: "整机最大输入功率", value: " 16KW" },
+    { name: "每个电源通道的最大输出功率", value: " 2KW " },
+    { name: "延迟开/关时间", value: " 1 second   " },
+    { name: "级联控制", value: "Yes " },
+    { name: "旁路功能 ", value: "Yes " },
+    { name: "ALL OFF功能 ", value: " Yes " },
+  ]
+
+physicalspecification:
+  [
+    { name: "尺寸 (W×D×H) ", value: "483 × 291 × 88mm" },
+    { name: "包装尺寸 (W×D×H)", value: "526 × 369 × 145mm" },
+    { name: "净重 (kg/Pcs)  ", value: "5.7kg" },
+    { name: "总重量 (kg/Pcs)", value: "7.6kg" },
+  ]
+
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/gp820/gp820-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_gp820_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters                   |                  |
+# | ------------------------------------------ | ---------------- |
+# | Maximum input power of the whole machine   | 16KW             |
+# | Maximum output power of each power channel | 2KW              |
+# | Delay on/off time                          | 1 second         |
+# | Cascade control                            | Yes              |
+# | BYPASS function                            | Yes              |
+# | ALL OFF function                           | Yes              |
+# | Dimensions (W × D × H)                     | 484 × 222 × 88mm |
+# | Packaging size (W × D × H)                 | 555 × 310 × 78mm |
+# | Net weight (kg/Pcs)                        | 5kg              |
+# | Total weight (kg/Pcs)                      | 6kg              |

@@ -4,8 +4,14 @@ import Link from "next/link";
 // import Form from "next/form";
 import categoryData from "@/sections/products/categoryData";
 import config from "@/config/config.json";
-// import NewsLatterBox from "../Contact/NewsLatterBox";
+import { useTranslation } from "app/[locale]/i18n/client";
+import { LocaleTypes } from "app/[locale]/i18n/settings";
+import { useParams } from "next/navigation";
 const Footer = () => {
+  const locale = useParams()?.locale as LocaleTypes;
+
+  const { t } = useTranslation(locale, "footer");
+
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -33,11 +39,11 @@ const Footer = () => {
       <div className="footer">
         <div className=" py-8 bg-secondary w-full">
           <p className="text-center pro-font-bold text-xl text-black text-primary">
-            SINCE 1981, GERMANY
+            {t("SINCE 1981, GERMANY")}
           </p>
 
           <p className="text-center text-xl pro-font-bold text-black text-primary">
-            Pro Entertainment Audio System
+            {t("Pro Entertainment Audio System")}
           </p>
         </div>
         <footer
@@ -46,11 +52,9 @@ const Footer = () => {
         >
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
-              {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/10">
-            </div> */}
               <div className="w-full px-4 md:w-1/2 lg:w-3/12 xl:w-2/10">
                 <div className="mb-12 max-w-[360px] lg:mb-6 ">
-                  <Link href="/" className="mb-6 inline-block">
+                  <Link href={`/${locale}`} className="mb-6 inline-block">
                     <Image
                       src="/images/logo/syrincs-logo-white.webp"
                       alt="logo"
@@ -59,7 +63,7 @@ const Footer = () => {
                       height={30}
                     />
                     <h3 className="text-white text-center ">
-                      We Ascend, Sound Soar
+                      {t("We Ascend, Sound Soar")}
                     </h3>
                   </Link>
 
@@ -70,16 +74,16 @@ const Footer = () => {
               <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/10 text-center">
                 <div className="mb-6 lg:mb-8">
                   <h2 className="mb-2 text-base font-bold text-white ">
-                    Products
+                    {t("Products")}
                   </h2>
                   <ul>
                     {categoryData.map((category, footindex) => (
                       <li key={footindex}>
                         <a
-                          href={`/products/${category.slug}`}
+                          href={`/${locale}/products/${category.slug}`}
                           className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                         >
-                          {category.title}
+                          {t(category.title)}
                         </a>
                       </li>
                     ))}
@@ -90,47 +94,47 @@ const Footer = () => {
               <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/10 text-center">
                 <div className="mb-6 lg:mb-8">
                   <h2 className="mb-2 text-base font-bold text-white ">
-                    Showcase
+                    {t("Showcase")}
                   </h2>
                   <ul>
                     <li>
                       <a
-                        href="/showcase"
+                        href={`/${locale}/showcase`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        Party K
+                        {t("Party K")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/showcase"
+                        href={`/${locale}/showcase`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        DJ
+                        {t("DJ")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/showcase"
+                        href={`/${locale}/showcase`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        Bar
+                        {t("Bar")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/showcase"
+                        href={`/${locale}/showcase`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        KTV
+                        {t("Club")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/showcase"
+                        href={`/${locale}/showcase`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        Club
+                        {t("Live")}
                       </a>
                     </li>
                   </ul>
@@ -141,43 +145,43 @@ const Footer = () => {
                 <div className="mb-6 lg:mb-8">
                   <h2 className="mb-2 text-base font-bold text-white ">
                     <a
-                      href="/support"
+                      href={`/${locale}/support`}
                       className="mb-1 inline-block text-white duration-300 hover:text-secondary"
                     >
-                      Support
+                      {t("Support")}
                     </a>
                   </h2>
                   <ul>
                     <li>
                       <a
-                        href="/support/service"
+                        href={`/${locale}/support/service`}
                         className="mb-1 inline-block font-light text-xs text-white duration-300 hover:text-secondary"
                       >
-                        Service
+                        {t("Service")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/downloads"
+                        href={`/${locale}/downloads`}
                         className="mb-1 inline-block font-light text-xs text-white duration-300 hover:text-secondary"
                       >
-                        Downloads
+                        {t("Downloads")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/privacy"
+                        href={`/${locale}/privacy`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        Privacy Policy
+                        {t("Privacy")}
                       </a>
                     </li>
                     <li>
                       <a
-                        href="/contact"
+                        href={`/${locale}/contact`}
                         className="mb-1 inline-block text-xs text-white  font-light duration-300 hover:text-secondary"
                       >
-                        Contact us
+                        {t("Contact")}
                       </a>
                     </li>
                   </ul>
@@ -191,14 +195,16 @@ const Footer = () => {
             <div className="container">
               <div className="flex flex-wrap items-center justify-between py-6">
                 <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-5/12">
-                  <h2>Stay Tuned</h2>
-                  <p>Subscribe to the Syrincs newsletter and stay tuned</p>
+                  <h2>{t("Stay Tuned")}</h2>
+                  <p>
+                    {t("Subscribe to the Syrincs newsletter and stay tuned.")}
+                  </p>
                 </div>
                 <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-7/12 inschrijfformulier">
                   <form onSubmit={handleSubmit} className="mt-8 mb-2 ">
                     <ul>
                       <li>
-                        <label>Your market</label>
+                        <label>{t("Your market")}</label>
                         <div className="flex gap-3">
                           <div className="flex h-6 shrink-0 items-center">
                             <div className="group grid size-4 grid-cols-1">
@@ -211,7 +217,7 @@ const Footer = () => {
                               />
                             </div>
                             <label className="font-medium text-gray-900 px-1">
-                              Commercial
+                              {t("Commercial")}
                             </label>
                           </div>
                           <div className="flex h-6 shrink-0 items-center">
@@ -225,7 +231,7 @@ const Footer = () => {
                               />
                             </div>
                             <label className="font-medium text-gray-900 px-1">
-                              Touring/Rental
+                              {t("Touring/Rental")}
                             </label>
                           </div>
                           <div className="flex h-6 shrink-0 items-center">
@@ -239,7 +245,7 @@ const Footer = () => {
                               />
                             </div>
                             <label className="font-medium text-gray-900 px-1">
-                              Installation
+                              {t("Installation")}
                             </label>
                           </div>
                           <div className="flex h-6 shrink-0 items-center">
@@ -253,22 +259,22 @@ const Footer = () => {
                               />
                             </div>
                             <label className="font-medium text-gray-900 px-1">
-                              Studio
+                              {t("Studio")}
                             </label>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <label>E-mail address</label>
+                        <label>{t("E-mail address")} </label>
                         <input
                           type="email"
                           name="email"
-                          placeholder="Your email-address"
+                          placeholder={t("Enter your email address")}
                           className="rounded-sm border border-primary bg-white checked:border-primary checked:bg-primary indeterminate:border-primary indeterminate:bg-primary focus-visible:outline-2 focus-visible:outline-primary disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                         />
                       </li>
                       <li>
-                        <input type="submit" value="Sign Up" />
+                        <input type="submit" value={t("Sign Up")} />
                       </li>
                     </ul>
                   </form>
@@ -357,7 +363,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
-                <h2 className="text-right">Sound Soar</h2>
+                <h2 className="text-right">{t("Sound Soar")}</h2>
               </div>
             </div>
 
@@ -374,28 +380,27 @@ const Footer = () => {
               <div className="w-full px-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
                 <ul className="nav text-right font-light text-primary text-xs">
                   <li className="">
-                    <a href="/" aria-current="page">
-                      Home
+                    <a href={`/${locale}/`} aria-current="page">
+                      {t("Home")}
                     </a>
                   </li>
                   <li>
-                    <a href="/products/">Products</a>
+                    <a href={`/${locale}/products`}>{t("Products")}</a>
                   </li>
                   <li>
-                    <a href="/showcase/">Showcase</a>
+                    <a href={`/${locale}/showcase/`}>{t("Showcase")} </a>
                   </li>
                   <li>
-                    <a href="/downloads">Downloads</a>
+                    <a href={`/${locale}/downloads/`}>{t("Downloads")}</a>
                   </li>
                   <li>
-                    <a href="/contact/">Contact</a>
+                    <a href={`/${locale}/contact/`}>{t("Contact")}</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </footer>
-        {/* <div className="py-8 bg-secondary w-full"></div> */}
         <div className="absolute right-0 top-14 z-[-1]">
           <svg
             width="55"

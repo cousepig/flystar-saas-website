@@ -1,45 +1,47 @@
 [
-    {
-      "id": 1,
-      "title": "Live House enhances sound system with Syrincs Audio",
-      "tagline": "IF YOU LIKE IT",
-      "image": "/images/home/banner-1.jpg",
-      "buttons": [
-        {
-          "id": 1,
-          "text": "Read More",
-          "link": "/",
-          "type": "btn-dark btn-circle"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Syrincs Systems Prove Ideal For All In Trondheim",
-      "tagline": "IF YOU LIKE IT",
-      "image": "/images/home/banner-2.jpg",
-      "buttons": [
-        {
-          "id": 1,
-          "text": "Read More",
-          "link": "/",
-          "type": "btn-dark btn-circle"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Syrincs Systems Prove Ideal For All In Trondheim",
-      "tagline": "IF YOU LIKE IT",
-      "image": "/images/home/banner-3.jpg",
-      "buttons": [
-        {
-          "id": 1,
-          "text": "Read More",
-          "link": "/",
-          "type": "btn-dark btn-circle"
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Live House enhances sound system with Syrincs Audio",
+    "tagline": "IF YOU LIKE IT",
+    "image": "/images/home/banner-1.jpg",
+    "link": "/en/products",
+    "buttons": [
+      {
+        "id": 1,
+        "text": "Read More",
+        "link": "/",
+        "type": "btn-dark btn-circle"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Syrincs Systems Prove Ideal For All In Trondheim",
+    "tagline": "IF YOU LIKE IT",
+    "image": "/images/home/banner-2.jpg",
+    "link": "/en/products",
+    "buttons": [
+      {
+        "id": 1,
+        "text": "Read More",
+        "link": "/",
+        "type": "btn-dark btn-circle"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Syrincs Systems Prove Ideal For All In Trondheim",
+    "tagline": "IF YOU LIKE IT",
+    "image": "/images/home/banner-3.jpg",
+    "link": "/en/showcase",
+    "buttons": [
+      {
+        "id": 1,
+        "text": "Read More",
+        "link": "/",
+        "type": "btn-dark btn-circle"
+      }
+    ]
+  }
+]

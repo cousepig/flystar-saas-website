@@ -2,7 +2,13 @@
 // import Link from "next/link"
 import NewsLatterBox from "./NewsLatterBox";
 
+import { useTranslation } from "app/[locale]/i18n/client";
+import { LocaleTypes } from "app/[locale]/i18n/settings";
+import { useParams } from "next/navigation";
 const Contact = () => {
+  const locale = useParams()?.locale as LocaleTypes;
+
+  const { t } = useTranslation(locale, "contact");
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -19,10 +25,10 @@ const Contact = () => {
       const responseData = await response.json();
       console.log(responseData["message"]);
 
-      alert("Message successfully sent");
+      alert(t("Message successfully sent"));
     } catch (err) {
       console.error(err);
-      alert("Error, please try resubmitting the form");
+      alert(t("Error, please try resubmitting the form"));
     }
   }
   return (
@@ -36,7 +42,7 @@ const Contact = () => {
               "
             >
               <h2 className="mb-3 text-xl font-bold text-black">
-                Germany Office
+                {t("Germany Office")}
               </h2>
 
               <div className="mb-12 font-light text-body-color">
@@ -47,7 +53,7 @@ const Contact = () => {
               </div>
 
               <h2 className="mb-3 text-xl font-bold text-black  ">
-                Hong Kong Office
+                {t("Hong Kong Office")}
               </h2>
               <div className="mb-12 font-light text-body-color">
                 <p>
@@ -63,7 +69,7 @@ const Contact = () => {
               </div>
 
               <h2 className="mb-3 text-xl font-bold text-black  ">
-                China Office
+                {t("China Office")}
               </h2>
               <div className="mb-12 font-light text-body-color">
                 <p>
@@ -79,11 +85,12 @@ const Contact = () => {
               </div>
 
               <h2 className="mb-3 text-xl font-bold text-black ">
-                Get Assistance by Opening a Ticket
+                {t("Get Assistance by Opening a Ticket")}
               </h2>
               <p className="mb-12 font-light text-body-color">
-                We &APOS; ll respond to your inquiry as soon as possible via
-                email.
+                {t(
+                  "We'll respond to your inquiry as soon as possible via email."
+                )}
               </p>
               <form onSubmit={handleSubmit} className="mt-8 mb-2 ">
                 <div className="-mx-4 flex flex-wrap">
@@ -93,12 +100,12 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-primary "
                       >
-                        Your Name
+                        {t("Your Name")}
                       </label>
                       <input
                         name="name"
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder={t("Enter your name")}
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#11211f] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -109,12 +116,12 @@ const Contact = () => {
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-primary "
                       >
-                        Your Email
+                        {t("Your Email")}
                       </label>
                       <input
                         name="email"
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder={t("Enter your email")}
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#11211f] dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -125,19 +132,19 @@ const Contact = () => {
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-primary "
                       >
-                        Your Message
+                        {t("Your Message")}
                       </label>
                       <textarea
                         name="message"
                         rows={5}
-                        placeholder="Enter your Message"
+                        placeholder={t("Enter your message")}
                         className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#11211f] dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button className="shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-                      Submit
+                      {t("Submit")}
                     </button>
                   </div>
                 </div>

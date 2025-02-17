@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Product } from "contentlayer/generated";
+// import { Product } from "contentlayer/generated";
 // import Link from "next/link";
 /**
  * 商品卡片组件
@@ -8,11 +8,15 @@ import { Product } from "contentlayer/generated";
  * @param product 商品对象，包含商品的图片、标题、描述和slug等信息
  * @returns 返回渲染后的商品卡片DOM结构
  */
-const ProductCard = ({ product }: { product: Product }) => {
+const ProductCard = ({ params: locale, product }: any) => {
   const { title, image, description, slug, ctitle, content } = product;
+
   return (
     <div className="col-md-6 related-product mb-5">
-      <Link href={"" + slug} className="bg-white h-100 d-block">
+      <Link
+        href={`/${locale}/product/${slug}`}
+        className="bg-white h-100 d-block"
+      >
         <div
           className="w-full wow fadeInUp group relative overflow-hidden rounded-sm bg-white duration-300  grid-cols-3 grid gap-6"
           data-wow-delay=".1s"

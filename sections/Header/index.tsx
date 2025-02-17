@@ -5,14 +5,20 @@ import { usePathname } from "next/navigation";
 import { SetStateAction, useEffect, useState } from "react";
 
 import menuData from "./menuData";
+import LangSwitch from "@/components/LangSwitch";
 
+import { useTranslation } from "app/[locale]/i18n/client";
+import { LocaleTypes } from "app/[locale]/i18n/settings";
+import { useParams } from "next/navigation";
 const Header = () => {
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+  const locale = useParams()?.locale as LocaleTypes;
 
+  const { t } = useTranslation(locale, "header");
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
@@ -51,7 +57,7 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12 left-0 top-0 z-40 flex absolute">
               <Link
-                href="/"
+                href={`/${locale}`}
                 className={`header-logo block w-full h-20 ${
                   sticky ? "py-5 lg:py-2" : "py-0"
                 } `}
@@ -102,14 +108,14 @@ const Header = () => {
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
-                            href={menuItem.path}
+                            href={`/${locale}${menuItem.path}`}
                             className={`flex py-2 text-base font-light lg:mr-0 pro-font-ltlight lg:inline-flex lg:px-0 lg:py-4 ${
                               usePathName === menuItem.path
                                 ? "text-yellow"
                                 : "text-white hover:text-yellow "
                             }`}
                           >
-                            {menuItem.title}
+                            {t(menuItem.title)}
                           </Link>
                         ) : (
                           <>
@@ -117,7 +123,7 @@ const Header = () => {
                               onClick={() => handleSubmenu(index)}
                               className="flex cursor-pointer items-center justify-between py-2 pro-font-ltlight text-base font-light text-white group-hover:text-yellow dark:text-white/70 dark:group-hover:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-4"
                             >
-                              {menuItem.title}
+                              {t(menuItem.title)}
                               <span className="pl-1">
                                 <svg width="20" height="20" viewBox="0 1 24 24">
                                   <path
@@ -143,13 +149,13 @@ const Header = () => {
                                       <Link
                                         href={
                                           submenuItem.path
-                                            ? submenuItem.path
+                                            ? "/" + locale + submenuItem.path
                                             : "/"
                                         }
                                         className="block rounded py-1 text-xs font-light  text-white pro-font-ltlight hover:text-yellow lg:px-3"
                                       >
                                         <span key={subIndex}>
-                                          {submenuItem.title}
+                                          {t(submenuItem.title)}
                                         </span>
                                       </Link>
                                     </li>
@@ -161,6 +167,9 @@ const Header = () => {
                         )}
                       </li>
                     ))}
+                    <li className="group relative">
+                      <LangSwitch />
+                    </li>
                   </ul>
                 </nav>
               </div>

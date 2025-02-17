@@ -1,0 +1,76 @@
+title: liveclose 21B
+ctitle: 21英寸低频扬声器系统
+description: 频率响应 (-3dB) 37Hz-150Hz | 额定功率 (AES) 2000W | 灵敏度(1W@1M) 98dB | 最大声压级 124dB/130dB (peak)
+image: /images/products/liveclose21b/liveclose21b-0.jpg
+dimensional: /images/products/liveclose21b/liveclose21b-dimensions.png
+images: ["/images/products/liveclose21b/liveclose21b-1.jpg"]
+category: speaker
+slug: liveclose21b
+language: zh
+date: 2024-04-01
+features:
+  [
+    "21英寸低频的组合提供了高保真的音效。",
+    "额定功率2000W，最大可达8000W，满足各类场景需求。",
+    "21mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content:
+  liveclose 21B是一款专门为追求高品质声音输出的用户设计的低音炮，箱体采用烤漆木质材质，既保证了音箱的美观度，又拥有良好的声学表现。
+
+  liveclose 21B凭借出色的性能、优质的用料、精致的设计，无论是在专业音响领域还是日常娱乐场景，都能为用户带来绝佳的声音体验。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "37Hz-150Hz" },
+    # { name: "频率响应(-10db)", value: "45Hz-20kHz" },
+    { name: "额定功率(RMS)", value: "2000W" },
+    { name: "总功率(MUSIC)", value: "4000W" },
+    { name: "总功率(PEAK)", value: "8000W" },
+    { name: "最大声压级 @ 1m", value: "124dB/130dB (PEAK)" },
+    { name: "灵敏度 1W @ 1m", value: "98 dB" },
+    { name: "额定阻抗 (Ohm)", value: "4 Ω" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "	21英寸低音炮" },
+    { name: "低音扬声器", value: "1 x 21 英寸低频单元" },
+    { name: "箱体材质", value: "21mm 层压板" },
+    { name: "箱体材质", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "	喷粉涂层" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "725 × 724 × 912mm" },
+    { name: "包装尺寸(W x D x H):", value: "880 × 855 × 1045mm" },
+    { name: "净重", value: "92kg" },
+    { name: "毛重", value: "97kg" },
+  ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/liveclose21b/liveclose21b-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_live_close21b_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters     |                                                        |
+# | ---------------------------- | ------------------------------------------------------ |
+# | Box Construction             | 21mm Russian birch laminated board                     |
+# | Unit Composition Transformer | 1 x 21 "Low Frequency Unit                             |
+# | 频率响应 (-3dB)    | 37Hz-150Hz                                             |
+# | 额定功率 (AES)            | 2000W                                                  |
+# | 灵敏度（ 1W@1M )        | 98dB                                                   |
+# | Maximum SPL                  | 124dB/130dB (peak)                                     |
+# | Rated Impedance              | 4 OHM                                                  |
+# | Install                      | 25 steel suspension points, 1xM20 steel mounting plate |
+# | 尺寸 (W × D × H)       | 724 × 725 × 921mm                                      |
+# | Package Dimension            | 880 × 855 × 1045mm                                     |
+# | 净重                   | 92kg                                                   |
+# | 毛重                 | 97kg                                                   |

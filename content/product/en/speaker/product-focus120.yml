@@ -1,0 +1,107 @@
+title: FOCUS120
+ctitle: 12 inch two way full range speaker
+description: Frequency response 55Hz-20kHz (-3dB) | Rated power RMS 400W | Sensitivity 97.5 dB
+image: /images/products/focus120/focus120-0.jpg
+dimensional: /images/products/focus120/focus120-dimensions.png
+images:
+  [
+    "/images/products/focus120/focus120-1.jpg",
+    "/images/products/focus120/focus120-2.jpg",
+    "/images/products/focus120/focus120-3.jpg",
+    "/images/products/focus120/focus120-4.jpg",
+    "/images/products/focus120/focus120-5.jpg",
+    "/images/products/focus120/focus120-6.jpg",
+  ]
+category: speaker
+slug: focus120
+language: en
+date: 2024-01-02
+
+features:
+  [
+    "The combination of 12 inch low-frequency and 1.75-inch high-frequency units provides high fidelity sound effects.",
+    "The rated power is 400W, and the maximum can reach 1600W, meeting the needs of various scenarios.",
+    "15mm laminated board box with iron mesh, sturdy and durable.",
+    "Equipped with NL4 connectors and lifting kits, it can flexibly adapt to various scenarios.",
+    "Reasonable price, excellent performance, and value for money.",
+  ]
+content:
+  FOCUS120 is a full range speaker designed specifically for users who pursue high-quality sound output. The box body is made of baked paint wood material, which not only ensures the beauty of the speaker, but also has good acoustic performance.
+
+  FOCUS120, with its outstanding performance, high-quality materials, and exquisite design, can bring users an excellent sound experience in both professional audio fields and daily entertainment scenarios.
+
+technicalspecification: [
+    { name: "Frequency Response(-3db)", value: "55Hz-20kHz" },
+    # { name: "Frequency Response(-10db)", value: "45Hz-20kHz" },
+    { name: "Rated Power(AES)", value: "400W" },
+    # { name: "Total Power(MUSIC)", value: "800W" },
+    # { name: "Total Power(PEAK)", value: "1600W" },
+    { name: "Max SPL @ 1m", value: "125dB/131dB (PEAK)" },
+    { name: "Dispersion (H x V)", value: "90 x 95" },
+    { name: "Sensitivity 1W @ 1m", value: "97.5 dB" },
+    { name: "Nominal Impedance (Ohm)", value: "8 Ω" },
+    # { name: "Crossover Frequencies", value: "2.2kHz" },
+    # { name: "Distortion 10% P", value: "≤5%" },
+  ]
+
+physicalspecification:
+  [
+    { name: "Box", value: "12 inch Two Way Full Range Speaker" },
+    { name: "Woofer", value: "1 x 12 'low-frequency unit" },
+    { name: "Compression driver", value: "1 x 44-core compression driver" },
+    {
+      name: "Frequency division mode",
+      value: "Built in two-way frequency divider",
+    },
+    { name: "Cabinet/Case Material", value: "15mm laminated board" },
+    {
+      name: "Box surface treatment",
+      value: "Water based coal grey sand surface paint",
+    },
+    {
+      name: "Grille",
+      value: "Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel",
+    },
+    { name: "Connector", value: "2 x NL4" },
+    { name: "Optional Accessories", value: "Lifting kit" },
+    { name: "Dimensions(W x D x H)", value: "343 x 439 x 600mm" },
+    { name: "Package Dimensions(W x D x H):", value: "396 x 478 x 640mm" },
+    { name: "Net weight", value: "22.7kg" },
+    { name: "Gross weight", value: "24.8kg" },
+  ]
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/focus120/focus120-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "Manual",
+      url: "/download/syrincs_focus120_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters                  |                                                                            |
+# | ----------------------------------------- | -------------------------------------------------------------------------- |
+# | Box                                       | Painted Wooden Full Range Speaker                                          |
+# | Unit composition                          | 1 x 12 "low-frequency unit 1 x 1.7" high-frequency driver                  |
+# | Frequency division mode                   | Built in two-way frequency divider                                         |
+# | Frequency response (-3dB)                 | 55Hz-20kHz                                                                 |
+# | Frequency response (-3dB)                 | 45Hz-20kHz                                                                 |
+# | Rated power AES                           | 400W                                                                       |
+# | Long term maximum power                   | 800W                                                                       |
+# | Short term maximum power                  | 1600W                                                                      |
+# | Distortion 10% P                          | ≤5%                                                                        |
+# | Sensitivity                               | 97.5 dB                                                                    |
+# | Maximum sound pressure level pink noise   | 125dB/131dB (peak)                                                         |
+# | Effective sound pressure level pink noise | 116dB/122dB (peak)                                                         |
+# | Impedance                                 | 8 Ω                                                                        |
+# | Box                                       | 15mm laminated board                                                       |
+# | Box surface treatment                     | Coal gray water-based sand surface paint spraying                          |
+# | Iron mesh                                 | Electrostatic powder coating black fine sand matte, 1.2mm low carbon steel |
+# | Connector                                 | 2 × NL4                                                                    |
+# | Optional accessories                      | Lifting kit                                                                |
+# | Dimensions (W × D × H)                    | 352 × 600 × 450 mm                                                         |
+# | Weight                                    | 22.7kg                                                                     |

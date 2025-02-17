@@ -1,0 +1,80 @@
+title: G2.11
+ctitle: Two channel amplifier
+description: Output power 8 Ω 1050W × 2 | Output power 4 Ω 1400W × 2
+image: /images/products/g2-11/g2-11-0.jpg
+dimensional: /images/products/g2-11/g2-11-dimensions.png
+images:
+  ["/images/products/g2-11/g2-11-1.jpg", "/images/products/g2-11/g2-11-2.jpg"]
+category: amplifier
+slug: g2-11
+language: en
+date: 2024-06-06
+
+features:
+  [
+    "1. Innovative amplification circuit, the whole machine ensures sound quality while significantly improving efficiency (the overall efficiency is nearly twice that of traditional design, more energy-efficient);",
+    "2. Unique voltage current temperature management system ensures more stable system operation;",
+    "3. Complete functional settings and model sequences to meet the needs of various application scenarios in the entertainment market.",
+  ]
+content: The G series power amplifier is a professional power amplifier specially launched by SYRINCS for the entertainment market, with exclusive tone tuning. The entire series adopts carefully designed fully balanced amplification circuits, resulting in sweet and powerful tones.
+
+technicalspecification:
+  [
+    { name: "Power", value: " " },
+    { name: "Stereo 8 Ω", value: "1050W x 2" },
+    { name: "Stereo 4 Ω", value: "1400W x 2" },
+    {
+      name: "Input sensitivity (3 gears optional) @8Ω, 1kHz, ±10% or ±1dB",
+      value: "",
+    },
+    { name: "0.775V", value: "0.73V " },
+    { name: "1V", value: "0.92V " },
+    { name: "32dB (40x gain)", value: "32dB " },
+    { name: "Total harmonic distortion ", value: "＜0.1% @ 8 Ω, 1kHz" },
+    {
+      name: "Intermodulation distortion",
+      value: "＜0.5% @ 8 Ω, 60Hz/7kHz 4:1",
+    },
+    { name: "Frequency response ", value: "20Hz-20kHz ± 2dB " },
+    { name: "Damping coefficient", value: "＞200 @ 8 Ω, 100Hz" },
+    {
+      name: "Signal to noise ratio",
+      value: "＞105dB @ 8 Ω, 1kHz, 32dB range, A-weighted",
+    },
+  ]
+
+physicalspecification:
+  [
+    {
+      name: "Rated consumption current @ 1/8 maximum output power, 4 Ω",
+      value: "5.5A",
+    },
+    { name: "Input interface", value: "XLR x 2" },
+    { name: "Cascade output", value: "XLR x 2" },
+    { name: "Power output ", value: "NL4 x 2" },
+    { name: "Rated power supply voltage", value: "220V~50Hz" },
+    {
+      name: "Cooling method ",
+      value: "Dual Cooling Fan Controlled by Temperature",
+    },
+    {
+      name: "Environmental temperature ",
+      value: "Operating temperature -10 ℃~40 ℃ Storage and transportation temperature -25 ℃~80 ℃ ",
+    },
+    { name: "Net weight", value: "14.8kg" },
+    { name: "Size", value: "89mm × 482mm × 279mm (including 304mm rack)" },
+  ]
+
+downloads: [
+    {
+      title: "Hi-res photo",
+      url: "/images/products/g2-11/g2-11-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "Manual",
+      url: "/download/syrincs_g_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+  ]

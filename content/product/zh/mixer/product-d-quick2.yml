@@ -1,0 +1,139 @@
+title: D-QUICK2
+ctitle: 数字调音台
+description: D-QUICK2数字调音台配备20个线性电平输入、16个麦克风前置放大器和一个播放引擎；31段GEQ处理器；DSP效应；虽然辅助总线具有如此强大的功能，但其操作非常简单。
+image: /images/products/d-quick2/d-quick2-0.jpg
+dimensional:
+images:
+  [
+    "/images/products/d-quick2/d-quick2-1.jpg",
+    "/images/products/d-quick2/d-quick2-2.jpg",
+    "/images/products/d-quick2/d-quick2-3.jpg",
+    "/images/products/d-quick2/d-quick2-4.jpg",
+    "/images/products/d-quick2/d-quick2-5.jpg",
+    "/images/products/d-quick2/d-quick2-6.jpg",
+  ]
+category: mixer
+slug: d-quick2
+language: zh
+date: 2024-11-28
+
+features:
+  [
+    "16个麦克风前置放大器，具有专业电平控制",
+    "20个线性电平输入",
+    "8台辅助输送机",
+    "2个内部效应",
+    "1个主输出",
+    "所有通道控制室输出",
+    "2个耳机输出",
+    "100mm精密电动推杆",
+    "7英寸彩色触摸屏，可视化界面和设置",
+    "24位/48KHz采样率",
+    "编程、保存、上传和复制功能",
+    "数字噪声门",
+    "带有内置效果（两种类型）",
+    "数字压缩器/限制器",
+    "数字4段全参数均衡器",
+    "6个DCA数字控制，用于音频或静音",
+    "机器锁定和解锁功能，密码修改功能",
+    "远程控制：以太网或USB",
+    "用于无线控制的IPad应用程序编辑器",
+    "可选模块扩展接口：多轨USB录音模块、CobraNet模块、Dante模块等",
+ 
+  ]
+content:
+  D MATCH 2.6是一款数字音频处理器。该设备将两个模拟输入音频信号数字化，并提供音频处理和扬声器管理功能，非常适合提高中小型放大场所的音质。它还可以在集中控制室监控系统的工作状态。通过在PC上安装系统控制软件，可以监控和管理RS-485控制总线上的多达50个设备，从而轻松处理大型复杂的应用程序。该面板具有输入和输出电平的动态余量指示器，可以显示每个输出通道（音频源、超低频、低频、中频和高频）的配置信息。数字显示器显示设备地址代码或当前用户程序编号，可以使用面板上的触摸按钮设置地址代码或调用用户程序。该设备可以灵活地将两个输入信号分配给六个输出，配置为三个立体声通道或最多六个单声道分频器。
+
+  两个输入信号可以灵活地分配给六个输出，配置为三个立体声或最多六个单声道分频器。此外，它还包括延迟、压缩/限制器、参数均衡器或图形均衡器等功能，因此该设备非常适合在放大场所提高音质的应用。
+
+technicalspecification:
+  [
+    {
+      name: "麦克风输入",
+      value: "电子平衡",
+    },
+    {
+      name: "频率响应",
+      value: " 20Hz-20KHz 0dBu ± 1.5dB  ",
+    },
+    {
+      name: "主输出失真（THDN）",
+      value: " 0.01% at 0dBu 1 KHz       ",
+    },
+    { name: "信噪比", value: " 107dB      " },
+    { name: "最大输入电平", value: " +22dBu    " },
+    { name: "幻影电源(+/-3V)    ", value: " +48VDC   " },
+  ]
+
+physicalspecification:
+  [
+    { name: "线性输入", value: "非平衡" },
+    {
+      name: "频率响应直接输出",
+      value: " 20Hz-20KHz 0dBu ± 1.5dB   ",
+    },
+    { name: "主输出失真(THDN)   ", value: " 0.01% at 0dBu 1KHz" },
+    { name: "增益", value: " -15dBu~+35dBu     " },
+    { name: "最大输入电平 (0dBu gain) ", value: " +20dBu    " },
+    {
+      name: " 17~18/9~20 立体声输入",
+      value: "平衡（2对立体声）",
+    },
+    {
+      name: "主输出频率响应",
+      value: " 20Hz-20KHz at 0dBu ± 1.5dB ",
+    },
+    { name: "主输出失真 (THDN)   ", value: " 0.01% at 0dBu 1KHz" },
+    { name: "增益", value: " ∞ to+10dBu " },
+    { name: "主输出", value: "  " },
+    { name: "最大输出级别", value: "  " },
+    { name: "AUX1~4 输出", value: " +20dBu     " },
+    { name: "最大输出级别", value: "  " },
+    { name: "SUB1-4 输出", value: " +20dBu    " },
+    { name: "最大输出级别", value: " +20dBu     " },
+  ]
+  
+
+  # ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/d-quick2/d-quick2-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/Syrincs_d-quick2_manual.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# | Specification parameters         |                            |
+# | -------------------------------- | -------------------------- |
+# | Microphone input                 | Electronic balanced        |
+# | Frequency response direct output | 20Hz-20KHz 0dBu ± 1.5dB    |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1 KHz        |
+# | Signal to noise ratio            | 107dB                      |
+# | Maximum input level              | +22dBu                     |
+# | Phantom power supply (+/-3V)     | +48VDC                     |
+# | \* _ Linear input _ \*           | Unbalanced                 |
+# | Frequency response direct output | 20Hz-20KHz 0dBu ± 1.5dB    |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1KHz         |
+# | Gain                             | -15dBu~+35dBu              |
+# | Maximum input level (0dBu gain)  | +20dBu                     |
+# | 17~18/9~20 stereo input          | Balanced (2 stereo pairs)  |
+# | Main output frequency response   | 20Hz-20KHz at 0dBu ± 1.5dB |
+# | Main output distortion (THDN)    | 0.01% at 0dBu 1KHz         |
+# | Gain                             | ∞ to+10dBu                 |
+# | \* _ Main output _ \*            |                            |
+# | Maximum output level             |                            |
+# | AUX1~4 output                    | +20dBu                     |
+# | Maximum output level             |                            |
+# | SUB1-4 output                    | +20dBu                     |
+# | Maximum output level             | +20dBu                     |
+
+# Specification:
+# [
+
+# ]

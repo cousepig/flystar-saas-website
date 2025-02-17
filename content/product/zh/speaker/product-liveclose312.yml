@@ -1,0 +1,94 @@
+title: liveclose312
+ctitle: 高声压三分频无源全频音箱
+description: 额定功率 (AES) :LF:360W | 灵敏度（ 1W@1M ）:LF:100dB | 最大声压级:LF:122dB/128dB (peak)
+image: /images/products/liveclose312/liveclose312-0.jpg
+dimensional: /images/products/liveclose312/liveclose312-dimensions.png
+images:
+  [
+    "/images/products/liveclose312/liveclose312-1.jpg",
+    "/images/products/liveclose312/liveclose312-2.jpg",
+    "/images/products/liveclose312/liveclose312-3.jpg",
+    "/images/products/liveclose312/liveclose312-4.jpg",
+    "/images/products/liveclose312/liveclose312-5.jpg",
+    "/images/products/liveclose312/liveclose312-6.jpg",
+    "/images/products/liveclose312/liveclose312-7.jpg",
+  ]
+category: speaker
+slug: liveclose312
+language: zh
+date: 2024-03-02
+features:
+  [
+    "14英寸低频的组合提供了高保真的音效。",
+    "额定功率1200W，最大可达4800W，满足各类场景需求。",
+    "15mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content:
+  liveclose312是一款专门为追求高品质声音输出的用户设计的低音炮，箱体采用烤漆木质材质，既保证了音箱的美观度，又拥有良好的声学表现。
+
+  liveclose312凭借出色的性能、优质的用料、精致的设计，无论是在专业音响领域还是日常娱乐场景，都能为用户带来极佳的声音体验。
+technicalspecification: [
+    {
+      name: "频率响应(-3db)",
+      value: "LF: 110Hz-1.1 kHz (-3dB) MF: 360Hz-4.1 kHz (-3dB) HF: 2kHz-17.5kHz (-3dB)",
+    },
+    { name: "频率响应(-10db)", value: "34Hz-150Hz" },
+    { name: "额定功率(AES)", value: "LF: 360W MF: 140W HF: 40W" },
+    # { name: "Total Power(MUSIC)", value: "2400W" },
+    # { name: "Total Power(PEAK)", value: "4800W" },
+    {
+      name: "最大声压级 @ 1m",
+      value: "LF: 122dB/128dB (peak) MF: 121 dB/127dB (peak) HF: 118dB/124dB (peak)  ",
+    },
+    { name: "指向性 (H x V)", value: "90 °× 40 ° " },
+    { name: "灵敏度 1W @ 1m", value: "LF:100dB MF:103dB HF:105dB " },
+    { name: "额定阻抗 (Ohm)", value: "8 Ω" },
+    { name: "分频点", value: "MF/LF: 500Hz, MF/HF:2.5KHz" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "14 inch sub低音扬声器" },
+    { name: "低音扬声器", value: "1 x 12 寸低音单元" },
+    { name: "中音单元", value: "1 x 6 寸中音单元" },
+    { name: "压缩驱动器", value: "44mm 高频压缩驱动器" },
+    { name: "箱体材质", value: "18mm 层压板" },
+    { name: "箱体材质", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "静电粉末喷涂黑色细砂哑光,1.2mm低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "466 × 480 × 708mm" },
+    { name: "包装尺寸(W x D x H):", value: "595 × 565 × 825mm" },
+    { name: "净重", value: "35.7kg" },
+    { name: "毛重", value: "39.7kg" },
+  ]
+downloads: [
+    { title: "照片", url: "", icon: "/images/jpg.gif" },
+    {
+      title: "说明书",
+      url: "/download/syrincs_live_close312_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# ---
+
+# | Specification parameters       |                                                                                                          |
+# | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+# | Box construction               | 15mm laminated Russian birch wood                                                                        |
+# | Unit composition Transformer   | LF: 1x12 "MF: 1x6" HF: 44mm high frequency 压缩驱动器                                            |
+# | 频率响应 (-3dB)      | LF: 110Hz-1.1 kHz (-3dB) MF: 360Hz-4.1 kHz (-3dB) HF: 2kHz-17.5kHz (-3dB)                                |
+# | 额定功率 (AES)              | LF: 360W MF: 140W HF: 40W                                                                                |
+# | 灵敏度（ 1W@1M )          | LF:100dB MF:103dB HF:105dB                                                                               |
+# | Maximum SPL                    | LF: 122dB/128dB (peak) MF: 121 dB/127dB (peak) HF: 118dB/124dB (peak)                                    |
+# | Rated Impedance                | 8 OHM                                                                                                    |
+# | Directional 指向性 (H × V) | 90 °× 40 °                                                                                               |
+# | Frequency division point       | MF/LF: 500Hz, MF/HF:2.5KHz                                                                               |
+# | 连接器                      | 2 x NL4 (INPUTI: midrange 2+1-, INPUTI: High frequency 1+2- INPUT2: Low frequency 1+1-, INPUT2: NC 2+2-) |
+# | 尺寸 (W × D × H)         | 466 × 480 × 708mm                                                                                        |
+# | Package Dimension              | 595 × 565 × 825mm                                                                                        |
+# | 净重                     | 35.7kg                                                                                                   |
+# | 毛重                   | 39.7kg                                                                                                   |

@@ -1,0 +1,83 @@
+title: Liveclose 218B
+ctitle: 双18英寸低频扬声器
+description: 频率响应 (-3dB) 38Hz-200Hz | 额定功率 (RMS) 1000W | 灵敏度 (1W@1M) 99dB | 最大声压级 135d8 (peak)
+image: /images/products/liveclose218b/liveclose218b-0.jpg
+dimensional: /images/products/liveclose218b/liveclose218b-dimensions.png
+images:
+  [
+    "/images/products/liveclose218b/liveclose218b-1.jpg",
+    "/images/products/liveclose218b/liveclose218b-2.jpg",
+    "/images/products/liveclose218b/liveclose218b-3.jpg",
+  ]
+category: speaker
+slug: liveclose218b
+language: zh
+date: 2024-04-02
+features:
+  [
+    "双18寸低频的组合，提供高保真的音效。",
+    "额定功率1000W，最大可达4000W，满足各类场景需求。",
+    "15mm层压板箱配铁网，坚固耐用。",
+    "配备NL4连接件及升降套件，可灵活适应各种场景。",
+    "价格合理，性能优异，物有所值。",
+  ]
+content:
+  liveclose 218B是一款专门为追求高品质声音输出的用户设计的低音炮，箱体采用烤漆木质材质，既保证了音箱的美观度，又拥有良好的声学表现。
+
+  liveclose 218B凭借出色的性能、优质的用料、精致的设计，无论是在专业音响领域还是日常娱乐场景，都能为用户带来极佳的声音体验。
+
+technicalspecification: [
+    { name: "频率响应(-3db)", value: "38Hz-200Hz" },
+    # { name: "频率响应(-10db)", value: "34Hz-150Hz" },
+    { name: "额定功率(RMS)", value: "1000W" },
+    # { name: "Total Power(MUSIC)", value: "2400W" },
+    # { name: "Total Power(PEAK)", value: "4800W" },
+    { name: "最大声压级 @ 1m", value: "129dB/135dB (PEAK)" },
+    { name: "灵敏度 1W @ 1m", value: "99 dB" },
+    { name: "额定阻抗 (Ohm)", value: "4 Ω" },
+  ]
+
+physicalspecification:
+  [
+    { name: "音箱", value: "双 18 英寸低音炮" },
+    { name: "低音扬声器", value: "2 x 18 英寸铁氧体低音扬声器" },
+    { name: "箱体材质", value: "21mm 层压板" },
+    { name: "箱体材质", value: "水性煤灰色沙面漆" },
+    { name: "面网", value: "静电粉末喷涂黑色细砂哑光,1.2mm低碳钢" },
+    { name: "连接器", value: "2 x NL4" },
+    { name: "可选配件", value: "吊装套件" },
+    { name: "尺寸(W x D x H)", value: "1075 × 786 × 567mm" },
+    { name: "包装尺寸(W x D x H):", value: "1180 × 890 × 690mm" },
+    { name: "净重", value: "80.5kg" },
+    { name: "毛重", value: "97kg" },
+  ]
+downloads: [
+    {
+      title: "照片",
+      url: "/images/products/liveclose218b/liveclose218b-0.jpg",
+      icon: "/images/jpg.gif",
+    },
+    {
+      title: "说明书",
+      url: "/download/syrincs_live_close218b_说明书.pdf",
+      icon: "/images/pdf.gif",
+    },
+    # { title: "Dimensional drawing", url: "", icon: "/images/pdf.gif" },
+    # { title: "Software", url: "", icon: "/images/unknown.gif" },
+  ]
+# ---
+
+# | Specification parameters      |                                                                                                              |
+# | ----------------------------- | ------------------------------------------------------------------------------------------------------------ |
+# | Box construction              | 18mm laminated board surface polyurethane paint 18mm bird ply wood, durable polyurethane textured base paint |
+# | Unit composition: Transformer | 2X18 "Low frequency unit 18" Neodymium 低音扬声器                                                                |
+# | 频率响应 (-3dB)     | 40Hz-150Hz                                                                                                   |
+# | 频率响应 (-10dB)    | 34Hz-150Hz                                                                                                   |
+# | 额定功率 (AES)             | 1200W                                                                                                        |
+# | 灵敏度（ 1W@1M )         | 98dB                                                                                                         |
+# | Maximum SPL                   | 124dB/130dB (peak)                                                                                           |
+# | Rated Impedance               | 4 OHM                                                                                                        |
+# | 连接器                     | 2 × NL4                                                                                                      |
+# | 尺寸 (W × D × H)        | 558 × 780 × 1078mm                                                                                           |
+# | Package Dimension             | 1180 × 890 × 690mm                                                                                           |
+# | 毛重                  | 91.2kg                                                                                                       |
